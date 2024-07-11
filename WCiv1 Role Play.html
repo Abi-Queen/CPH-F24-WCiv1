@@ -323,6 +323,14 @@ header li {
   height: 500px;
 }
 
+.hellenistichero {
+  background-image: url("images/alexander-mosaic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+
 .rome1hero {
   background-image: url("images/trajan-tortoise.jpg");
   background-position: center;
@@ -722,7 +730,7 @@ function copybtn(copy) {
 
 &lt;div class=&quot;portals&quot;&gt; 
 &lt;h3&gt;[[The Hellenistic World |Hellenistic]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/greece1b.jpg&quot; alt=&quot;ruins of circular, columned temple&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39; &quot;Rome1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; 
+&lt;&lt;link &#39;&lt;img src=&quot;images/greece1b.jpg&quot; alt=&quot;ruins of circular, columned temple&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39; &quot;Hellenistic&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; 
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
@@ -1013,11 +1021,16 @@ function copybtn(copy) {
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1038,12 +1051,18 @@ function copybtn(copy) {
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journeyt.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;t&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;In the Middle Ages, people wondered about Stonehenge: Who built it? Why? Sometimes, they imagined explanations. For instance, in some French and English stories about the legends of King Arthur and his knights, the wizard Merlin built Stonehenge as a memorial for a battle in the Brittons&#39; war with the Saxon invaders. Merlin used his magic to transport the stones from Ireland, and a friendly giant set them in place. It&#39;s not all that different from &lt;em&gt;Ancient Aliens&lt;/em&gt; today.&lt;/p&gt;
 &lt;img src=&quot;images/stonehenge-wace.jpg&quot; alt=&quot;manuscript illlustration of giant building stonehenge&quot; width=&quot;50%&quot;&gt;
 &lt;p&gt;Here&#39;s a construction scene from a 14th-century manuscript (from &lt;a href=&quot;https://www.worldhistory.org/image/10486/merlin-constructs-stonehenge-roman-de-brut/&quot; target=&quot;blank&quot;&gt;World History Encyclopedia&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -1149,11 +1168,16 @@ function copybtn(copy) {
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -1174,12 +1198,18 @@ function copybtn(copy) {
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;With is strategically powerful location between the great Tigris and Euphrates rivers, it&#39;s no wonder that the city of Babylon reigned supreme in the region, serving as the administrative and economic hub for numerous empires as they rose and fell through the Bronze and Iron Age epochs. The Hebrew Bible presented Babylon as the epitome worldly vice, sin, greed, and ambition, a den of iniquity standing in stark opposiiton to the upright virtue of the Hebrew followers of Yaweh. Babylon became the original &quot;sin city.&quot; This image persisted into the modern age as centuries of Christian writers and artists used Babylon to represent the antipathy of Christian virtue, the antichrist&#39;s corrupt foil to Christ&#39;s pure promise of eternal life.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/whore-babylon.jpg&quot; alt=&quot;woman riding a dragon&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;This image from a sixteenth-century German Bible represents the &quot;Whore of Babylon&quot; with her dragon. In the biblical book of Revelations, she is the mother of the Antichrist of Armageddon. By putting a papal crown on the woman, this Protestant artist has harnessed the old symbolism of Babylon to his own political agenda, creating an image that demonizes the Pope and the Catholic church.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -2419,11 +2449,16 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -2444,12 +2479,18 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;Caption&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#tespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -2550,11 +2591,15 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -2575,12 +2620,18 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;Caption&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -2999,17 +3050,23 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;But this time will be different. This time, the Helots have friends too. The moon looks monstrous as it floats up higher on the horizon - an angry red eye, leering through twisting columns and heavy layers of smoke. The Helots are burning the crops they’ve been growing for their masters. Occasionally the sound of screaming threads through the smoky air. You’re lying in the tall grass, your head resting in the curve of your lover’s arm. You feel so alive. Like you have never been alive before. Like his body is a portal to another world, and you have fallen through it. The world you left wasn’t real. This is the real world. You resist sleep, your eyes tracking the rise of the bloody orb of the moon. When the it reaches its zenith, you will meet with the Athenian rowers in the olive grove at the foot of this hill. Yesterday, Sparta sent Athens home when they came to help their “friends” crush the rebellion: “Thanks for coming, but &lt;&lt;linkappend &quot;we don&#39;t want you here.&quot;&quot;&gt;&gt;&lt;&lt;include &quot;Helot-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; So the Athenians sailed off over the horizon … and then looped back around to anchor here in the cove and send runners to find the Helot leaders. Your heart leaps as you think about what might happen now.&lt;/p&gt;
+&lt;p&gt;But this time will be different. This time, the Helots have friends too. The moon looks monstrous as it floats up higher on the horizon - an angry red eye, leering through twisting columns and heavy layers of smoke. The Helots are burning the crops they’ve been growing for their masters. Occasionally the sound of screaming threads through the smoky air. You’re lying in the tall grass, your head resting in the curve of your lover’s arm. You feel so alive. Like you have never been alive before. Like his body is a portal to another world, and you have fallen through it. The world you left wasn’t real. This is the real world. You resist sleep, your eyes tracking the rise of the bloody orb of the moon. When the it reaches its zenith, you will meet with the Athenian rowers in the olive grove at the foot of this hill. Yesterday, Sparta sent Athens home when they came to help their “friends” crush the rebellion: “Thanks for coming, but &lt;&lt;linkappend &quot;we don&#39;t want you here.&quot;&gt;&gt;&lt;&lt;include &quot;Helot-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; So the Athenians sailed off over the horizon … and then looped back around to anchor here in the cove and send runners to find the Helot leaders. Your heart leaps as you think about what might happen now.&lt;/p&gt;
 &lt;hr&gt;
+
 &lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -3026,18 +3083,28 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;li&gt;Your past experience, skills, physical and intellectual abilities&lt;/li&gt;
 &lt;li&gt;Your family and personal relationships and community network&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;We&#39;ve all heard of Helen of Troy, the most beautiful woman in the world, awarded to Paris, Prince of Troy, in a hilariously cheeky &quot;be careful what you wish for&quot; move by Aphrodite. But she wasn&#39;t Helen of Troy at all. She was Helen of Sparta ... and that was the problem, right? The story of Helen is exemplary of a wider trend in the ancient sources representing Spartan women as physically attractive (and, perhaps, dangerous?). Hollywood likes to tell the Paris-Helen story in a way that appeals to our modern tastes for romantic love. But Homer tells it quite differently. In the ancient poems, Helen &lt;em&gt;hates&lt;/em&gt; Paris and does her best to make his life miserable - for instance, constantly calling him a coward and flirting &lt;em&gt;hard&lt;/em&gt; with his big brother, Hector. Homer&#39;s version feels more in line with what we would expect from an abducted Spartan queen.&lt;/p&gt; 
-&lt;p&gt;Anyway, the story of Helen and the Trojan War was clearly a beloved and widely retold tale throughout ancient Greece. The most complete Trojan War narrative comes to us in oral-traditional verse composed by the (blind?) poet Homer c. 800 BCE. &quot;Sing, Muse! Sing of the rage of Achilles...&quot; The opening lines of Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; are as familiar as the &quot;In the beginning...&quot; of &lt;em&gt;Genesis&lt;/em&gt;. Indeed, the great epics of Homer, &lt;em&gt;The Iliad&lt;/em&gt; and &lt;em&gt;The Odyssey&lt;/em&gt;, are second only to the Bible in the longevity and depth of their influence on artistic and literary genius of the West for the past two millenia (and more). For long centuries, artists and poets and even political figures have drawn inspiration from the story of the Trojan War. The Roman poet Virgil used Homer&#39;s epics as a template for his own version a Roman origin story (&lt;em&gt;The Aeneid&lt;/em&gt;). Medieval historians traced their own kings&#39; lineages back to the plains of Ilium (Britons came from a Brutus who fled Troy, for instance, and Thor was named for his native city of Troy). Later, Hector, Helen, Achilles, and company appear on Shakespeare&#39;s stage, and these days, in Hollywood blockbusters. Probably my personal favorite is Dan Simmons&#39; spec fiction novels &lt;em&gt;Illium&lt;/em&gt; and &lt;em&gt;Olympos&lt;/em&gt;, in which post-humans are Greek gods playing war games with their nano-engineered pet superhumans on a mockup of the Trojan War on Mars. Thank you, Homer, whoever you were.&lt;/p&gt;
+&lt;p&gt;Anyway, the story of Helen and the Trojan War was clearly a beloved and widely retold tale throughout ancient Greece. The most complete Trojan War narrative comes to us in oral-traditional verse composed by the (blind?) poet Homer c. 800 BCE. &quot;Sing, Muse! Sing of the rage of Achilles...&quot; The opening lines of Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; are as familiar as the &quot;In the beginning...&quot; of &lt;em&gt;Genesis&lt;/em&gt;. Indeed, the great epics of Homer, &lt;em&gt;The Iliad&lt;/em&gt; and &lt;em&gt;The Odyssey&lt;/em&gt;, are second only to the Bible in the longevity and depth of their influence on artistic and literary genius of the West for the past two millenia (and more). For long centuries, artists and poets and even political figures have drawn inspiration from the story of the Trojan War. The Roman poet Virgil used Homer&#39;s epics as a template for his own version a Roman origin story (&lt;em&gt;The Aeneid&lt;/em&gt;). Medieval historians traced their own kings&#39; lineages back to the plains of Ilium. (Thus, Britons came from a Brutus who fled Troy, for instance, and Thor was named for his native city of Troy.) Later, Hector, Helen, Achilles, and company appear on Shakespeare&#39;s stage, and these days, in Hollywood blockbusters. Probably my personal favorite is Dan Simmons&#39; spec fiction novels &lt;em&gt;Illium&lt;/em&gt; and &lt;em&gt;Olympos&lt;/em&gt;, in which post-humans are Greek gods playing war games with their nano-engineered pet superhumans on a mockup of the Trojan War on Mars. Thank you, Homer, whoever you were.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/odysseus-sirens.jpg&quot; alt=&quot;men in ship, sirens diving&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Ancient Greek pottery showing Odysseus listening to the sirens&#39; song&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/waterhouse-penelope.jpg&quot; alt=&quot;men speaking through window as woman weaves&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Odysseus&#39; wife, Penelope, tricking her suitors by weaving her father&#39;s funeral shroud all day (and unraveling it at night), by Pre-Raphaelite painter John William Waterhouse (England, 1912)&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+
+
+
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -3137,11 +3204,16 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -3166,6 +3238,12 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;Historians have often noted strong parallels between the Peloponnesian War of ancient times and the Cold War of the twentieth century. Both wars formed around the rivalry between two regional superpowers (Sparta vs. Athens, and the US vs. USSR). Both rivalries had ideological as well as economic differences at their core (democracy vs. oligarchy in the ancient world, and liberal democracy and capitalism vs. oligarchic communism in the modern world). Both wars were characterized by alternating periods of peace and tension, proxy wars, repeated diplomatic failures, and by complex networks of alliances linking smaller polities allied to each superpower. Both wars were prolonged by political as well as geopolitical factors. And in both cases, an outside &quot;third power&quot; added complexity to the core opposition between the two great powers (Persia in ancient times, and China in the twentieth century). And in both cases, we 21st-century Americans want to cheer on Team Democracy, but it&#39;s hard to do it wholeheartedly, because nobody comes away with clean hands. It&#39;s hard to point out the &quot;good guy&quot; in wars like this.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -4061,8 +4139,13 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -4084,12 +4167,18 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
 image
 &lt;p&gt;Caption&lt;/p&gt;
+
+&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -4468,8 +4557,6 @@ image
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="46" name="Our History Rewrite" tags="black" position="3000,3000" size="100,100">&lt;h1&gt;Our History Rewrite&lt;/h1&gt;
 &lt;img src=&quot;images/open-book-fantasy.jpg&quot; alt=&quot;open book with castle, forest, pegasus growing from pages&quot; width=&quot;100%&quot;&gt;
 &lt;p&gt;Could history have happened differently? Would the present be different? What will the future hold? It&#39;s up to you!&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;bi&quot;&gt;Need to play the weekly Role Play game? &lt;/span&gt;Head &lt;&lt;link &quot;back to Start.&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;p&gt;If you&#39;re done with this week&#39;s Role Play assignment, check out what everyone else has created. Play around with these narratives and be ready to discuss some of the following prompts when we meet in class. &lt;span class=&quot;bi&quot;&gt;Note that I may not have posted the class&#39;s responses here yet.&lt;/span&gt; I will post a Canvas announcement when I&#39;ve updated this content.&lt;/p&gt;
 &lt;ul&gt;
@@ -4853,7 +4940,13 @@ image
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;The password is incorrect. Back to [[Our History Rewrite]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">Eric J. Goldberg, &lt;em&gt;In the Manner of the Franks: Hunting, Kingship, and Masculinity in Early Medieval Europe&lt;/em&gt; (Philadelphia: University of Pennsylvania Press, 2020)
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+Eric J. Goldberg, &lt;em&gt;In the Manner of the Franks: Hunting, Kingship, and Masculinity in Early Medieval Europe&lt;/em&gt; (Philadelphia: University of Pennsylvania Press, 2020)
 
 
 &amp;#169; Copyright Abigail Queen. June 2024.
@@ -5361,13 +5454,12 @@ This quest is complete. [[Continue with the role play scenario. |GT]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Enter" tags="" position="100,1900" size="100,100">&lt;&lt;if $Password is &quot;Beowulf&quot;&gt;&gt;
 &lt;div class=&quot;starthero&quot;&gt;
 &lt;div class=&quot;title-sub&quot;&gt;
-&lt;h1&gt; Welcome, Time Traveler!&lt;/h1&gt;
-&lt;p&gt;Venture into the past. Make some history.&lt;/p&gt;
-&lt;h2&gt;Choose a name to use on this journey:&lt;/h2&gt;&lt;&lt;textbox &quot;$PlayerName&quot; &quot;&quot; &quot;Portals&quot;&gt;&gt;
+&lt;h1&gt;Welcome, Time Traveler!&lt;/h1&gt;
+&lt;p&gt;Venture into the past. Make some history. Start by entering the name you would like to use on this journey:&lt;/p&gt;&lt;&lt;textbox &quot;$PlayerName&quot; &quot;&quot; &quot;Portals&quot;&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;p&gt;If you&#39;re already done with this week&#39;s role play assignment, open Our History Rewrite to explore the new history you and your comrades have created. This is where it gets really fun... &lt;/p&gt;
+&lt;p&gt;If you&#39;re already done with this week&#39;s role play assignment, set off on a different path. Explore the new history you and your comrades have created. This is where it gets really fun... &lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -7660,11 +7752,15 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -7695,6 +7791,11 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;&lt;img src=&quot;images/spartacus.jpg&quot; alt=&quot;gladiators fighting in the arena&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;(Above: From the classic film &lt;em&gt;Spartacus&lt;/em&gt; in 19??)&lt;/p&gt; 
 &lt;p&gt;To the Romans, thumbs down meant &quot;no,&quot; as in, &quot;stop,&quot; as in, &quot;don&#39;t kill the person you&#39;ve just defeated.&quot; This makes all kinds of sense (of course it does, right?), because the thumbing person is talking to the gladiator who&#39;s victorious, so they&#39;re giving a simple &quot;green light or red light&quot; message. Thumbs up is for go: &quot;Kill!&quot; Thumbs down is red for stop: &quot;Stop.&quot; Easy. Why Hollywood consistently mangles this is beyond my meagre understanding. They&#39;re pretty good at what they do, so there must be a reason for it. I&#39;m just not in on the secret, and that&#39;s fine.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -7758,7 +7859,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 
 &lt;footer&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
+&lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Rome: Republic to Empire |Rome1]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="129" name="rome1-combat1" tags="" position="500,3500" size="100,100">&lt;&lt;if $rome1Combat1 is &quot;done&quot;&gt;&gt;
@@ -8503,7 +8604,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/ul&gt;
 &lt;/header&gt;
 
-&lt;div class=&quot;greecehero&quot;&gt;
+&lt;div class=&quot;hellenistichero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;The Hellenistic World&lt;/h1&gt;
 &lt;p&gt;The conquests of Alexander the Great reshaped the ancient West, creating a degree of cultural and economic unity founded on the intellectual, technological, and military acheivements of the Greeks. As Alexander&#39;s successors squabbled in the east, a new power was rising in the west: Rome.&lt;/p&gt;
@@ -8850,8 +8951,8 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;set $renCombat2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $witchExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $witchExplore2 to &quot;&quot;&gt;&gt;
-&lt;&lt;set $genExplore1 to &quot;&quot;&gt;&gt;
-&lt;&lt;set $genExplore2 to &quot;&quot;&gt;&gt;
+&lt;&lt;set $artExplore1 to &quot;&quot;&gt;&gt;
+&lt;&lt;set $artExplore2 to &quot;&quot;&gt;&gt;
 
 &lt;header&gt;
 &lt;ul&gt;
@@ -8890,7 +8991,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/div&gt;
 &lt;div class=&quot;row transbox&quot;&gt;
 &lt;p&gt;[[In an English witch hunt |Witch]]&lt;/p&gt;
-&lt;p&gt;[[Artemisia Gentileschi attacking African slavery |Gentileschi]]&lt;/p&gt;
+&lt;p&gt;[[An African artist in Italy |Artist]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -9017,11 +9118,17 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Ever hear of a Pyrrhic victory? Just before the Punic Wars, a Hellenistic general called Pyrrhus gave the Romans a very hard time indeed (a bit like Hannibal would do soon after Pyrrhus). History remembers Pyrrhus for his victory over the Romans at the Battle of Asculum in 279 BCE. He won, but lost so many troops that the victory was strategically worse than useless. He had to quit and go home. So if someone says, &quot;I got it done, but it was a Pyrrhic victory,&quot; they mean that their victory was so costly that the whole endeavor was more of a failure than a success.&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Did you already know all that?&lt;/p&gt;
+&lt;p id=&quot;zrespA.&quot;&gt;&lt;&lt;link &quot;Yep.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Sorry.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;No, it was new.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;Awesome. It&#39;s fun to pick up new tid-bits.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -9045,13 +9152,18 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;When Napoleon Bonaparte rose to power in the wake of the French Revolution, he appropriated Roman aesthetics and symbolism to represent his new regime. He was a military dictator (the first modern dictator in every sense). He had absolute power. But, given what happened to the last absolute ruler of France, Napoleon prudently strove to present himself as a man of the people whose mandate to rule sprang from democratic elections and the consent of the governed. Like the American founding fathers, Napoleon turned to republican Rome for well-known symbols of republican government: eagles, columns, &quot;legions,&quot; and such. Laurel wreaths instead of crowns, etc.&lt;/p&gt;
 &lt;p&gt;One of the most famous portraits of the great Bonaparte links back to the Second Punic War, when Carthaginian general Hannibal Barca famously crossed the Alps with his army, including war elephants. If you look closely, you can see Hannibal&#39;s name scratched into the rocks of this Alpine pass, alongside Charlemagne&#39;s and Napoleon&#39;s.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/david-napoleon.jpg&quot; alt=&quot;Napoleon on horseback pointing&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Jacques Louis David, &quot;Napoleon Crossing the Alps&quot; (1801)&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;So, what is Charlemagne&#39;s name doing on the rocks?&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Just for fun, because he was an important French ruler.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;No, there&#39;s a lot more to it than that.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;To lay claim to Germany.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Ok, this is going to sound crazy, but we&#39;re talking about Napoleon here, so crazy is on the table. First, Charlemagne was known as the founder of the Carolingian Empire, which became the Holy Roman Empire, which included France and Germany and other odd bits of Europe, sanctioned by the Pope after Charlemagne crossed the Alps to save him from raucous barbarians called Lombards, whom we will meet soon. Napoleon was hoping to do something similar, only bigger (of course).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -9253,11 +9365,16 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -9278,12 +9395,17 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;The Victorians created some loveable and obdurately naive representations of Ancient Greek sexuality. Zeus repeatedly &quot;married&quot; or &quot;befriended&quot; humans (you know what really happened there...). The great Archaic Era poet, Sappho of Lesbos ran a school for girls (in fact, her poetry expresses erotic love between women). Victorian notions of sexuality were rigidly, almost pathologically binary, and they were desperate to fit ancient Greek literature into that framework.&lt;/p&gt;
-&lt;img src=&quot;images/stonehenge-wace.jpg&quot; alt=&quot;manuscript illlustration of giant building stonehenge&quot; width=&quot;50%&quot;&gt;
-&lt;p&gt;Here&#39;s a construction scene from a 14th-century manuscript (from &lt;a href=&quot;https://www.worldhistory.org/image/10486/merlin-constructs-stonehenge-roman-de-brut/&quot; target=&quot;blank&quot;&gt;World History Encyclopedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/alma-tadema-sappho.jpg&quot; alt=&quot;women in Greek dress in a theater listen to young man playing a lyre&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Above: Lawrence Alma-Tadema, &quot;Sappho and Alcaeus&quot; (1881)&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -9625,11 +9747,15 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -9648,12 +9774,20 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
-History of the history
-image
-caption
+&lt;p&gt;When the Renaissance erupted across Europe and brought light to the &quot;dark&quot; Middle Ages, people decided that medieval architecture was hiddeous, lumpy, dark, clumsy. They began building in a new style in emulation of Rome and Greece: clean lines, pillars, lots of light, arches, domes, order, harmony, &lt;em&gt;symmetry&lt;/em&gt;. To them, medieval architecture represented barbarism and ignorance. They were going to put all that behind them and revive the grand and glorious style of Roman times. Who had ended Rome? Well, the barbarian tribes. The Goths. So they called medieval architecture &quot;gothic&quot; as a pejorative term. To them, &quot;gothic&quot; was the antithesis of &quot;civilized.&quot;&lt;/p&gt;
+&lt;p&gt;A few centuries later, people (mostly young women) started reading and writing ghost stories about vampires and haunted castles, and the aesthetic was very medieval: ruined abbeys and vaulted naves and stained glass. The genre became known as the &quot;gothic novel.&quot; And from there, you can pretty much pick up the connection to the &quot;goth look&quot; we&#39;re familiar with today.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/salisbury-cathedral.jpg&quot; alt=&quot;gothic cathedral exterior&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Above: Salisbury Cathedral in England (c. 1250) is a beautiful example of the gothic style.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/alphonso-psalter.jpg&quot; alt=&quot;illuminated manuscript&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Above: Renaissance &quot;moderns&quot; applied the term &quot;gothic&quot; to medieval scripts too, like this psalter from England, c. 1300.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -9711,7 +9845,7 @@ caption
 
 &lt;footer&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
+&lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="179" name="AS-king" tags="" position="800,4500" size="100,100">&lt;header&gt;
@@ -9750,11 +9884,15 @@ caption
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -9774,11 +9912,16 @@ caption
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;I have bad news. We have fallen in with some bad company in this branch of our time travel journey. Very bad. Our fellow travelers are Nazis. Adolf Hitler&#39;s fascination with an an &quot;Aryan&quot; master race led him to celebrate the early medieval history of Germanic peoples. This is why he loved Wagner&#39;s operas about early Germanic legends like Sigurd and the valkyries. You know how the bad guys in the old Indiana Jones movies are always Nazi archaeologists? Well, that&#39;s pretty realistic. The Nazi regime did support scholars scholars whose research focused on this corner of history. Ever since, white supremacist psychos have emulated Hitler&#39;s passion for Germanic history, especially Norse myth and legend. The whole episode left a sickly aura of death over this part of the historical landscape. It&#39;s really unfortunate. So let&#39;s do our best to avoid these traveling companions and explore early Germanic history without them.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/nazi-prop.jpg&quot; alt=&quot;nazi propaganda posters&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Nazi propaganda drew heavily on the themes and aesthetic of Hitler&#39;s ideas of Germany&#39;s Aryan history&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -9830,7 +9973,7 @@ caption
 
 &lt;footer&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
+&lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="180" name="Rome2-victory-a" tags="" position="2100,4300" size="100,100">&lt;header class=&quot;center&quot;&gt;
@@ -11364,11 +11507,17 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;The Norman Conquest of 1066 is when all of the lovely French enters our incredibly rich English language. For instance, it&#39;s why we say &quot;cow&quot; in the field (where the English peasants used the Old English word &lt;em&gt;cu&lt;/em&gt;), but &quot;beef&quot; on our plate (where the Norman lords used the Norman French word &lt;em&gt;boef&lt;/em&gt;).&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -11399,6 +11548,11 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;So, was he real? Yep. But the &quot;real&quot; Robin Hood bore little resemblance to the guy in the stories medieval people loved so much. The &quot;real, original&quot; Robin Hood was a Saxon nobleman called Hereweard the Wake. In the years following the Norman Conquest of 1066, the Saxon Hereweard and his band of outlaws kept up a successful guerrilla resistance against the new Norman regime, working from a base hidden deep in the fens of eastern England (marsy, boggy wetlands). If there&#39;s any one person we can identify as the &quot;real&quot; Robin Hood, it&#39;s him.&lt;/p&gt;
 &lt;p&gt;And so what? Does that mean the Robin Hood adored by medieval peasants is invalid or illegitimate in some way? Or the one Hollywood likes to show us today? I don&#39;t think so. It comes back to thinking carefully about the quesitons we ask of history. Instead of asking, &quot;Was Robin Hood real?&quot; or &quot;Is this Robin Hood movie accurate?&quot;, maybe we should ask something like, &quot;What did medeival people think of Robin Hood? What can those stories tell us about their lives and beliefs?&quot; History can only tell us what we ask it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/robin-hood-film.jpg&quot; alt=&quot;Robin Hood movie covers&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Which Robin Hood do you like best?&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Russell Crowe in 2010&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespC&quot;&gt;&lt;&lt;link &quot;The fox in the Disney one&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -11496,11 +11650,17 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Most of the time, Viking defence plans didn&#39;t work. Early in the Viking Age, the raiders just raided and took off with captives for the slave trade and whatever treasure they could carry. But around the tenth century, they started colonizing. Like the ancient Greeks, Vikings were highly successful seafaring colonizers. And like the Greeks, this habit created a wide diaspora of Viking cultural influence, including language change. They didn&#39;t always raid. They were traders first and foremost, and that involves communication. So Scandinavian loan words seeped into the langauages of the people they traded with and raided and pushed aside as colonizers. The modern English we speak today bears deep imprints from the Vikings, including the words egg, law, and knife.&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -11531,6 +11691,11 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;So, what about &lt;a href=&quot;https://www.bbc.com/reel/video/p099hyk0/the-viking-warrior-who-turned-out-to-be-a-woman&quot; target=&quot;_blank&quot;&gt;the Viking Age Birka grave&lt;/a&gt; in Sweden? In which female remains were found in a grave containing the burial goods of a warrior (sword, axe, horse, etc.)? &lt;a href=&quot;https://drive.google.com/file/d/1FXZFpu1AngrN8SU1esKVQPyqv6SDgppd/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;Some leading archaeologists&lt;/a&gt; interpret this burial as evidence that Viking warrior women did exist, as represented in the Netflix show. However, others point to numerous problems with this interpretation (for instance, the sad fact that the Victorian Era archaeologists who collected the remains and mapped the site did a very shoddy job of it, so that there&#39;s no way to know if those female bones were truly buried in a &quot;warrior grave.&quot; (If you&#39;re interested, &lt;a href=&quot;https://drive.google.com/file/d/1-1saIebK6NxfJWDe5WeJEB-64D3stB6g/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;here&#39;s an excellent recent article&lt;/a&gt; about this very active and impassioned academic debate.) There are lots of Viking Age warrior graves containing male bones. The one exception at the Birka site may not really be an exception. (And there are &lt;a href=&quot;https://drive.google.com/file/d/1ukl-8zLfnAW4B-XfgjcxCeK0mgLWsCGZ/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;intersex people buried with warrior goods&lt;/a&gt; in early medieval Finland graves.) There&#39;s also the problem of cremation: Vikings often burned their dead rather than burying them, so it&#39;s possible that Viking women warriors were cremated instead of buried. But with no written evidence in favor, and 99% (or 100%) of the archaeological evidence against, it is reasonable to conclude that Viking warrior women are fictional.&lt;/p&gt;
 &lt;img src=&quot;images/maud-valyries.jpg&quot; alt=&quot;valkyries riding horses in clouds&quot; width=&quot;100%&quot;&gt;
 &lt;p&gt;Vikings, Victorians, and Netflix have all enjoyed the idea of Viking warrior women. Here&#39;s an exmple of the trend from 1890 England: &quot;The Ride of the Valkyries&quot; by William T. Maud.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -11590,7 +11755,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 
 &lt;footer&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
+&lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Viking Age Portal |Viking]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="209" name="Viking-victory-d" tags="" position="2100,5100" size="100,100">&lt;header class=&quot;center&quot;&gt;
@@ -12385,8 +12550,18 @@ You already won this fight. [[Continue on. |Viking]]
 &lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="defence-link1" tags="" position="1100,4900" size="100,100">raiding or trading? who knows? captives among chief forms of plunder</tw-passagedata><tw-passagedata pid="220" name="defence-link2" tags="" position="1200,4900" size="100,100">like viking candy, basically, why Charles the Simple gave Rollo Normandy...
-map of Viking raids</tw-passagedata><tw-passagedata pid="221" name="defence-explore1" tags="" position="800,5000" size="100,100">&lt;&lt;if $defenceExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="defence-link1" tags="" position="1100,4900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;raiding or trading? who knows? captives among chief forms of plunder&lt;/p&gt;
+&lt;p&gt;image of ship?&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="220" name="defence-link2" tags="" position="1200,4900" size="100,100">like viking candy, basically, why Charles the Simple gave Rollo Normandy...
+map of Viking raids
+
+&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;like viking candy; why Charles gave Rollo Normandy&lt;/p&gt;
+&lt;p&gt;map of viking raids and settlements&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="221" name="defence-explore1" tags="" position="800,5000" size="100,100">&lt;&lt;if $defenceExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Defence]]
 
 &lt;&lt;else&gt;&gt;
@@ -12527,9 +12702,25 @@ This quest is complete. [[Continue with the role play scenario. |Hastings]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Hastings]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="229" name="hastings-link1" tags="" position="1100,5500" size="100,100">york minster</tw-passagedata><tw-passagedata pid="230" name="hastings-link2" tags="" position="1200,5500" size="100,100">harald hardrada verangian guard</tw-passagedata><tw-passagedata pid="231" name="hastings-link3" tags="" position="1300,5500" size="100,100">legend of fafnir, berserkrs, beowulf as aglaca, images of hoards</tw-passagedata><tw-passagedata pid="232" name="hastings-link4" tags="" position="1400,5500" size="100,100">godwin exiled (again) and was shipwrecked ironically enough and spent time as a guest in normandy, raiding and hunting, and norman sources say he promised to back william&#39;s claim (edward promised crown to a few people)
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="229" name="hastings-link1" tags="" position="1100,5500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;Constantine, Danelaw and Yorvik&lt;/p&gt;
+&lt;p&gt;York Minster&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="230" name="hastings-link2" tags="" position="1200,5500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;harald hardrada verangian guard&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="231" name="hastings-link3" tags="" position="1300,5500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;legend of fafnir, beresrkrs, beowulf as aglaca&lt;/p&gt;
+&lt;p&gt;images of treasure; image of sigurd slaying fafnir on rune stone&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="232" name="hastings-link4" tags="" position="1400,5500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;godwin exiled (again) and was shipwrecked ironically enough and spent time as a guest in normandy, raiding and hunting, and norman sources say he promised to back william&#39;s claim (edward promised crown to a few people)
 
-battle often viewed as confrontation btwn old fashioned gmc shield wall style combat and new heavy cav knights of hma and lma, but really, normans were using both throuhgout med already and harold was using both up around york; truth in it but more nuanced than old fasioned free gmc &quot;nation in arms&quot; vs new norman-french feudalism and heavy cav knights; normans were cutting edge using combo while english were more reliant on old ways (but not dogmatically clinging to it since they did use it at york)</tw-passagedata><tw-passagedata pid="233" name="skaldic" tags="" position="1600,5400" size="100,100">&lt;h1&gt;Skaldic Verse&lt;/h1&gt;
+battle often viewed as confrontation btwn old fashioned gmc shield wall style combat and new heavy cav knights of hma and lma, but really, normans were using both throuhgout med already and harold was using both up around york; truth in it but more nuanced than old fasioned free gmc &quot;nation in arms&quot; vs new norman-french feudalism and heavy cav knights; normans were cutting edge using combo while english were more reliant on old ways (but not dogmatically clinging to it since they did use it at york)&lt;/p&gt;
+&lt;p&gt;images of Harold and William hunting together on BT; image of shield wall failing on BT&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="233" name="skaldic" tags="" position="1600,5400" size="100,100">&lt;h1&gt;Skaldic Verse&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -13267,14 +13458,14 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;gt-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;el-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;gt-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;el-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -13291,11 +13482,15 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -13309,15 +13504,15 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/ol&gt;
 &lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Your sense of identity, both as an aristocrat and as a woman&lt;/li&gt;
+&lt;li&gt;Your experience of life at court, in marriage, and on crusade&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;The Victorians absolutely loved the Middle Ages. They built in the gothic style that was becoming popular during Eleanor of Aquitaine&#39;s life. Probably the most famous example of this 19th-century gothic revival are the Houses of Parliament in London:&lt;/p&gt;
 &lt;img src=&quot;images/parliament.jpg&quot; alt=&quot;houses of parliament&quot; width=&quot;80%&quot;&gt;
@@ -13332,6 +13527,11 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;&lt;img src=&quot;images/leighton-godspeed.jpg&quot;&lt;/p&gt;
 &lt;p&gt;Leighton, &quot;The Accolade&quot; (1901)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/leighton-acolade.jpg&quot;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Was there a &quot;real&quot; King Arthur?&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Um ... that&#39;s a terrible question?&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;Quite so. There was a real guy in fifth-century post-Roman England who did things like unite British resistance to Germanic invasion. His story later ossified as legend and then permutated into more legends. Was that guy &quot;King Arthur?&quot; There may be no valid answer that exact question.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Nah.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Well, sort of... but there&#39;s more to it than a blanket negative. We&#39;d miss quite a lot of interesting historical inquiry if we just go with a simple &quot;no&quot; here (though you&#39;re forgiven if you think that&#39;s not such a bad thing...).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -13628,7 +13828,21 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants Portal |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="242" name="el-link1" tags="" position="1100,5700" size="100,100">hildegard&#39;s music and career, quote from friendship, two images from her visions, quote from forceful letter to pope</tw-passagedata><tw-passagedata pid="243" name="el-link2" tags="" position="1200,5700" size="100,100">forced marriages and other violence legally practiced against high status medieval women (with connections to very recent legal injustices like marital rape)</tw-passagedata><tw-passagedata pid="244" name="el-link3" tags="" position="1300,5700" size="100,100">bernard&#39;s speech at vezaly, king lous&#39; ptsd and pennance, eleanor on second crusade</tw-passagedata><tw-passagedata pid="245" name="crusade" tags="" position="1600,5800" size="100,100">&lt;h1&gt;Pope Urban II&#39;s Call for Crusade&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="242" name="el-link1" tags="" position="1100,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;hildegard&#39;s music and career, quote from friendship and quote from letter to pope&lt;/p&gt;
+&lt;p&gt;image from vision&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="243" name="el-link2" tags="" position="1200,5700" size="100,100">forced marriages and other violence legally practiced against high status medieval women (with connections to very recent legal injustices like marital rape)
+
+&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;forced marriages and other violence related to medieval (or 20th-century...) marriage law&lt;/p&gt;
+&lt;p&gt;isabella of france meeting mortimer&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="244" name="el-link3" tags="" position="1300,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;ref bernard&#39;s speech at vezaly, king louis&#39; ptsd incident and pennance, eleanor on crusade&lt;/p&gt;
+&lt;p&gt;eleanor on crusade&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="245" name="crusade" tags="" position="1600,5800" size="100,100">&lt;h1&gt;Pope Urban II&#39;s Call for Crusade&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -13955,7 +14169,11 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="248" name="el-link4" tags="" position="1400,5700" size="100,100">heloise &quot;women better suited to monastic life&quot; bc wet and monks drink a lot</tw-passagedata><tw-passagedata pid="249" name="warry-hellenistic" tags="" position="1500,3000" size="100,100">&lt;h1&gt;The Punic Wars&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="248" name="el-link4" tags="" position="1400,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;Heloise writes to Abelard that women are better suited to monasticism bc they are naturally wet and monks drink a lot ... &lt;/p&gt;
+&lt;p&gt;image of letter&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="249" name="warry-hellenistic" tags="" position="1500,3000" size="100,100">&lt;h1&gt;The Punic Wars&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14708,7 +14926,325 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Alexandria Scenario |Alexandria]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="256" name="equiano" tags="" position="1500,7800" size="100,100"></tw-passagedata><tw-passagedata pid="257" name="bondage" tags="" position="1600,7800" size="100,100"></tw-passagedata><tw-passagedata pid="258" name="eltis" tags="" position="1700,7800" size="100,100"></tw-passagedata><tw-passagedata pid="259" name="Witch" tags="" position="800,7500" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="256" name="equiano" tags="" position="1500,7800" size="100,100">&lt;h1&gt;An African Boy is Enslaved&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ps-tag&quot;&gt;
+&lt;p&gt;Primary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Equiano intro and link&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqe1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqa1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqe2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqa2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqe3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqa3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqe4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteqa4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[An African boy is enslaved |equiano]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[The origins of anti-black racism |bondage]]&lt;/li&gt;
+&lt;li&gt;[[Gender and slavery |eltis]]&lt;/li&gt;
+&lt;li&gt;[[European descriptions of African women |morgan]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-a]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="257" name="bondage" tags="" position="1600,7800" size="100,100">&lt;h1&gt;The Origins of Antiblack Racism&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ss-tag&quot;&gt;
+&lt;p&gt;Secondary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Davis intro and link&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdave1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdava1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdave2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdava2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdave3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdava3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdave4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artdava4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[An African boy is enslaved |equiano]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[The origins of anti-black racism |bondage]]&lt;/li&gt;
+&lt;li&gt;[[Gender and slavery |eltis]]&lt;/li&gt;
+&lt;li&gt;[[European descriptions of African women |morgan]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-a]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="258" name="eltis" tags="" position="1700,7800" size="100,100">&lt;h1&gt;Gender and Slavery&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ps-tag&quot;&gt;
+&lt;p&gt;Primary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Eltis intro and link&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltise1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltisa1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltise2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltisa2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltise3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltisa3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltise4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$arteltisa4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[An African boy is enslaved |equiano]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[The origins of anti-black racism |bondage]]&lt;/li&gt;
+&lt;li&gt;[[Gender and slavery |eltis]]&lt;/li&gt;
+&lt;li&gt;[[European descriptions of African women |morgan]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-a]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="259" name="Witch" tags="" position="800,7500" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -14744,11 +15280,16 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Etymologies are interesting. They can also be powerful. Sometimes people point to a word&#39;s origin or history as a persuasive, or even a conclusive, Q.E.D. case-closed piece of evidence in support of their argument or agenda. It&#39;s nothing new. Back in 1487 when the woman-hating (he was working through a bad breakup, actually) priest Heinrich Kramer and James Sprenger first published a book about how to find, torture, and kill witches (&lt;em&gt;Malleus Maleficarum&lt;/em&gt;, or &quot;The Hammer of the Witches&quot;), they supported their argument that &quot;women are often witches because women are evil&quot; with false etymologies (and mis-quotations of the Bible, and all kinds of shoddy scholarship and bad logic that would be funny if the book hadn&#39;t helped kill and torture so many people). For instance, they pointed to the Latin word for woman, &lt;em&gt;femina&lt;/em&gt;. &quot;See!?&quot; they said, &quot;The very &lt;em&gt;word&lt;/em&gt; &quot;woman&quot; comes from the words for &quot;faith&quot; (&lt;em&gt;fe&lt;/em&gt;) and &quot;less&quot; (&lt;em&gt;minus&lt;/em&gt;. So of course women are naturally faithless and evil.&quot;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -14770,12 +15311,17 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 History of the history
 Image
 Caption
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -14831,7 +15377,7 @@ Caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="260" name="Gentileschi" tags="" position="800,7700" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="260" name="Artist" tags="" position="800,7700" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -14849,14 +15395,14 @@ Caption
 &lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;gen-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;art-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;gen-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;art-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -14867,11 +15413,14 @@ Caption
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
-&lt;p&gt;Some interesting etymology&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -14893,12 +15442,17 @@ Caption
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 History of the history
 image
 caption
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -14942,7 +15496,7 @@ caption
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 victory-link&quot;&gt;
-&lt;p&gt;[[Victory! |Renaissance-victory-g]]&lt;/p&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-a]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
@@ -14993,15 +15547,20 @@ caption
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Peasants may not have left much of a written record (except for the records of eternal neighborhood bickering preserved in manor court rolls). But they left traces in the words we use every day. Think about surnames, for instance. Many of our most common English names have their roots in the trades by which people were known in medieval times: Miller, Carter, Wheeler, Smith. There are also plenty of figures of speech from peasant life still in common use today. &quot;Windfall,&quot; for instance: The forest was commonly owned by the lord, and peasants were not allowed to harvest forest resources (like wild game or timber) without permission. But when a storm blew down a huge tree, it was considered a common resource to be used by the village. The huge beams common in medieval buildings could only come from large, old trees. A &quot;windfall&quot; was when such a tree fell down, typically in a storm. It was a stroke of good luck for the community.&lt;/p&gt;
 &lt;p&gt;You can see these huge beams, characteristic of medieval timber frame architecture, here on a barn and a a guildhall from fifteenth-century England&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/timberframe-barn.jpg&quot; alt=&quot;timber frame interior&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/york-guildhall.jpg&quot; alt=&quot;timber frame exterior&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -15023,12 +15582,17 @@ caption
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
 image
 caption
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -15056,7 +15620,7 @@ caption
 &lt;h2&gt;Secondary Sources&lt;/h2&gt;
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Peasant life: Men and Women |pennifader]]&lt;/li&gt;
+&lt;li&gt;[[Peasant life and relationships |penifader]]&lt;/li&gt;
 &lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
@@ -15122,11 +15686,15 @@ caption
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -15141,8 +15709,9 @@ caption
 &lt;/ol&gt;
 &lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;Your political situation, especially rivalries with other crusader leaders&lt;/li&gt;
+&lt;li&gt;The military strengths and weaknesses of yourself and your enemy&lt;/li&gt;
+&lt;li&gt;Your sense of self, identity, duty, as a crusader and as a knight&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class=&quot;container&quot;&gt;
@@ -15154,6 +15723,11 @@ caption
 &lt;p&gt;History of the history&lt;/p&gt;
 image
 caption
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -15214,7 +15788,325 @@ caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="263" name="witch-images" tags="" position="1500,7400" size="100,100"></tw-passagedata><tw-passagedata pid="264" name="scott" tags="" position="1600,7400" size="100,100"></tw-passagedata><tw-passagedata pid="265" name="witchcraft-gender" tags="" position="1700,7400" size="100,100"></tw-passagedata><tw-passagedata pid="266" name="ms-hunts" tags="" position="1500,6600" size="100,100"></tw-passagedata><tw-passagedata pid="267" name="hunt-death" tags="" position="1600,6600" size="100,100"></tw-passagedata><tw-passagedata pid="268" name="gawain" tags="" position="1700,6600" size="100,100"></tw-passagedata><tw-passagedata pid="269" name="goldberg" tags="" position="1900,6600" size="100,100"></tw-passagedata><tw-passagedata pid="270" name="orme" tags="" position="1800,6600" size="100,100"></tw-passagedata><tw-passagedata pid="271" name="life" tags="" position="1500,7000" size="100,100">&lt;h1&gt;Scenes of Peasant Life&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="263" name="witch-images" tags="" position="1500,7400" size="100,100">&lt;h1&gt;Imagining Witches&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ps-tag&quot;&gt;
+&lt;p&gt;Primary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;embed slide show of emod witch images&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwe1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwa1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwe2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwa2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwe3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwa3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwe4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchwa4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Images of witches |witch-images]]&lt;/li&gt;
+&lt;li&gt;[[An English witch trial |scott]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Gender and witch trials |witchcraft-gender]]&lt;/li&gt;
+&lt;li&gt;[[A non-binary person |thomasine]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-w]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="264" name="scott" tags="" position="1600,7400" size="100,100">&lt;h1&gt;An English witch trial (1584)&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ps-tag&quot;&gt;
+&lt;p&gt;Primary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Reginald Scott intro and link&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsce1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsca1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsce2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsca2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsce3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsca3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsce4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchsca4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Images of witches |witch-images]]&lt;/li&gt;
+&lt;li&gt;[[An English witch trial |scott]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Gender and witch trials |witchcraft-gender]]&lt;/li&gt;
+&lt;li&gt;[[A non-binary person |thomasine]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-w]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="265" name="witchcraft-gender" tags="" position="1700,7400" size="100,100">&lt;h1&gt;Kounine, &quot;Gender and Witchcraft Accusations&quot;&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ss-tag&quot;&gt;
+&lt;p&gt;Secondary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Kounine article&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchke1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchka1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchke2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchka2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchke3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchka3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchke4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$witchka4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Images of witches |witch-images]]&lt;/li&gt;
+&lt;li&gt;[[An English witch trial |scott]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Gender and witch trials |witchcraft-gender]]&lt;/li&gt;
+&lt;li&gt;[[A non-binary person |thomasine]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-w]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="266" name="ms-hunts" tags="" position="1500,6600" size="100,100"></tw-passagedata><tw-passagedata pid="267" name="hunt-death" tags="" position="1600,6600" size="100,100"></tw-passagedata><tw-passagedata pid="268" name="gawain" tags="" position="1700,6600" size="100,100"></tw-passagedata><tw-passagedata pid="269" name="goldberg" tags="" position="1900,6600" size="100,100"></tw-passagedata><tw-passagedata pid="270" name="orme" tags="" position="1800,6600" size="100,100"></tw-passagedata><tw-passagedata pid="271" name="life" tags="" position="1500,7000" size="100,100">&lt;h1&gt;Scenes of Peasant Life&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -15296,7 +16188,7 @@ caption
 &lt;h2&gt;Secondary Sources&lt;/h2&gt;
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Peasant life: Men and Women |pennifader]]&lt;/li&gt;
+&lt;li&gt;[[Peasant life: Men and Women |penifader]]&lt;/li&gt;
 &lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
@@ -15360,11 +16252,15 @@ caption
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
+&lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;(Score + 2).&lt;/p&gt;
+&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -15385,12 +16281,17 @@ caption
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
-&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
 image
 caption
+
+&lt;hr&gt;
+&lt;p&gt;Question&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -15774,7 +16675,15 @@ caption
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="294" name="hattin-link1" tags="" position="1100,6300" size="100,100">map of crusader states in 1187</tw-passagedata><tw-passagedata pid="295" name="hattin-link2" tags="" position="1200,6300" size="100,100">graphic showing templar charge stats</tw-passagedata><tw-passagedata pid="296" name="hattin-link3" tags="" position="1300,6300" size="100,100">slides showing knights in/around 12th c</tw-passagedata><tw-passagedata pid="297" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if $knightsCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="294" name="hattin-link1" tags="" position="1100,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;map of crusader states 1187&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="295" name="hattin-link2" tags="" position="1200,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;templar charge stats&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="296" name="hattin-link3" tags="" position="1300,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;knights (heavy cav) strength of crusader armies; muslims soon began to emulate&lt;/p&gt;
+&lt;p&gt;embed slides of 12th-c knights&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="297" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if $knightsCombat1 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
 
@@ -16453,7 +17362,23 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="326" name="for-link1" tags="" position="1100,6500" size="100,100"></tw-passagedata><tw-passagedata pid="327" name="for-link2" tags="" position="1200,6500" size="100,100"></tw-passagedata><tw-passagedata pid="328" name="love-link1" tags="" position="1100,7100" size="100,100">st john&#39;s eve midsummer bonfire beltane</tw-passagedata><tw-passagedata pid="329" name="love-link2" tags="" position="1200,7100" size="100,100">plays</tw-passagedata><tw-passagedata pid="330" name="witch-explore1" tags="" position="800,7400" size="100,100">&lt;&lt;if $witchExplore1 is &quot;done&quot;&gt;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="326" name="for-link1" tags="" position="1100,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;text&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="327" name="for-link2" tags="" position="1200,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;text&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="328" name="love-link1" tags="" position="1100,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;st john&#39;s eve bonfire midsummer beltane&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="329" name="love-link2" tags="" position="1200,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;medieval plays&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="330" name="witch-explore1" tags="" position="800,7400" size="100,100">&lt;&lt;if $witchExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Witch]]
 
 &lt;&lt;else&gt;&gt;
@@ -16524,8 +17449,8 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Witch]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="334" name="gen-explore1" tags="" position="800,7800" size="100,100">&lt;&lt;if $genExplore1 is &quot;done&quot;&gt;&gt;
-This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="334" name="art-explore1" tags="" position="800,7800" size="100,100">&lt;&lt;if $artExplore1 is &quot;done&quot;&gt;&gt;
+This quest is complete. [[Continue with the role play scenario. |Artist]]
 
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -16533,44 +17458,44 @@ This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
 &lt;div class=&quot;container gt-explore&quot;&gt;
 &lt;div class=&quot;row transbox explore-spoils-cont&quot;&gt;
 &lt;p&gt;Question text&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ1&quot; &quot;A&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ1&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ1&quot; &quot;A&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ1&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row transbox&quot; id=&quot;explore-spoils&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 explore-link&quot;&gt;
-&lt;&lt;link &quot;How did you do?&quot;&gt;&gt;&lt;&lt;replace &quot;#explore-spoils&quot;&gt;&gt;&lt;&lt;include &quot;gen-explore1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;How did you do?&quot;&gt;&gt;&lt;&lt;replace &quot;#explore-spoils&quot;&gt;&gt;&lt;&lt;include &quot;art-explore1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="335" name="gen-explore2" tags="" position="900,7800" size="100,100">&lt;&lt;if $genExplore2 is &quot;done&quot;&gt;&gt;
-This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="335" name="art-explore2" tags="" position="900,7800" size="100,100">&lt;&lt;if $artExplore2 is &quot;done&quot;&gt;&gt;
+This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
 &lt;p&gt;Here&#39;s an interesting question. It might be difficult, or it might be easy. What else would we expect from an epic adventure?&lt;/p&gt;
 &lt;div class=&quot;container gt-explore&quot;&gt;
 &lt;div class=&quot;row transbox explore-spoils-cont&quot;&gt;
 &lt;p&gt;Question text&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ2&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ2&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$genExploreQ2&quot; &quot;C&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ2&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ2&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$artExploreQ2&quot; &quot;C&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row transbox&quot; id=&quot;explore-spoils&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 explore-link&quot;&gt;
-&lt;&lt;link &quot;How did you do?&quot;&gt;&gt;&lt;&lt;replace &quot;#explore-spoils&quot;&gt;&gt;&lt;&lt;include &quot;gen-explore2-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;How did you do?&quot;&gt;&gt;&lt;&lt;replace &quot;#explore-spoils&quot;&gt;&gt;&lt;&lt;include &quot;art-explore2-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="336" name="gen-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if $genExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $genExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="336" name="art-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if $artExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
@@ -16578,12 +17503,12 @@ This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
 &lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Gentileschi]]&lt;/p&gt;
+&lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Artist]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
-&lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Gentileschi]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="337" name="gen-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if $genExploreQ1 is &quot;A&quot;&gt;&gt;
-&lt;&lt;set $genExplore1 to &quot;done&quot;&gt;&gt;
+&lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Artist]]&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="337" name="art-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if $artExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
@@ -16591,10 +17516,10 @@ This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
 &lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Gentileschi]]&lt;/p&gt;
+&lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Artist]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
-&lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Gentileschi]] to continue with the role play scenario.&lt;/p&gt;
+&lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Artist]] to continue with the role play scenario.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="338" name="Renaissance-victory-w" tags="" position="2100,7500" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -16696,7 +17621,7 @@ This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="339" name="Renaissance-victory-g" tags="" position="2100,7700" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="339" name="Renaissance-victory-a" tags="" position="2100,7700" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -16797,10 +17722,133 @@ This quest is complete. [[Continue with the role play scenario. |Gentileschi]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="340" name="witch-link1" tags="" position="1100,7300" size="100,100"></tw-passagedata><tw-passagedata pid="341" name="witch-link2" tags="" position="1200,7300" size="100,100"></tw-passagedata><tw-passagedata pid="342" name="gen-link1" tags="" position="1100,7900" size="100,100">history of gen&#39;s assault and fate of judith painting vs caravaggio&#39;s and his character</tw-passagedata><tw-passagedata pid="343" name="gen-link2" tags="" position="1200,7900" size="100,100">eu travelers&#39; depictions of native am and afr women</tw-passagedata><tw-passagedata pid="344" name="gen-link3" tags="" position="1300,7900" size="100,100">carracci portrait vs img of afr women by de bry w descr</tw-passagedata><tw-passagedata pid="345" name="morgan" tags="" position="1800,7800" size="100,100"></tw-passagedata><tw-passagedata pid="346" name="gen-link4" tags="" position="1400,7900" size="100,100">protestant woodcuts
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="340" name="witch-link1" tags="" position="1100,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;text&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="341" name="witch-link2" tags="" position="1200,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;text&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="342" name="art-link1" tags="" position="1100,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;brief bio of Gentileschi&lt;/p&gt;
+&lt;p&gt;paintings&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="343" name="art-link2" tags="" position="1200,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;eu travelers&#39; depictions of native american and african women&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="344" name="art-link3" tags="" position="1300,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;protestant and black legend woodcuts used for pr&lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
+&lt;p&gt;caption&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="345" name="morgan" tags="" position="1800,7800" size="100,100">&lt;h1&gt;Morgan, &quot;Some Could Suckle over their Shoulder&quot;&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ss-tag&quot;&gt;
+&lt;p&gt;Secondary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Morgan intro and link&lt;/p&gt;
+&lt;hr&gt;
 
-black legend woodcuts
-</tw-passagedata><tw-passagedata pid="347" name="Knights-victory-h" tags="" position="2100,6100" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artme1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artma1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artme2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artma2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artme3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artma3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artme4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$artma4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[An African boy is enslaved |equiano]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[The origins of anti-black racism |bondage]]&lt;/li&gt;
+&lt;li&gt;[[Gender and slavery |eltis]]&lt;/li&gt;
+&lt;li&gt;[[European descriptions of African women |morgan]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Renaissance-victory-a]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
+&lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="346" name="Knights-victory-h" tags="" position="2100,6100" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -16901,7 +17949,7 @@ black legend woodcuts
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="348" name="nuns" tags="" position="1900,5800" size="100,100">&lt;h1&gt;Life as a Nun&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="347" name="nuns" tags="" position="1900,5800" size="100,100">&lt;h1&gt;Life as a Nun&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17009,7 +18057,7 @@ black legend woodcuts
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="349" name="jews" tags="" position="1700,5800" size="100,100">&lt;p&gt;We tend to think of the crusades as wars in the Holy Land, but most of the crusading violence and warfare happend within Europe itself: against the pagans in the Baltic, heretics in southern France, Muslims in Spain, and against Jewish communities who lived in most European cities. In &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;these excerpts,&lt;/a&gt; medieval chroniclers relate two twelfth-century episides of this crusade-fueled violence against Jews in Europe.&lt;/p&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="348" name="jews" tags="" position="1700,5800" size="100,100">&lt;p&gt;We tend to think of the crusades as wars in the Holy Land, but most of the crusading violence and warfare happend within Europe itself: against the pagans in the Baltic, heretics in southern France, Muslims in Spain, and against Jewish communities who lived in most European cities. In &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;these excerpts,&lt;/a&gt; medieval chroniclers relate two twelfth-century episides of this crusade-fueled violence against Jews in Europe.&lt;/p&gt;
 &lt;p&gt;When I was at grad school in York, I frequently walked passed Clifford&#39;s Tower. In 1190, around 40 Jewish families chose to commit mass suicide rather than fall into the hands of the bloodthirsty mob outside. Today, it can be quite spooky to walk past the tower in the evening.&lt;/p&gt;
 &lt;img src=&quot;images/clifford&quot; alt=&quot;stone tower on grassy mound&quot; width=300px&quot;&gt;
 &lt;h1&gt;Pope Urban II&#39;s Call for Crusade&lt;/h1&gt;
@@ -17123,7 +18171,7 @@ black legend woodcuts
 &lt;/footer&gt;
 
 
-</tw-passagedata><tw-passagedata pid="350" name="miller" tags="" position="1600,7000" size="100,100">&lt;h1&gt;From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt;&lt;/h1&gt;
+</tw-passagedata><tw-passagedata pid="349" name="miller" tags="" position="1600,7000" size="100,100">&lt;h1&gt;From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17205,7 +18253,7 @@ black legend woodcuts
 &lt;h2&gt;Secondary Sources&lt;/h2&gt;
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Peasant life: Men and Women |pennifader]]&lt;/li&gt;
+&lt;li&gt;[[Peasant life and relationships |penifader]]&lt;/li&gt;
 &lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
@@ -17233,7 +18281,222 @@ black legend woodcuts
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Misummer Scenario |Love]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="351" name="pennifader" tags="" position="1700,7000" size="100,100"></tw-passagedata><tw-passagedata pid="352" name="sexuality" tags="" position="1800,7000" size="100,100"></tw-passagedata><tw-passagedata pid="353" name="Peasants-victory-l" tags="" position="2100,6900" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="350" name="penifader" tags="" position="1700,7000" size="100,100">&lt;h1&gt;Peasant Life&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ss-tag&quot;&gt;
+&lt;p&gt;Secondary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Leading medievalist and feminist historian Judith M. Bennett wrote a wonderful microhistory about a 14th-century English peasant woman named Cecilia Penifader. In &lt;a href=&quot;https://drive.google.com/file/d/1zVF-N3qWCA1GM6LVK9jzyWvKvxTZMr-_/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;this section&lt;/a&gt;, Bennett takes on on a tour of a typical year in a medieval village. And in &lt;a href=&quot;https://drive.google.com/file/d/1k2HAmWDS3hwEEzPfBwIzP9sLSVejfVuq/view?usp=sharing&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;, she covers relationships, marriage, and gender.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How peasants lived, worked, and played in a typical year&lt;/li&gt;
+&lt;li&gt;Relationships, especially overlapping networks and obligations among community, family, and marriage&lt;/li&gt;
+&lt;li&gt;Religious practices and beliefs&lt;/li&gt;
+&lt;li&gt;Medieval farming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepene1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepena1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepene2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepena2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepene3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepena3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepene4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovepena4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Scenes from peasant life |life]]&lt;/li&gt;
+&lt;li&gt;[[From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt; |miller]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Peasant life and relationships |penifader]]&lt;/li&gt;
+&lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Peasants-victory-l]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
+&lt;li&gt;[[Back: The Misummer Scenario |Love]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="351" name="sexuality" tags="" position="1800,7000" size="100,100">&lt;h1&gt;Medieval Attitudes toward Sexuality&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 ss-tag&quot;&gt;
+&lt;p&gt;Secondary Source&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Loaned this book out ... will get it back soon I hope...&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;How to use this source&lt;/h2&gt;
+&lt;p&gt;This source might provide information or insights about your character&#39;s outlook, experiences, situation, or motivations. Look for ideas about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Medieval attitudes, expectations, and practices regarding sexuality, gender, relationships, marriage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+
+&lt;div class=&quot;container marginalia&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;Marginalia&lt;/h2&gt;
+&lt;p&gt;This is where you will collect evidence and analysis from this source. The text you enter here will appear in the Victory! screen at the end of the game. (Note: You do not need to fill in all of the boxes. Use as many or as few as you need.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;First set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexe1&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexa1&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Second set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexe2&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexa2&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Third set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexe3&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexa3&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row marginalia-box&quot;&gt;
+&lt;h3&gt;Fourth set of evidence &amp; analysis&lt;/h3&gt;
+&lt;p&gt;Enter evidence from the source (quote or detail):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexe4&quot; &quot;&quot;&gt;&gt;
+&lt;p&gt;Enter corresponding analysis (thoughts, reflections, ideas):&lt;/p&gt;
+&lt;&lt;textarea &quot;$lovesexa4&quot; &quot;&quot;&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;The Sources&lt;/h2&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-6 ps&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
+&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Scenes from peasant life |life]]&lt;/li&gt;
+&lt;li&gt;[[From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt; |miller]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-6 ss&quot; id=&quot;sourcedoorstext&quot;&gt;
+&lt;div class=&quot;transbox sourcelist&quot;&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
+&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Peasant life and relationships |penifader]]&lt;/li&gt;
+&lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;Done collecting material?&lt;/h2&gt;
+&lt;p&gt;Your notes from this source are saved. If you need more material, look through some more sources below. If you&#39;re done with your research and ready to write, move on to the Victory! page and end the game. You&#39;ll find your notes waiting for you there.&lt;/p&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;p&gt;[[Victory! |Peasants-victory-l]]&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
+&lt;li&gt;[[Back: The Misummer Scenario |Love]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="352" name="Peasants-victory-l" tags="" position="2100,6900" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -17418,7 +18681,7 @@ black legend woodcuts
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="354" name="thomasine" tags="" position="1800,7400" size="100,100">&lt;h1&gt;A Non-Binary Mercenary&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="353" name="thomasine" tags="" position="1800,7400" size="100,100">&lt;h1&gt;A Non-Binary Mercenary&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17524,7 +18787,7 @@ black legend woodcuts
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="355" name="alex-link2" tags="" position="1200,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="354" name="alex-link2" tags="" position="1200,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;The symposium - the ancient Greek tradition of a dinner party centered around philosophical and literary debates - was one of the features of Hellenistic culture that spread with Alexander&#39;s conquests. The ceramic art below, from fifth-century BCE Athens, shows a symposium.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/symposium.jpg&quot; alt=&quot;ceramic art showing figures reclining and feasting&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
