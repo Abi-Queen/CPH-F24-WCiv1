@@ -101,7 +101,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 	<tw-storydata name="WCiv1 Role Play" startnode="150" creator="Twine" creator-version="2.8.1" format="SugarCube" format-version="2.36.1" ifid="A231BEF0-9C6D-42AB-BEB0-6003F7BA75A3" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 /* body style */
 body .passage {
-  font-size: 115%;
+  font-size: 117%;
   line-height: 1.6;
   background-color: black;
   color: white;
@@ -229,6 +229,11 @@ text-decoration: underline;
   padding: 10px;
 }
 
+.link p {
+  text-align: left;
+  font-size: 12 pt;
+  line-height: 1.3;
+}
 
 /* passages */
 .title-box {
@@ -9942,12 +9947,12 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
-
-&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p&gt;Linguistic traces of Germanic paganism are with us every day: Sunday, Monday, Tuesday, Wednesday, Thursday, and Friday. Those English names come from the old gods: Sun, Moon, Tyr, Woden, Thor, Frig. So that explains the &quot;d&quot; in Wednesday: &quot;Woden&#39;s Day.&quot; What happened to Saturday? I think the Romans got that one (Saturn).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Did you already know the story of that weird &quot;d&quot; in Wednesday?&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Yes, everyone knows about that.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Ok, sorry. I&#39;m boring.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;No! It all makes sense now! B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;hr&gt;Cool. Etymology is so fun.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -11565,14 +11570,13 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
-
+&lt;hr&gt;
 &lt;p&gt;The Norman Conquest of 1066 is when all of the lovely French enters our incredibly rich English language. For instance, it&#39;s why we say &quot;cow&quot; in the field (where the English peasants used the Old English word &lt;em&gt;cu&lt;/em&gt;), but &quot;beef&quot; on our plate (where the Norman lords used the Norman French word &lt;em&gt;boef&lt;/em&gt;).&lt;/p&gt;
 
-&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p&gt;What other languages had a major impact on early English?&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Latin&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Correct. As the language of the educated elite and the church, many Latin loanwords and expressions seeped into medieval English.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Old Norse&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;hr&gt;That&#39;s right. When you get repeatedly wrecked (or more politely, &quot;annexed&quot; or &quot;contacted&quot;) by the Vikings, your language bears a record of that trauma (or more politely, &quot;cultural exchange&quot;).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -13529,18 +13533,19 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;p&gt;Your mouth curls into a wry smirk as you compare Hildegard&#39;s magic with the thin, discordant cacophony of King Louis’ court musicians. His royal halls were cramped and cold, stinking and crowded with ignorant fools - the knights with nothing to say but horses and dogs and killing. You and your ladies lost yourselves in song and story, in the world of King Arthur long ago, of Merlin and fairies and magic. A deluge of gold flowed from your hands into the purses of the minstrels and clerics who wrote and sang the songs. When you left the royal court at Paris and returned home to Poitiers, the best troubadours came too, following the flow of gold. For many, it was a homecoming. Since the days of your grandfather, Duke William X, Aquitaine has been a haven for troubadours and jongleurs and every wayward cleric bored with university life.&lt;/p&gt;
 
-&lt;p&gt;You once heard a bastard son of your lover, Henry Plantagenet, decline a pre-packaged, high-status career in the church: “I prefer horses and dogs to books and priests.” The meat-headed fool. When they finally annulled your marriage to Louis, you broke free from men like Henry and his bastard. They tried to steal you back as you fled from Paris and marriage and queenship, homeward toward Poitiers. You rode dressed as a man but they still found you out, and only the strong sword and canny wit of old William Marshal saved you from &lt;&lt;linkappend &quot;the torture of a forced marriage.&quot;&gt;&gt;&lt;&lt;include el-link2&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; Once safely home in your castle, surrounded by walls 15 feet thick and your own garrison, you wrote to Pope Eugenius III: “I prefer books and priests to horses and dogs.” He let you establish a new monastic order. After all, you are the richest woman in Europe, with more land, castles, and knights than the king of France (your ex husband), and his arch-rival Duke Henry Plantagenet (one of your ex lovers) combined. You brought this vast inheritance to the Church as your dowry. The pope fell all over himself setting his seal to your new order’s charter as fast as his old cadaver would move, and he’s let you do as you please ever since.&lt;/p&gt;
+&lt;p&gt;You once heard a bastard son of your lover, Henry Plantagenet, decline a pre-packaged, high-status career in the church: “I prefer horses and dogs to books and priests.” The meat-headed fool. When they finally annulled your marriage to Louis, you broke free from men like Henry and his bastard. They tried to steal you back as you fled from Paris and marriage and queenship, homeward toward Poitiers. You rode dressed as a man but they still found you out ... it was close.&lt;/p&gt;
+&lt;p&gt;From the safety of your mighty castle of Poitiers, surrounded by walls 15 feet thick and your own garrison, you wrote to Pope Eugenius: “I prefer books and priests to horses and dogs.” He let you establish a new monastic order. After all, you are the richest woman in Europe, with more land, castles, and knights than the king of France (your ex husband), and his arch-rival Duke Henry Plantagenet (one of your ex lovers) combined. You brought this vast inheritance to the Church as your dowry. The pope fell all over himself setting his seal to your new order’s charter, and he’s let you do as you please ever since.&lt;/p&gt;
 
-&lt;p&gt;You move slowly through the cavernous space toward the scriptorium, deep in thought. You need to write a letter. Pope Eugene III has asked Bernard of Clairvaux to call for a Third Crusade. You remember his sermon a decade ago when, at the pope&#39;s behest, Bernard preached at Vézelay, calling for the Second Crusade. The crowd went mad, roaring &quot;Deus vult!&quot; and even the soft eyes of your husband, King Louis, blazed with maniacal fervor as he committed himself to the holy war. Bernard&#39;s success had come at a cost though, when &lt;&lt;linkappend &quot;the crusade&#39;s failure&quot;&gt;&gt;&lt;&lt;include el-link3&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; blackened his reputation. And now the pope wants him to do it again, and he&#39;s written to you to ask your advice... &lt;/p&gt;
+&lt;p&gt;You move slowly through the cavernous space toward the scriptorium, deep in thought. You need to write a letter. Pope Eugene has asked Bernard of Clairvaux to call for a Third Crusade. You remember his sermon a decade ago when, at the pope&#39;s behest, Bernard preached at Vézelay, calling for the Second Crusade. The crowd went mad, roaring &quot;Deus vult!&quot; and even the soft eyes of &lt;&lt;linkappend &quot;your husband, King Louis,&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include el-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; blazed with maniacal fervor as he committed himself to the holy war. Bernard&#39;s success had come at a cost though, when the crusade&#39;s failure blackened his reputation. And now the pope wants him to do it again, and Bernard has written to you to ask your advice. You know he&#39;s probably written to Hildegard too, and you wonder what she will say. &lt;/p&gt;
 
-&lt;p&gt;You exit the shadowy cloister arch and cross a sunny courtyard dappled with sunlight and shadow, alive with birdsong. You need to find Heloise before sitting down to write. She&#39;s here somewhere. &lt;&lt;linkappend &quot;Heloise&#39;s learning far exceeds your own.&quot;&gt;&gt;&lt;&lt;include el-link4&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; She’s famous for the depth of her knowledge, her rhetorical genius and mastery of dialectical logic. Her correspondence Abelard keeps her in practice. Heloise will be able to help you build your argument in the erudite, scholastic style Bernard will respect. Now, if you could only find her... &lt;/p&gt;
+&lt;p&gt;You exit the shadowy cloister arch and cross a sunny courtyard dappled with sunlight and shadow, alive with birdsong. You need to find Heloise before sitting down to write. She&#39;s here somewhere. &lt;&lt;linkappend &quot;Heloise&#39;s learning far exceeds your own.&quot;&gt;&gt;&lt;&lt;include el-link3&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; She’s famous for the depth of her knowledge, her rhetorical genius and mastery of dialectical logic. Her correspondence Abelard keeps her in practice. Heloise will be able to help you build your argument in the erudite, scholastic style Bernard will respect. Now, if you could only find her... &lt;/p&gt;
 
 &lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. &lt;&lt;link &quot;Pet the zombie &quot;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
-
+&lt;hr&gt;
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
@@ -13570,20 +13575,20 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
-
+&lt;hr&gt;
 &lt;p&gt;The Victorians absolutely loved the Middle Ages. They built in the gothic style that was becoming popular during Eleanor of Aquitaine&#39;s life. Probably the most famous example of this 19th-century gothic revival are the Houses of Parliament in London:&lt;/p&gt;
 &lt;img src=&quot;images/parliament.jpg&quot; alt=&quot;houses of parliament&quot; width=&quot;80%&quot;&gt;
 &lt;p&gt;They even &lt;em&gt;re&lt;/em&gt;built old churches in the gothic style, whether the church was from that period or not (unfortunately erasing much fine romanesque and Anglo-Saxon architecture in their anachronistic zeal). As the children of Romanticism, Victorians were inclined to feel nostalgic for the simpler and more honest times of the Middle Ages, when (they imagined) people lived in harmony with nature and felt genuine passion for God (in contrast to their urbanizing, industrializing, machine-driven world). Victorian authors like Tennyson and Scott revived the old legends of King Arthur and his knights of Camelot. Artists of the Preraphaelite school did the same. Here are some notable (and splendid) examples.&lt;/p&gt;
 &lt;p&gt;Waterhouse, &quot;The Lady of Shalott&quot; (1888)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/waterhouse-shallot.jpg&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/waterhouse-shallot.jpg&quot; alt=&quot;woman in a boat&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Draper, &quot;Guinevere and Lancelot&quot; (1895)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/draper-guen.jpg&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/draper-guen.jpg&quot; alt=&quot;women on a dias surrounded by flowers&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Dicksee, &quot;La Belle Dame sans Merci&quot; (c. 1900)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/dicksee-dame.jpg&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/dicksee-dame.jpg&quot; alt=&quot;woman rides warhorse as knight in full armor walks beside her&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Leighton, &quot;God Speed&quot; (1900)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/leighton-godspeed.jpg&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/leighton-godspeed.jpg&quot; alt=&quot;woman addresses mounted knight&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Leighton, &quot;The Accolade&quot; (1901)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/leighton-acolade.jpg&quot;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/leighton-acolade.jpg&quot; alt=&quot;woman dubs kneeling knight with sword&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Was there a &quot;real&quot; King Arthur?&lt;/p&gt;
@@ -13896,20 +13901,16 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Medieval Peasants Portal |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;</tw-passagedata><tw-passagedata pid="242" name="el-link1" tags="" position="1100,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;hildegard&#39;s music and career, quote from friendship and quote from letter to pope&lt;/p&gt;
-&lt;p&gt;image from vision&lt;/p&gt;
+&lt;p&gt;Hildegard of Bingen led a brilliant career as a church leader. A powerful player in twelfth century high politics, she corresponded with, negotiated with, debated, and occasionally chastized figures as powerful as popes and bishops, and the charismatic Cistercian Bernard of Clairvaux. She published widely on medicine, natural history, saints&#39; lives, heresies, crusades, and contributed to the current debates of the twelfth-century academic scene. In her intellectual achievements, Hildegard stands alone. But the power she wielded as a woman in the medieval church was not anomalous. Though medieval society was patriarchal, many women acted with as much autonomy and wielded as much power as their male contemporaries. A career in the church could free women from some of the constraints and sources of inequality they would have faced in the secular world. (For instance, a couple of Merovingian princesses who resented being put into nunneries led the nuns in all-out military rebellions that were not unsuccessful (for a time...).&lt;/p&gt;
+&lt;p&gt;Hildegard was a mystic and a visionary whose prophetic connection to God was acknowledged and legitimized by the pope. (I wonder if he ever regretted doing that, when he received some of her stinging rebukes, spoken as a prophet of God in the thundering style of Isaiah!) She wrote about her visions and the theological systems they inspired her to formulate, accompanying these texts with magnificent, complex illustrations, including the examples below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/hildegard-vision1&quot; alt=&quot;circular composition of angels singing&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/hildegard-vision2&quot; alt=&quot;abstract diagram of creation&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;And when she got bored, Hildegard created her own secret language. So, the lady was basically a genius. We might call her a polymath, I guess? Today, Hildegard is most widely remembered for the music she composed. People continue to savor and to record it today. Here is her &lt;a href=&quot;https://youtu.be/puAOTgq3Wkc?si=udVp1XgGycJL-Caw&quot; target=&quot;_blank&quot;&gt;&quot;Columba aspexit&quot;&lt;/a&gt; (one of my favorites), and &lt;a href=&quot;https://youtu.be/5TdkOE3-vMQ?si=F9Oln_bTx3j6kxAI&quot; target=&quot;_blank&quot;&gt;an antiphon,&lt;/a&gt;, and &lt;a href=&quot;https://youtu.be/zUlRIqu-74E?si=q8jEPiBCNOfyBRkz&quot; target=&quot;_blank&quot;&gt;&quot;O ecclesia&quot;&lt;/a&gt; (also incredible, if you like this kind of thing).&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="243" name="el-link3" tags="" position="1300,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;Heloise, like &lt;/p&gt;
+&lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="243" name="el-link2" tags="" position="1200,5700" size="100,100">forced marriages and other violence legally practiced against high status medieval women (with connections to very recent legal injustices like marital rape)
-
-&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;forced marriages and other violence related to medieval (or 20th-century...) marriage law&lt;/p&gt;
-&lt;p&gt;isabella of france meeting mortimer&lt;/p&gt;
-&lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="244" name="el-link3" tags="" position="1300,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;ref bernard&#39;s speech at vezaly, king louis&#39; ptsd incident and pennance, eleanor on crusade&lt;/p&gt;
-&lt;p&gt;eleanor on crusade&lt;/p&gt;
-&lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="245" name="crusade" tags="" position="1600,5800" size="100,100">&lt;h1&gt;Pope Urban II&#39;s Call for Crusade&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="244" name="crusade" tags="" position="1600,5800" size="100,100">&lt;h1&gt;Pope Urban II&#39;s Call for Crusade&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14016,7 +14017,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="246" name="romance" tags="" position="1700,5800" size="100,100">&lt;h1&gt;Women and Arthurian Romance&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="245" name="romance" tags="" position="1700,5800" size="100,100">&lt;h1&gt;Women and Arthurian Romance&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14125,7 +14126,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="247" name="manesse" tags="" position="1500,5800" size="100,100">&lt;h1&gt;Medieval Noblewomen&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="246" name="manesse" tags="" position="1500,5800" size="100,100">&lt;h1&gt;Medieval Noblewomen&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14234,11 +14235,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="248" name="el-link4" tags="" position="1400,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;Heloise writes to Abelard that women are better suited to monasticism bc they are naturally wet and monks drink a lot ... &lt;/p&gt;
-&lt;p&gt;image of letter&lt;/p&gt;
-&lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="249" name="warry-hellenistic" tags="" position="1500,3000" size="100,100">&lt;h1&gt;The Punic Wars&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="247" name="warry-hellenistic" tags="" position="1500,3000" size="100,100">&lt;h1&gt;The Punic Wars&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14345,7 +14342,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Attacking Rome Scenario |Cannae]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="250" name="Hellenistic-victory-c" tags="" position="2100,2900" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="248" name="Hellenistic-victory-c" tags="" position="2100,2900" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -14435,7 +14432,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Hellenistic Portal |Hellenistic]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="251" name="punic" tags="" position="1400,3000" size="100,100">&lt;h1&gt;The Battles of Cannae and Zama&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="249" name="punic" tags="" position="1400,3000" size="100,100">&lt;h1&gt;The Battles of Cannae and Zama&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14545,7 +14542,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Attacking Rome Scenario |Cannae]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="252" name="homosexuality" tags="" position="1700,2500" size="100,100">&lt;h1&gt;Homosexuality in Ancient Greece&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="250" name="homosexuality" tags="" position="1700,2500" size="100,100">&lt;h1&gt;Homosexuality in Ancient Greece&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14655,7 +14652,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Alexandria Scenario |Alexandria]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="253" name="theophrastus" tags="" position="1600,2500" size="100,100">&lt;h1&gt;Theophrastus, &lt;em&gt;Characters&lt;/em&gt;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="251" name="theophrastus" tags="" position="1600,2500" size="100,100">&lt;h1&gt;Theophrastus, &lt;em&gt;Characters&lt;/em&gt;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14767,7 +14764,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Alexandria Scenario |Alexandria]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="254" name="epictetus" tags="" position="1500,2500" size="100,100">&lt;h1&gt;Stoicism&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="252" name="epictetus" tags="" position="1500,2500" size="100,100">&lt;h1&gt;Stoicism&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14880,7 +14877,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Alexandria Scenario |Alexandria]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;
-</tw-passagedata><tw-passagedata pid="255" name="epicurus" tags="" position="1400,2500" size="100,100">&lt;h1&gt;Epicureanism&lt;/h1&gt;
+</tw-passagedata><tw-passagedata pid="253" name="epicurus" tags="" position="1400,2500" size="100,100">&lt;h1&gt;Epicureanism&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14991,7 +14988,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: Hellenistic World Portal |Hellenistic]]&lt;/li&gt;
 &lt;li&gt;[[Back: Alexandria Scenario |Alexandria]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="256" name="equiano" tags="" position="1500,7800" size="100,100">&lt;h1&gt;An African Boy is Enslaved&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="254" name="equiano" tags="" position="1500,7800" size="100,100">&lt;h1&gt;An African Boy is Enslaved&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -15099,7 +15096,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="257" name="bondage" tags="" position="1600,7800" size="100,100">&lt;h1&gt;The Origins of Antiblack Racism&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="255" name="bondage" tags="" position="1600,7800" size="100,100">&lt;h1&gt;The Origins of Antiblack Racism&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -15205,7 +15202,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="258" name="eltis" tags="" position="1700,7800" size="100,100">&lt;h1&gt;Gender and Slavery&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="256" name="eltis" tags="" position="1700,7800" size="100,100">&lt;h1&gt;Gender and Slavery&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -15311,7 +15308,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="259" name="Witch" tags="" position="800,7500" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="257" name="Witch" tags="" position="800,7500" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -15444,7 +15441,7 @@ Caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="260" name="Artist" tags="" position="800,7700" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="258" name="Artist" tags="" position="800,7700" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -15583,7 +15580,7 @@ Caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="261" name="Love" tags="" position="800,6900" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="259" name="Love" tags="" position="800,6900" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -15724,7 +15721,7 @@ caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="262" name="Hattin" tags="" position="800,6100" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="260" name="Hattin" tags="" position="800,6100" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -15864,7 +15861,7 @@ caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="263" name="witch-images" tags="" position="1500,7400" size="100,100">&lt;h1&gt;Imagining Witches&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="261" name="witch-images" tags="" position="1500,7400" size="100,100">&lt;h1&gt;Imagining Witches&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -15970,7 +15967,7 @@ caption
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="264" name="scott" tags="" position="1600,7400" size="100,100">&lt;h1&gt;An English witch trial (1584)&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="262" name="scott" tags="" position="1600,7400" size="100,100">&lt;h1&gt;An English witch trial (1584)&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16076,7 +16073,7 @@ caption
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="265" name="witchcraft-gender" tags="" position="1700,7400" size="100,100">&lt;h1&gt;Kounine, &quot;Gender and Witchcraft Accusations&quot;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="263" name="witchcraft-gender" tags="" position="1700,7400" size="100,100">&lt;h1&gt;Kounine, &quot;Gender and Witchcraft Accusations&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16182,7 +16179,7 @@ caption
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="266" name="ms-hunts" tags="" position="1500,6600" size="100,100">&lt;h1&gt;Medieval Hunting Books&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="264" name="ms-hunts" tags="" position="1500,6600" size="100,100">&lt;h1&gt;Medieval Hunting Books&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16293,7 +16290,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: Forester Scenario |Forester]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="267" name="hunt-death" tags="" position="1600,6600" size="100,100">&lt;h1&gt;Hunting &quot;Accidents&quot;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="265" name="hunt-death" tags="" position="1600,6600" size="100,100">&lt;h1&gt;Hunting &quot;Accidents&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16401,7 +16398,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: Forester Scenario |Forester]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="268" name="gawain" tags="" position="1700,6600" size="100,100">&lt;h1&gt;From &lt;em&gt;Sir Gawain and the Green Knight&lt;/em&gt;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="266" name="gawain" tags="" position="1700,6600" size="100,100">&lt;h1&gt;From &lt;em&gt;Sir Gawain and the Green Knight&lt;/em&gt;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16517,7 +16514,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: Forester Scenario |Forester]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="269" name="goldberg" tags="" position="1900,6600" size="100,100">&lt;h1&gt;Goldberg, &quot;Peasants and Poaching&quot;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="267" name="goldberg" tags="" position="1900,6600" size="100,100">&lt;h1&gt;Goldberg, &quot;Peasants and Poaching&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16627,7 +16624,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: Forester Scenario |Forester]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="270" name="orme" tags="" position="1800,6600" size="100,100">&lt;h1&gt;Nicholas Orme, &quot;Medieval Hunting: Fact and Fancy&quot;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="268" name="orme" tags="" position="1800,6600" size="100,100">&lt;h1&gt;Nicholas Orme, &quot;Medieval Hunting: Fact and Fancy&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16736,7 +16733,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: Forester Scenario |Forester]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="271" name="life" tags="" position="1500,7000" size="100,100">&lt;h1&gt;Scenes of Peasant Life&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="269" name="life" tags="" position="1500,7000" size="100,100">&lt;h1&gt;Scenes of Peasant Life&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -16846,7 +16843,7 @@ caption
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Misummer Bonfire Scenario |Love]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="272" name="lachish-rewrite" tags="" position="5000,1900" size="100,100"></tw-passagedata><tw-passagedata pid="273" name="assyria-rewrite" tags="" position="3900,1900" size="100,100"></tw-passagedata><tw-passagedata pid="274" name="helot-rewrite" tags="" position="3900,2300" size="100,100"></tw-passagedata><tw-passagedata pid="275" name="pericles-rewrite" tags="" position="5000,2300" size="100,100"></tw-passagedata><tw-passagedata pid="276" name="cannae-rewrite" tags="" position="5000,2700" size="100,100"></tw-passagedata><tw-passagedata pid="277" name="alex-rewrite" tags="" position="3900,2700" size="100,100"></tw-passagedata><tw-passagedata pid="278" name="pompeii-rewrite" tags="" position="3925,3100" size="100,100"></tw-passagedata><tw-passagedata pid="279" name="spartacus-rewrite" tags="" position="5000,3100" size="100,100"></tw-passagedata><tw-passagedata pid="280" name="adrian-rewrite" tags="" position="3900,3500" size="100,100"></tw-passagedata><tw-passagedata pid="281" name="asking-rewrite" tags="" position="5000,3500" size="100,100"></tw-passagedata><tw-passagedata pid="282" name="defence-rewrite" tags="" position="3900,3900" size="100,100"></tw-passagedata><tw-passagedata pid="283" name="hastings-rewrite" tags="" position="5000,3900" size="100,100"></tw-passagedata><tw-passagedata pid="284" name="eleanor-rewrite" tags="" position="3900,4300" size="100,100"></tw-passagedata><tw-passagedata pid="285" name="hattin-rewrite" tags="" position="5000,4300" size="100,100"></tw-passagedata><tw-passagedata pid="286" name="rebel-rewrite" tags="" position="3900,4700" size="100,100"></tw-passagedata><tw-passagedata pid="287" name="forester-rewrite" tags="" position="5000,4700" size="100,100"></tw-passagedata><tw-passagedata pid="288" name="witch-rewrite" tags="" position="3900,5100" size="100,100"></tw-passagedata><tw-passagedata pid="289" name="gentileschi-rewrite" tags="" position="5000,5100" size="100,100"></tw-passagedata><tw-passagedata pid="290" name="Forester" tags="" position="800,6700" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="270" name="lachish-rewrite" tags="" position="5000,1900" size="100,100"></tw-passagedata><tw-passagedata pid="271" name="assyria-rewrite" tags="" position="3900,1900" size="100,100"></tw-passagedata><tw-passagedata pid="272" name="helot-rewrite" tags="" position="3900,2300" size="100,100"></tw-passagedata><tw-passagedata pid="273" name="pericles-rewrite" tags="" position="5000,2300" size="100,100"></tw-passagedata><tw-passagedata pid="274" name="cannae-rewrite" tags="" position="5000,2700" size="100,100"></tw-passagedata><tw-passagedata pid="275" name="alex-rewrite" tags="" position="3900,2700" size="100,100"></tw-passagedata><tw-passagedata pid="276" name="pompeii-rewrite" tags="" position="3925,3100" size="100,100"></tw-passagedata><tw-passagedata pid="277" name="spartacus-rewrite" tags="" position="5000,3100" size="100,100"></tw-passagedata><tw-passagedata pid="278" name="adrian-rewrite" tags="" position="3900,3500" size="100,100"></tw-passagedata><tw-passagedata pid="279" name="asking-rewrite" tags="" position="5000,3500" size="100,100"></tw-passagedata><tw-passagedata pid="280" name="defence-rewrite" tags="" position="3900,3900" size="100,100"></tw-passagedata><tw-passagedata pid="281" name="hastings-rewrite" tags="" position="5000,3900" size="100,100"></tw-passagedata><tw-passagedata pid="282" name="eleanor-rewrite" tags="" position="3900,4300" size="100,100"></tw-passagedata><tw-passagedata pid="283" name="hattin-rewrite" tags="" position="5000,4300" size="100,100"></tw-passagedata><tw-passagedata pid="284" name="rebel-rewrite" tags="" position="3900,4700" size="100,100"></tw-passagedata><tw-passagedata pid="285" name="forester-rewrite" tags="" position="5000,4700" size="100,100"></tw-passagedata><tw-passagedata pid="286" name="witch-rewrite" tags="" position="3900,5100" size="100,100"></tw-passagedata><tw-passagedata pid="287" name="gentileschi-rewrite" tags="" position="5000,5100" size="100,100"></tw-passagedata><tw-passagedata pid="288" name="Forester" tags="" position="800,6700" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -16855,7 +16852,7 @@ caption
 &lt;/header&gt;
 
 &lt;div class=&quot;title-box&quot;&gt;
-&lt;h1&gt;$PlayerName, you are a forester in the Black Forest of Germany&lt;/h1&gt;
+&lt;h1&gt;$PlayerName, you are a forester in the Black Forest&lt;/h1&gt;
 &lt;p&gt;Swabia, in the Holy Roman Empire, c. 1100&lt;/p&gt;
 &lt;/div&gt;
 
@@ -16927,15 +16924,15 @@ caption
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
-
+&lt;hr&gt;
 &lt;p&gt;If you&#39;re enjoying this time travel journey through marvelous and magical world of medieval forest legend, you have plenty of company (like me). Many have traveled this path before us, and shaped the woodland vista we&#39;re enjoying right now. Fairy tales like Hansel and Gretel, Red Ridinghood, or Beauty and the Beast heavily influence what we&#39;re seeing here. The first people to commit these oral traditional narratives to writing as &quot;fairy tales&quot; were Madame d&#39;Aulnoy and Charles Perrault in 17th-century France, and the Grimm Brothers in early 19th-century Germany. In each case, these writers took an active role in shaping the stories for their own purposes. More recently, Disney and Pixar have taken their turn, making the stories palatable to 20th- and 21st-century consumers, and profitable for themselves.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/fairy-tale-movies.jpg&quot; alt=&quot;movie covers&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;But we are historians here! Have these fellow travelers ruined the view for us? Are our attitudes to the fairy tales so hopelessly muddled by all these previous re-tellings that the stories have no value to us as historians? When we look at actual medieval sources, we find very strong parallels with the fairy tales motifs. It&#39;s clear that they preserve elements of medieval folklore. But how can we find those medieval elements amid the untidy jumble of additions made by antiquarians and entertainers in the modern era? Should we even try? Well, that depends on who you ask.&lt;/p&gt; 
 
 &lt;hr&gt;
 &lt;p&gt;What do you think? Do the European fairy tales have value as primary sources about medieval history?&lt;/p&gt;
-&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;No way. They are far too compromised, and we have other, more legitimate primary sources from the actual Middle Ages. We should rely on those instead.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;So ... you are not wrong. This is all correct. Many historians would avoid making any reference to fairy tales as primary sources for medieval history. But some would go for it. Personally, I think the fairy tales do have some value as primary sources about medieval history, &lt;em&gt;if&lt;/em&gt; they are handled with care. There are other sources very similar to the fairy tales in this way: the Hebrew Bible, for instance, or Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt;. These artifacts&#39; nature. as historical sources, is complex. Fortunately, historians have many methodological tools to help them make use of complicated, composite source material like these, adapted from scholars of anthropology, folklore, and oral traditional literature. So you&#39;re right, maybe we should avoid Red Ridinghood and Bluebeard. But we don&#39;t have to... &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Yes, please!&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Ok, so I agree with you. But we&#39;ve got to be very careful. Many historians would avoid making any reference to fairy tales as primary sources for medieval history. Others would argue that the fairy tales do have some value as primary sources about medieval history, &lt;em&gt;if&lt;/em&gt; they are handled with care. There are other sources very similar to the fairy tales in this way: the Hebrew Bible, for instance, or Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt;. These artifacts&#39; nature. as historical sources, is complex. Fortunately, historians have many methodological tools to help them make use of complicated, composite source material like these, adapted from scholars of anthropology, folklore, and oral traditional literature. So let&#39;s get busy with Red Ridinghood and Bluebeard. Yay! But we must proceed with great caution.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;No way. They are far too compromised, and we have other, more legitimate primary sources from the actual Middle Ages. We should rely on those instead.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;This is probably correct (although not everyone agrees). The fairy tales, as we have them today, do contain elements of medieval folklore and reflect peasant beliefs and lifestyles. &lt;em&gt;However,&lt;/em&gt; the earliest texts we have are from the later seventeenth century. The Middle Ages properly ends c. 1500. If our texts were oral traditional poetry, like Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt;, or Germanic verse like &lt;em&gt;Beowulf&lt;/em&gt; or skaldic poetry, that wouldn&#39;t be much of a problem, because the tectonics of oral traditional poetics are designed to resist change over time.  Those complex systems of meter and aural effect work to preserve pre-textual literature intact over long periods of time. &lt;em&gt;Beowulf&lt;/em&gt; survives only in a single 11th-century manuscript, but its linguistic features reflect a far earlier idiom of English, and for that and various other reasons, most scholars view it as a copy of an earlier, 8th-century poem. Thanks to methodologies developed by historical linguists and anthropologists and literary scholars of oral traditional poetics, we have the tools to use complex, composite texts like this judiciously and fruitfully. But these fairy tales are just simple prose. Nothing to preserve their content from significant permutations over the centuries. So I think you are right here: They are not very valuable (if at all) as primary sources about the Middle Ages, even though they clearly do reflect some commonplaces of medieval life and belief systems (like forests are dangerous and wolves are scary and nobody likes stepmothers).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Yes, please!&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;hr&gt;While some scholars feel the same, the consensus among historians is more in the opposite direction: We cannot use the fairy tales as primary sources about medieval history. The fairy tales, as we have them today, do contain elements of medieval folklore and reflect peasant beliefs and lifestyles. &lt;em&gt;However,&lt;/em&gt; the earliest texts we have are from the later seventeenth century. They change a good deal over time. The Middle Ages properly ends c. 1500, so texts from the late 17th century, 18th, and early 19th century can&#39;t tell us much (reliably) about medieval people. If these texts were oral traditional poetry, like Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt;, or Germanic verse like &lt;em&gt;Beowulf&lt;/em&gt; or skaldic poetry, that wouldn&#39;t be much of a problem, because the tectonics of oral traditional poetics are designed to resist change over time. Those complex systems of meter and aural effect work to preserve pre-textual literature intact over long periods of time. &lt;em&gt;Beowulf&lt;/em&gt; survives only in a single 11th-century manuscript, but its linguistic features reflect a far earlier idiom of English, and for that and various other reasons, most scholars view it as a copy of an earlier, 8th-century poem. Thanks to methodologies developed by historical linguists and anthropologists and literary scholars of oral traditional poetics, we have the tools to use complex, composite texts like this judiciously and fruitfully. But these fairy tales are just simple prose. Nothing to preserve their content from significant permutations over the centuries. So I think you are right here: They are not very valuable (if at all) as primary sources about the Middle Ages, even though they clearly do reflect some commonplaces of medieval life and belief systems (like forests are dangerous and wolves are scary and nobody likes stepmothers). If we did try to use them this way, our yield would be thin and unstable and poor quality. Sadly. Now, if we use the fairy tales to tell us about Renaissance and Early Modern periods, that&#39;s a whole different question, with a much more positive answer!&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
@@ -16992,7 +16989,7 @@ caption
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="291" name="hattin" tags="" position="1700,6200" size="100,100">&lt;h1&gt;The Battle of Hattin in Context&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="289" name="hattin" tags="" position="1700,6200" size="100,100">&lt;h1&gt;The Battle of Hattin in Context&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17101,7 +17098,7 @@ caption
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="292" name="crusader" tags="" position="1800,6200" size="100,100">&lt;h1&gt;Crusaders&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="290" name="crusader" tags="" position="1800,6200" size="100,100">&lt;h1&gt;Crusaders&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17210,7 +17207,7 @@ caption
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="293" name="sack" tags="" position="1500,6200" size="100,100">&lt;h1&gt;Crusaders Sack Jerusalem&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="291" name="sack" tags="" position="1500,6200" size="100,100">&lt;h1&gt;Crusaders Sack Jerusalem&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -17319,15 +17316,15 @@ caption
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="294" name="hattin-link1" tags="" position="1100,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="292" name="hattin-link1" tags="" position="1100,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;map of crusader states 1187&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="295" name="hattin-link2" tags="" position="1200,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="293" name="hattin-link2" tags="" position="1200,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;templar charge stats&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="296" name="hattin-link3" tags="" position="1300,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="294" name="hattin-link3" tags="" position="1300,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;knights (heavy cav) strength of crusader armies; muslims soon began to emulate&lt;/p&gt;
 &lt;p&gt;embed slides of 12th-c knights&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="297" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if $knightsCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="295" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if $knightsCombat1 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
 
@@ -17361,7 +17358,7 @@ You already won this fight. [[Continue on. |Knights]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="298" name="knights-combat2" tags="" position="600,5900" size="100,100">&lt;&lt;if $knightsCombat2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="296" name="knights-combat2" tags="" position="600,5900" size="100,100">&lt;&lt;if $knightsCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
 
@@ -17395,7 +17392,7 @@ You already won this fight. [[Continue on. |Knights]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="299" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if $knightsCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="297" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if $knightsCombatQ1 is &quot;B&quot;&gt;&gt;
 &lt;&lt;set $knightsCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
@@ -17405,7 +17402,7 @@ You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="300" name="knights-combat2-spoils" tags="" position="600,5800" size="100,100">&lt;&lt;if $knightsCombatQ2 is &quot;A&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="298" name="knights-combat2-spoils" tags="" position="600,5800" size="100,100">&lt;&lt;if $knightsCombatQ2 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $knightsCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
@@ -17414,7 +17411,7 @@ You already won this fight. [[Continue on. |Knights]]
 &lt;p&gt;[[Onward! |Knights]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="301" name="el-explore1" tags="" position="800,5800" size="100,100">&lt;&lt;if $elExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="299" name="el-explore1" tags="" position="800,5800" size="100,100">&lt;&lt;if $elExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Hastings]]
 
 &lt;&lt;else&gt;&gt;
@@ -17437,7 +17434,7 @@ This quest is complete. [[Continue with the role play scenario. |Hastings]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="302" name="el-explore2" tags="" position="900,5800" size="100,100">&lt;&lt;if $elExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="300" name="el-explore2" tags="" position="900,5800" size="100,100">&lt;&lt;if $elExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Eleanor]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -17459,7 +17456,7 @@ This quest is complete. [[Continue with the role play scenario. |Eleanor]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="el-explore1-spoils" tags="" position="800,5700" size="100,100">&lt;&lt;if $elExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="301" name="el-explore1-spoils" tags="" position="800,5700" size="100,100">&lt;&lt;if $elExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $elExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17472,7 +17469,7 @@ This quest is complete. [[Continue with the role play scenario. |Eleanor]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Eleanor]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="304" name="el-explore2-spoils" tags="" position="900,5700" size="100,100">&lt;&lt;if $elExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="302" name="el-explore2-spoils" tags="" position="900,5700" size="100,100">&lt;&lt;if $elExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $elExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17485,7 +17482,7 @@ This quest is complete. [[Continue with the role play scenario. |Eleanor]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Eleanor]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="305" name="hattin-explore1" tags="" position="800,6200" size="100,100">&lt;&lt;if $hattinExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="hattin-explore1" tags="" position="800,6200" size="100,100">&lt;&lt;if $hattinExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Hattin]]
 
 &lt;&lt;else&gt;&gt;
@@ -17508,7 +17505,7 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="306" name="hattin-explore2" tags="" position="900,6200" size="100,100">&lt;&lt;if $hattinExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="304" name="hattin-explore2" tags="" position="900,6200" size="100,100">&lt;&lt;if $hattinExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -17530,7 +17527,7 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="307" name="hattin-explore1-spoils" tags="" position="800,6300" size="100,100">&lt;&lt;if $hattinExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="305" name="hattin-explore1-spoils" tags="" position="800,6300" size="100,100">&lt;&lt;if $hattinExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $hattinExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17543,7 +17540,7 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Hattin]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="308" name="hattin-explore2-spoils" tags="" position="900,6300" size="100,100">&lt;&lt;if $hattinExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="306" name="hattin-explore2-spoils" tags="" position="900,6300" size="100,100">&lt;&lt;if $hattinExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $hattinExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17556,7 +17553,7 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Hattin]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="309" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if $peasCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="307" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if $peasCombatQ1 is &quot;B&quot;&gt;&gt;
 &lt;&lt;set $peasCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
@@ -17566,7 +17563,7 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="310" name="peas-combat1" tags="" position="500,6700" size="100,100">&lt;&lt;if $peasCombat1 is &quot;done&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="308" name="peas-combat1" tags="" position="500,6700" size="100,100">&lt;&lt;if $peasCombat1 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Peasants]]
 &lt;&lt;else&gt;&gt;
 
@@ -17600,7 +17597,7 @@ You already won this fight. [[Continue on. |Peasants]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="311" name="peas-combat2" tags="" position="600,6700" size="100,100">&lt;&lt;if $peasCombat2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="309" name="peas-combat2" tags="" position="600,6700" size="100,100">&lt;&lt;if $peasCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Peasants]]
 &lt;&lt;else&gt;&gt;
 
@@ -17634,7 +17631,7 @@ You already won this fight. [[Continue on. |Peasants]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="312" name="for-explore2" tags="" position="900,6600" size="100,100">&lt;&lt;if $forExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="310" name="for-explore2" tags="" position="900,6600" size="100,100">&lt;&lt;if $forExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -17656,7 +17653,7 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="313" name="peas-combat2-spoils" tags="" position="600,6600" size="100,100">&lt;&lt;if $peasCombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="311" name="peas-combat2-spoils" tags="" position="600,6600" size="100,100">&lt;&lt;if $peasCombatQ2 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $peasCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
@@ -17665,7 +17662,7 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;p&gt;[[Onward! |Peasants]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="314" name="for-explore1" tags="" position="800,6600" size="100,100">&lt;&lt;if $forExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="312" name="for-explore1" tags="" position="800,6600" size="100,100">&lt;&lt;if $forExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Forester]]
 
 &lt;&lt;else&gt;&gt;
@@ -17688,7 +17685,7 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="for-explore1-spoils" tags="" position="800,6500" size="100,100">&lt;&lt;if $forExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="313" name="for-explore1-spoils" tags="" position="800,6500" size="100,100">&lt;&lt;if $forExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $forExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17701,7 +17698,7 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Forester]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="316" name="for-explore2-spoils" tags="" position="900,6500" size="100,100">&lt;&lt;if $forExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="314" name="for-explore2-spoils" tags="" position="900,6500" size="100,100">&lt;&lt;if $forExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $forExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17714,7 +17711,7 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Forester]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="317" name="love-explore1" tags="" position="800,7000" size="100,100">&lt;&lt;if $loveExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="love-explore1" tags="" position="800,7000" size="100,100">&lt;&lt;if $loveExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Love]]
 
 &lt;&lt;else&gt;&gt;
@@ -17737,7 +17734,7 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="318" name="love-explore2" tags="" position="900,7000" size="100,100">&lt;&lt;if $rebelExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="316" name="love-explore2" tags="" position="900,7000" size="100,100">&lt;&lt;if $rebelExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -17759,7 +17756,7 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="319" name="love-explore1-spoils" tags="" position="800,7100" size="100,100">&lt;&lt;if $loveExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="317" name="love-explore1-spoils" tags="" position="800,7100" size="100,100">&lt;&lt;if $loveExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $loveExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17772,7 +17769,7 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Love]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="320" name="love-explore2-spoils" tags="" position="900,7100" size="100,100">&lt;&lt;if $loveExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="318" name="love-explore2-spoils" tags="" position="900,7100" size="100,100">&lt;&lt;if $loveExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $loveExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -17785,7 +17782,7 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Love]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="321" name="ren-combat1" tags="" position="500,7500" size="100,100">&lt;&lt;if $renCombat1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="319" name="ren-combat1" tags="" position="500,7500" size="100,100">&lt;&lt;if $renCombat1 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Renaissance]]
 &lt;&lt;else&gt;&gt;
 
@@ -17819,7 +17816,7 @@ You already won this fight. [[Continue on. |Renaissance]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="322" name="ren-combat2" tags="" position="600,7500" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="320" name="ren-combat2" tags="" position="600,7500" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Renaissance]]
 &lt;&lt;else&gt;&gt;
 
@@ -17853,7 +17850,7 @@ You already won this fight. [[Continue on. |Renaissance]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="323" name="ren-combat2-spoils" tags="" position="600,7400" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="321" name="ren-combat2-spoils" tags="" position="600,7400" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Renaissance]]
 &lt;&lt;else&gt;&gt;
 
@@ -17887,7 +17884,7 @@ You already won this fight. [[Continue on. |Renaissance]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="324" name="ren-combat1-spoils" tags="" position="500,7400" size="100,100">&lt;&lt;if $renCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="322" name="ren-combat1-spoils" tags="" position="500,7400" size="100,100">&lt;&lt;if $renCombatQ1 is &quot;B&quot;&gt;&gt;
 &lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
@@ -17897,7 +17894,7 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Renaissance]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="325" name="warewic" tags="" position="1600,6200" size="100,100">&lt;h1&gt;An Ideal Knight&lt;/h1&gt;
+</tw-passagedata><tw-passagedata pid="323" name="warewic" tags="" position="1600,6200" size="100,100">&lt;h1&gt;An Ideal Knight&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18006,25 +18003,23 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: King of Jerusalem |Hattin]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="326" name="for-link1" tags="" position="1100,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="324" name="for-link1" tags="" position="1100,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;A margrave was basically a count or duke of a marcher county in the Holy Roman Empire, since Charlemagne. A marcher county was on &quot;the marches,&quot; or the frontiers, so a margrave (English equivalent of &quot;marcher lord&quot;) had to have a certain amount of competence as a military leader. Swabia, bordering troublesome old Lombardy, and near the rising power of the Italian states, was a marcher county.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/hre1200.jpg&quot; alt=&quot;map of central Europe&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Map of the Holy Roman Empire, c. 1200.&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="327" name="for-link2" tags="" position="1200,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="325" name="for-link2" tags="" position="1200,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Your trap is a bow trap. The hidden bow fires its arrow when an animal (ideally, a wolf) trips the cord at ground level. Royal law requires that a bow trap be protected by neck-level cords as well, across the path before and after the armed trap. This way, only something the height of a wolf could trigger the deadly bow.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/stuttgart-bow.jpg&quot; alt=&quot;man in cloak with drawn bow&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: A drawn bow in the Stuttgart Psalter (Germany, c. 820) shows the type of bow this forester probably used.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/stuttgart-predators.jpg&quot; alt=&quot;predators across a river from livestock&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Above: This image from the Stuttgart Psalter (Germany, c. 820) captures the peasants&#39; attitude toward forest predators (boar, wolf, bear), who threaten their livestock.&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="328" name="love-link1" tags="" position="1100,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="326" name="love-link1" tags="" position="1100,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;st john&#39;s eve bonfire midsummer beltane&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="329" name="love-link2" tags="" position="1200,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="327" name="love-link2" tags="" position="1200,7100" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;medieval plays&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="330" name="witch-explore1" tags="" position="800,7400" size="100,100">&lt;&lt;if $witchExplore1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="328" name="witch-explore1" tags="" position="800,7400" size="100,100">&lt;&lt;if $witchExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Witch]]
 
 &lt;&lt;else&gt;&gt;
@@ -18047,7 +18042,7 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="331" name="witch-explore2" tags="" position="900,7400" size="100,100">&lt;&lt;if $witchExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="329" name="witch-explore2" tags="" position="900,7400" size="100,100">&lt;&lt;if $witchExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -18069,7 +18064,7 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="332" name="witch-explore1-spoils" tags="" position="800,7300" size="100,100">&lt;&lt;if $witchExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="330" name="witch-explore1-spoils" tags="" position="800,7300" size="100,100">&lt;&lt;if $witchExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $witchExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -18082,7 +18077,7 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Witch]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="333" name="witch-explore2-spoils" tags="" position="900,7300" size="100,100">&lt;&lt;if $witchExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="331" name="witch-explore2-spoils" tags="" position="900,7300" size="100,100">&lt;&lt;if $witchExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $witchExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -18095,7 +18090,7 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Witch]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="334" name="art-explore1" tags="" position="800,7800" size="100,100">&lt;&lt;if $artExplore1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="332" name="art-explore1" tags="" position="800,7800" size="100,100">&lt;&lt;if $artExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Artist]]
 
 &lt;&lt;else&gt;&gt;
@@ -18118,7 +18113,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="335" name="art-explore2" tags="" position="900,7800" size="100,100">&lt;&lt;if $artExplore2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="333" name="art-explore2" tags="" position="900,7800" size="100,100">&lt;&lt;if $artExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;else&gt;&gt;
 &lt;h1&gt;Exploring is fun!&lt;/h1&gt;
@@ -18140,7 +18135,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="336" name="art-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if $artExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="334" name="art-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if $artExploreQ2 is &quot;C&quot;&gt;&gt;
 &lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -18153,7 +18148,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Artist]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="337" name="art-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if $artExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="335" name="art-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if $artExploreQ1 is &quot;A&quot;&gt;&gt;
 &lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
@@ -18166,7 +18161,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Artist]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="338" name="Renaissance-victory-w" tags="" position="2100,7500" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="336" name="Renaissance-victory-w" tags="" position="2100,7500" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -18267,7 +18262,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="339" name="Renaissance-victory-a" tags="" position="2100,7700" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="337" name="Renaissance-victory-a" tags="" position="2100,7700" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -18368,31 +18363,31 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="340" name="witch-link1" tags="" position="1100,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="338" name="witch-link1" tags="" position="1100,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;text&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="341" name="witch-link2" tags="" position="1200,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="339" name="witch-link2" tags="" position="1200,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;text&lt;/p&gt;
 &lt;p&gt;image&lt;/p&gt;
 &lt;p&gt;caption&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="342" name="art-link1" tags="" position="1100,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="340" name="art-link1" tags="" position="1100,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;This is you.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/carracci-portrait.jpg&quot; alt=&quot;African woman holding a clock&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Italian painter Annibale Carracci created this portrait of an African woman holding a clock c. 1583. Its subject and original context continue to puzzle art historians.&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="343" name="art-link2" tags="" position="1200,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="341" name="art-link2" tags="" position="1200,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Renaissance European depictions of Native American and African women typically commented on the differences with European gender norms, especially social mores surrounding clothing, manners, sexuality and marriage, and gendered division of labor. Gender norms were centrally embedded in developing western ideas of race.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;debry-african-women.jpg&quot; alt=&quot;sketches of African women&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Artist Theodor de Bry produced this engraving of African women in 1604. De Bry himself never traveled to the Americas, Africa, or Asia. Instead, he produced engraving plates based on the paintings and sketches of people who &lt;em&gt;had&lt;/em&gt; been on European voyages to those places. Then, de Bry printed his engravings and sold many copies of books about European travels to the newly-discovered Americas, to Africa, and to Asia. His work exerted a powerful influence on Europeans&#39; developing sense of &quot;western&quot; identity, and their ideas about other cultures around the world.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/john-white-woman.jpg&quot; alt=&quot;painting of Native American woman wearing skirt of animal skin&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: In 1585, English artist John White visited the Carolina coast with the ill-fated Roanoke expedition, and painted numerous images of the indigenous people he met there. Fortunately for historians, White chose to return to England with paintings like tihs one, while the other Roanoke settlers stayed behind and were eaten by aliens. (That&#39;s actually what happened. Just ask the internet.)&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="344" name="art-link3" tags="" position="1300,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="342" name="art-link3" tags="" position="1300,7900" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;The printing press was the machinery that powered much/most of the progressive, innovative, modern discourse of the Renaissance. This began when German Protestant reformers invented and used the printing press to disseminate their criticisms of the Catholic church. As the Renaissance progressed, people used the same technology to push other agendas. For instance, when Spanish friar De las Casas spoke out in opposition to Spain&#39;s brutal treatment of Native Americans, Protestants picked up his reports of Spanish attrocities and wove them into their imperialist narratives with a propaganda project remembered by historians as &quot;The Black Legend.&quot; The Black Legend used De las Casas&#39; humanitarian messages for their own purpose, to present a contrast bewteen Catholic Spain as a uniquely brutal, evil empire on one hand, and the more progressive, liberal ideology of Protestant regimes of Elizabethan England and the Dutch Republic. Of course, the sad reality is that Protestant and Catholic kingdoms alike represented doom and disease for Native Americans. But the printing press was a powerful weapon in the arsenal of Protestant reformers who wanted to demonize Catholicism.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/blacklegend.jpg&quot; alt=&quot;cutting off hands and feet&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: One of Theodor de Bry&#39;s graphic scenes of Spanish atrocities against Native Americans (1590s).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/reformation-pope.jpg&quot; alt=&quot;caricature of demonic figure holding staff with ego sum papa title&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: The image on the left is one of the earliest Protestant prints, from sixteenth-century Paris. The version on the right is a later adaptation of the same motif, depicting the pope as a monstrous, predatory demon. (Remember the Babylon symbolism from our very first role play unit? Here it is again! The tower of Babel on the pope&#39;s head links back to the old symbolism of Babylon, and represents the worldliness and corruption of the Catholic church.)&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="345" name="morgan" tags="" position="1800,7800" size="100,100">&lt;h1&gt;Morgan, &quot;Some Could Suckle over their Shoulder&quot;&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="343" name="morgan" tags="" position="1800,7800" size="100,100">&lt;h1&gt;Morgan, &quot;Some Could Suckle over their Shoulder&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18498,7 +18493,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: An African Artist |Artist]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="346" name="Knights-victory-h" tags="" position="2100,6100" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="344" name="Knights-victory-h" tags="" position="2100,6100" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -18599,7 +18594,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="347" name="nuns" tags="" position="1800,5800" size="100,100">&lt;h1&gt;Life as a Nun&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="345" name="nuns" tags="" position="1800,5800" size="100,100">&lt;h1&gt;Life as a Nun&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18706,7 +18701,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: The Age of Knights |Knights]]&lt;/li&gt;
 &lt;li&gt;[[Back: Eleanor of Aquitaine |Eleanor]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="348" name="miller" tags="" position="1600,7000" size="100,100">&lt;h1&gt;From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt;&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="346" name="miller" tags="" position="1600,7000" size="100,100">&lt;h1&gt;From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18816,7 +18811,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Misummer Bonfire Scenario |Love]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="349" name="penifader" tags="" position="1700,7000" size="100,100">&lt;h1&gt;Peasant Life&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="347" name="penifader" tags="" position="1700,7000" size="100,100">&lt;h1&gt;Peasant Life&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18925,7 +18920,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Misummer Bonfire Scenario |Love]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="350" name="sexuality" tags="" position="1800,7000" size="100,100">&lt;h1&gt;Medieval Attitudes toward Sexuality&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="348" name="sexuality" tags="" position="1800,7000" size="100,100">&lt;h1&gt;Medieval Attitudes toward Sexuality&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -19031,7 +19026,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Misummer Bonfire Scenario |Love]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="351" name="Peasants-victory-l" tags="" position="2100,6900" size="100,100">&lt;header class=&quot;center&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="349" name="Peasants-victory-l" tags="" position="2100,6900" size="100,100">&lt;header class=&quot;center&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
@@ -19132,7 +19127,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="352" name="thomasine" tags="" position="1800,7400" size="100,100">&lt;h1&gt;A Non-Binary Mercenary&lt;/h1&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="350" name="thomasine" tags="" position="1800,7400" size="100,100">&lt;h1&gt;A Non-Binary Mercenary&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -19238,10 +19233,10 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: The Renaissance |Renaissance]]&lt;/li&gt;
 &lt;li&gt;[[Back: A Witch Trial |Witch]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="353" name="alex-link2" tags="" position="1200,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="351" name="alex-link2" tags="" position="1200,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;The symposium - the ancient Greek tradition of a dinner party centered around philosophical and literary debates - was one of the features of Hellenistic culture that spread with Alexander&#39;s conquests. The ceramic art below, from fifth-century BCE Athens, shows a symposium.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/symposium.jpg&quot; alt=&quot;ceramic art showing figures reclining and feasting&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="354" name="bradley" tags="" position="1900,3400" size="100,100">&lt;h1&gt;Bradley, &quot;The Regular, Daily Traffic in Slaves&quot;&lt;/h1&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="352" name="bradley" tags="" position="1900,3400" size="100,100">&lt;h1&gt;Bradley, &quot;The Regular, Daily Traffic in Slaves&quot;&lt;/h1&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -19349,13 +19344,19 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;[[Back: Rome: From Republic to Empire Portal |Rome1]]&lt;/li&gt;
 &lt;li&gt;[[Back: Spartacus Scenario |Spartacus]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="355" name="for-link3" tags="" position="1300,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="353" name="for-link3" tags="" position="1300,6500" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Jealous of his hunting rights, Charlemagne used his royal power to kick the peasants out of the forests. His aggressive new legislation privatized the forests and criminalized various forms of hunting and trapping. The new laws even forbid peasants to defend themselves from predatory wolves, a task the emperor delegated to royal appointees called the &lt;em&gt;luparii&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Controling the wolf population was also a task of the local foresters. Foresters were appointed by the king or emperor to enforce forest laws, and they occupied an unusual place in medieval society. They were peasants, but they regularly interacted with the nobility and enjoyed special legal and economic privileges, like exemptions from court meetings and military service. They tended to be more competent with horses and weapons, and have a higher income than most peasants. The position tended to be hereditary. (Why do you think that would that be?).&lt;/p&gt;
 &lt;p&gt;People were terrified of wolves (as reflected in oral traditional fairy tales like Red Riding Hood, or legends of werewolves). According to a learned 9th-century text based on Isidore of Seville&#39;s &lt;em&gt;Etymologies&lt;/em&gt;, &quot;With a greedy fury the wolf kills whatever it finds. … It is a ravenous beast eager for blood. Peasants say that a person loses his voice if a wolf sees him before he sees the wolf. For this reason people say when there is a sudden lull in a conversation, ‘Just like the wolf in the story…’ Wolves endure hunger for a long time, and after a long fast they devour everything.”&lt;/p&gt;
-&lt;p&gt;In English, the term &quot;wolf&#39;s head&quot; was slang for &quot;outlaw.&quot; Legally, everyone was required to kill or harm an outlaw if they could. That&#39;s what &quot;outlaw&quot; status meant, technically, and people felt the same way about wolves.&lt;/p&gt;
+&lt;p&gt;In English, the term &quot;wolf&#39;s head&quot; was slang for &quot;outlaw.&quot; Legally, everyone was required to kill or harm an outlaw if they could. That&#39;s what &quot;outlaw&quot; status meant, technically, and people felt the same way about wolves. It&#39;s hard to find any positive or sympathetic references to wolves from the Middle Ages. In the medieval French tales of Reynard the fox, the wolf represents the greedy and violent nobility, pitted against the smarller but resourceful fox (the peasants). (Although the Germanic motif of the beasts of battle and wolves&#39; vague association with berserks could be seen as &quot;positive&quot; inasmuch as it&#39;s part of a common stock of traditional heroic themes and aesthetic.)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/stuttgart-predators.jpg&quot; alt=&quot;predators across a river from livestock&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: This image from the Stuttgart Psalter (Germany, c. 820) captures the peasants&#39; attitude toward forest predators (boar, wolf, bear), who threaten their livestock.&lt;/p&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="354" name="el-link2" tags="" position="1200,5700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;p&gt;As a teenager, Eleanor married the French king Louis VII, later known as Saint Louis (not to be confused with Louis the Pious, who was a very French king). Eleanor&#39;s Louis did become quite saintly. But he didn&#39;t start out that way. He wasn&#39;t the oldest son, and he was raised for a career in the church, while his elder brother was groomed for the throne. But his brother died in a hunting &quot;accident&quot; at the age of 15, and everyone except Louis heaved a sigh of relief because (the older brother seems to have been pure evil). But Louis was disappointed. He didn&#39;t want to be king! Yuck. He was totally into his church career and hated the sudden pivot toward a career of chivalry.&lt;/p&gt;
+&lt;p&gt;Big surprise, Louis wasn&#39;t totally amazing at being king. And then he had a really bad experience. It happened when he went to war against some of his vassals at Eleanor&#39;s instigation. Her sister wanted to marry a dude who was already married, and Eleanor got Louis involved on her sister&#39;s side. Anyway, long story short, Louis finds himself on a hilltop just outside a town that&#39;s being sacked by his mercenaries. The mercenaries are everything on fire. The townsfolk are fleeing to the (stone) church for sanctuary and safety. But the wind shifts and the fires spread to the church. The wind is blowing toward the king on the hilltop. He can smell something like 1,500 people cooking, and he can hear them screaming. He&#39;s trying to send orders to stop it, but the flames don&#39;t listen, and neither does anyone else. This incident causes something to snap in the already emotionally battered young man&#39;s mind. What the chroniclers describe is what we would call PTSD. From then on, Louis starts living like an aescetic saint. Among other things, this means he&#39;s not going to beget a child. When he hears Bernard&#39;s call for holy crusade at Vessaly, it&#39;s like a rope thrown to a drowning man in a storm. He finally has something to live for: a martyr&#39;s death on holy crusade.&lt;/p&gt;
+&lt;p&gt;Eleanor goes with Louis on crusade. It was a military disaster, but Eleanor seems to have enjoyed luxury and adventure on the trip, including (probably) an affair with Raymond, the French crusader king of Anthioch. (She asks to be left behind with Raymond, instead of going home with Louis. She doesn&#39;t get away with that, but when they get home from crusade, her marriage with Louis is annulled. This was fairly common for aristocratic marriages, because the rules were kind of impossible: Marriage was forbidden within 4 degrees of affinity. Since the noble houses of Europe were tangled together like a nest of snakes, most aristocratic marriages had some kind of technical impediment (usually involving consanguinity), and could be annulled if people wanted to do that.&lt;/p&gt; 
+&lt;p&gt;&lt;img src=&quot;images/eleanor-chinon&quot; alt=&quot;fresco of medieval nobles on horseback&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Above: Louis and Eleanor with other nobles on crusade (13th-century fresco from a chapel at Chinon, France).&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
