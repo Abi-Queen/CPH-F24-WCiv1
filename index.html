@@ -169,6 +169,12 @@ img {
   box-shadow: 5px 10px 18px #888888
   margin: 10px;
 }
+
+.icon {
+  border: none;
+  margin: 5px;
+  border-radius: 0; 
+}
   
 
 /* style links */
@@ -687,7 +693,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -785,7 +791,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -839,7 +845,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -893,7 +899,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -947,7 +953,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -999,15 +1005,41 @@ function copybtn(copy) {
 &lt;&lt;set $Inventory to []&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="7" name="Inventory" tags="" position="100,0" size="100,100">&lt;&lt;if $horse is true&gt;&gt;&lt;img src=&quot;images/icons/horse.svg&quot; alt=&quot;horse&quot;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $sword is true&gt;&gt;&lt;img src=&quot;images/icons/sword.svg&quot; alt=&quot;sword&quot;&gt;&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="7" name="Inventory" tags="" position="100,0" size="100,100">&lt;&lt;if $horse is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/horse.svg&quot; alt=&quot;horse&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $sword is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/sword.svg&quot; alt=&quot;sword&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $helmet is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/helmet.svg&quot; alt=&quot;helmet&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $armor is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/armor.svg&quot; alt=&quot;armor&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $bow is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/bow.svg&quot; alt=&quot;bow&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $chalice is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/chalice.svg&quot; alt=&quot;chalice&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $gold is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/gold.svg&quot; alt=&quot;gold&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $lyre is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/lyre.svg&quot; alt=&quot;lyre&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $potion is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/potion.svg&quot; alt=&quot;potion&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $shield is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/shield.svg&quot; alt=&quot;shield&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $treasure is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/treasure.svg&quot; alt=&quot;treasure&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $lance is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/lance.svg&quot; alt=&quot;lance&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $book is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/book.svg&quot; alt=&quot;book&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;if $ring is true&gt;&gt;&lt;img class=&quot;icon&quot; src=&quot;images/icons/ring.svg&quot; alt=&quot;ring&quot; width=&quot;4%&quot;&gt;&lt;&lt;/if&gt;&gt;
+
 
 
 </tw-passagedata><tw-passagedata pid="8" name="GT" tags="" position="800,300" size="100,100">&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -1160,7 +1192,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -1311,7 +1343,7 @@ function copybtn(copy) {
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: In the Beginning&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/pyramids_leonardo-ramos_unsplash.jpg&quot; alt=&quot;pyramids&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -2450,7 +2482,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -2601,7 +2633,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -3082,7 +3114,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -3232,7 +3264,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -4171,7 +4203,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -5417,16 +5449,14 @@ You already won this fight. [[Continue on. |Beginning]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="gt-explore1-spoils" tags="" position="800,100" size="100,100">&lt;&lt;if $gtExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="gt-explore1-spoils" tags="" position="800,100" size="100,100">&lt;&lt;if ($gtExploreQ1 is &quot;A&quot;) and ($gtExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $gtExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Good choice!&lt;/p&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |GT]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -5513,15 +5543,13 @@ This quest is complete. [[Continue with the role play scenario. |GT]]
 &lt;/ol&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="64" name="gt-explore2-spoils" tags="" position="900,100" size="100,100">&lt;&lt;if $gtExploreQ2 is &quot;C&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="64" name="gt-explore2-spoils" tags="" position="900,100" size="100,100">&lt;&lt;if ($gtExploreQ2 is &quot;C&quot;) and ($gtExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $gtExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Yes. You don&#39;t need writing to pass down legends, myths, or history (at least not in ancient times). Oral traditions work fine for that. But you &lt;em&gt;do&lt;/em&gt; want a physical record as proof of business transactions. Nice work! Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |GT]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -5726,15 +5754,13 @@ This quest is complete. [[Continue with the role play scenario. |Babylon]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="babylon-explore1-spoils" tags="" position="800,700" size="100,100">&lt;&lt;if $babylonExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="79" name="babylon-explore1-spoils" tags="" position="800,700" size="100,100">&lt;&lt;if ($babylonExploreQ1 is &quot;A&quot;) and ($babylonExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $babylonExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Babylon]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -5761,35 +5787,33 @@ This quest is complete. [[Continue with the role play scenario. |Babylon]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="81" name="babylon-explore2-spoils" tags="" position="900,700" size="100,100">&lt;&lt;if $babylonExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="81" name="babylon-explore2-spoils" tags="" position="900,700" size="100,100">&lt;&lt;if ($babylonExploreQ2 is &quot;C&quot;) and ($babylonExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $babylonExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Babylon]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Babylon]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="82" name="iron-combat1-spoils" tags="" position="500,1000" size="100,100">&lt;&lt;if $ironCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="82" name="iron-combat1-spoils" tags="" position="500,1000" size="100,100">&lt;&lt;if ($ironCombatQ1 is &quot;B&quot;) and ($ironCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $ironCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the (mob) and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Iron]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the (mob). Better luck next time. [[Move on through this time travel portal. |Iron]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="83" name="iron-combat2-spoils" tags="" position="600,1000" size="100,100">&lt;&lt;if $ironCombatQ2 is &quot;A&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="83" name="iron-combat2-spoils" tags="" position="600,1000" size="100,100">&lt;&lt;if ($ironCombatQ2 is &quot;A&quot;) and ($ironCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $ironCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Iron]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the (some mob). Better luck next time. [[Move on through this time travel portal. |Iron]]&lt;/p&gt;
@@ -5816,15 +5840,13 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="85" name="assyria-explore1-spoils" tags="" position="800,900" size="100,100">&lt;&lt;if assyriaExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="85" name="assyria-explore1-spoils" tags="" position="800,900" size="100,100">&lt;&lt;if ($assyriaExploreQ1 is &quot;A&quot;) and ($assyriaExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $assyriaExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Assyria]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -5851,14 +5873,14 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="assyria-explore2-spoils" tags="" position="900,900" size="100,100">&lt;&lt;if $assyriaExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="assyria-explore2-spoils" tags="" position="900,900" size="100,100">&lt;&lt;if ($assyriaExploreQ2 is &quot;C&quot;) and ($assyriaExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $assyriaExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Assyria]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -6210,7 +6232,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Iron Age Empires&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/ironage.jpg&quot; alt=&quot;chariot&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -6367,7 +6389,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: In the Beginning&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/pyramids_leonardo-ramos_unsplash.jpg&quot; alt=&quot;pyramids&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -6562,28 +6584,24 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="97" name="lachish-explore1-spoils" tags="" position="800,1500" size="100,100">&lt;&lt;if $lachishExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="97" name="lachish-explore1-spoils" tags="" position="800,1500" size="100,100">&lt;&lt;if ($lachishExploreQ1 is &quot;A&quot;) and ($lachishExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $lachishExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Lachish]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Lachish]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="lachish-explore2-spoils" tags="" position="900,1500" size="100,100">&lt;&lt;if $lachishExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="lachish-explore2-spoils" tags="" position="900,1500" size="100,100">&lt;&lt;if ($lachishExploreQ2 is &quot;C&quot;) and ($lachishExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $lachishExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Lachish]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -6592,7 +6610,7 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Iron Age Empires&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/ironage.jpg&quot; alt=&quot;chariot&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -6741,15 +6759,15 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;Many neolithic forager societies rejected the new agraran, sedentary lifestyle because they wanted to avoid the negative environmental impacts resulting from agriculture and urban growth.&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;presentism&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt;This is false. Forager societies eagerly embraced the innovations of the neolithic revolution.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt;While some forager societies persisted in their traditional lifestyle during the Neolithic Revolution, there is no evidence that they made this choice out of concern for human impacts on the environment.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt; This seems plausible, since evidence shows that people were concerned about the environmental impacts of rising human population density in neolithic settlements.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect respones&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -6764,12 +6782,12 @@ You already won this fight. [[Continue on. |Greece]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="103" name="greece-combat2-spoils" tags="" position="600,1800" size="100,100">&lt;&lt;if $greeceCombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="103" name="greece-combat2-spoils" tags="" position="600,1800" size="100,100">&lt;&lt;if ($greeceCombatQ2 is &quot;A&quot;) and ($greeceCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $greeceCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Greece]]&lt;/p&gt;
@@ -6777,7 +6795,7 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Ancient Greece&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/greece1.jpg&quot; alt=&quot;warriors with spear and shield&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -6908,22 +6926,22 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;li&gt;[[Back: Start |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Ancient Greece Portal |Greece]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="105" name="begin-combat1-spoils" tags="" position="500,200" size="100,100">&lt;&lt;if $beginCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="105" name="begin-combat1-spoils" tags="" position="500,200" size="100,100">&lt;&lt;if ($beginCombatQ1 is &quot;B&quot;) and ($beginCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $beginCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Helmet&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Sword&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Beginning]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Beginning]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="106" name="begin-combat2-spoils" tags="" position="600,200" size="100,100">&lt;&lt;if $beginCombatQ2 is &quot;A&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="106" name="begin-combat2-spoils" tags="" position="600,200" size="100,100">&lt;&lt;if ($beginCombatQ2 is &quot;A&quot;) and ($beginCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $beginCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chalice&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Gold ring&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Gold ring&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Beginning]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Beginning]]&lt;/p&gt;
@@ -6995,12 +7013,12 @@ You already won this fight. [[Continue on. |Iron]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="109" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if $greeceCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="109" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if ($greeceCombatQ1 is &quot;B&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $greeceCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Greece]]&lt;/p&gt;
@@ -7016,7 +7034,7 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: (some dumb circular logic about neolithic hist)&lt;/p&gt;
+&lt;p&gt;It says: (some dumb circular logic)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -7070,15 +7088,13 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="helot-explore1-spoils" tags="" position="800,1700" size="100,100">&lt;&lt;if $helotExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="helot-explore1-spoils" tags="" position="800,1700" size="100,100">&lt;&lt;if ($helotExploreQ1 is &quot;A&quot;) and ($helotExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $helotExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Helot]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -7105,15 +7121,13 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="116" name="helot-explore2-spoils" tags="" position="900,1700" size="100,100">&lt;&lt;if $helotExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $helotExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="116" name="helot-explore2-spoils" tags="" position="900,1700" size="100,100">&lt;&lt;if ($helotExploreQ2 is &quot;C&quot;) and ($helotExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $helotExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Helot]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -7568,7 +7582,7 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Ancient Greece&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/greece1.jpg&quot; alt=&quot;warriors with spear and shield&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -7743,15 +7757,13 @@ This quest is complete. [[Continue with the role play scenario. |Pericles]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="pericles-explore1-spoils" tags="" position="800,2300" size="100,100">&lt;&lt;if $periclesExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="pericles-explore1-spoils" tags="" position="800,2300" size="100,100">&lt;&lt;if ($periclesExploreQ1 is &quot;A&quot;) and ($periclesExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $periclesExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Pericles]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -7778,15 +7790,13 @@ This quest is complete. [[Continue with the role play scenario. |Pericles]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="127" name="pericles-explore2-spoils" tags="" position="900,2300" size="100,100">&lt;&lt;if $periclesExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="127" name="pericles-explore2-spoils" tags="" position="900,2300" size="100,100">&lt;&lt;if ($periclesExploreQ2 is &quot;C&quot;) and ($periclesExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $periclesExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Pericles]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -7795,7 +7805,7 @@ This quest is complete. [[Continue with the role play scenario. |Pericles]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -7953,15 +7963,15 @@ You already won this fight. [[Continue on. |Rome1]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;Many neolithic forager societies rejected the new agraran, sedentary lifestyle because they wanted to avoid the negative environmental impacts resulting from agriculture and urban growth.&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;presentism...&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;A&quot;&gt;&gt;This is false. Forager societies eagerly embraced the innovations of the neolithic revolution.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;B&quot;&gt;&gt;While some forager societies persisted in their traditional lifestyle during the Neolithic Revolution, there is no evidence that they made this choice out of concern for human impacts on the environment.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;C&quot;&gt;&gt; This seems plausible, since evidence shows that people were concerned about the environmental impacts of rising human population density in neolithic settlements.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -7976,12 +7986,12 @@ You already won this fight. [[Continue on. |Rome1]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="130" name="rome1-combat1-spoils" tags="" position="500,3400" size="100,100">&lt;&lt;if $rome1CombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="130" name="rome1-combat1-spoils" tags="" position="500,3400" size="100,100">&lt;&lt;if ($rome1CombatQ1 is &quot;B&quot;) and ($rome1CombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome1Combat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome1]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Rome1]]&lt;/p&gt;
@@ -7997,7 +8007,7 @@ You already won this fight. [[Continue on. |Rome1]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: (some dumb circular logic about neolithic hist)&lt;/p&gt;
+&lt;p&gt;It says: (some dumb circular logic)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -8024,8 +8034,8 @@ You already won this fight. [[Continue on. |Rome1]]
 &lt;&lt;set $rome1Combat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome1]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Rome1]]&lt;/p&gt;
@@ -8052,15 +8062,13 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="134" name="spartacus-explore1-spoils" tags="" position="800,3300" size="100,100">&lt;&lt;if $spartacusExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="134" name="spartacus-explore1-spoils" tags="" position="800,3300" size="100,100">&lt;&lt;if ($spartacusExploreQ1 is &quot;A&quot;) and ($spartacusExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $spartacusExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Spartacus]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -8087,15 +8095,13 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="136" name="spartacus-explore2-spoils" tags="" position="900,3300" size="100,100">&lt;&lt;if $spartacusExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="136" name="spartacus-explore2-spoils" tags="" position="900,3300" size="100,100">&lt;&lt;if ($spartacusExploreQ2 is &quot;C&quot;) and ($gspartacusExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $spartacusExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Spartacus]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -8324,7 +8330,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Rome: From Republic to Empire&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/rome1.jpg&quot; alt=&quot;babies nursing from wolf&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -8701,7 +8707,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -8770,7 +8776,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Rome: From Republic to Empire&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/rome1.jpg&quot; alt=&quot;babies nursing from wolf&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -8866,7 +8872,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -8920,7 +8926,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -8974,7 +8980,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -9028,7 +9034,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -9082,7 +9088,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -9150,15 +9156,13 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="pompeii-explore1-spoils" tags="" position="800,3900" size="100,100">&lt;&lt;if $pompeiiExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="153" name="pompeii-explore1-spoils" tags="" position="800,3900" size="100,100">&lt;&lt;if ($pompeiiExploreQ1 is &quot;A&quot;) and ($pompeiiExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $pompeiiExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Pompeii]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -9185,15 +9189,13 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="155" name="pompeii-explore2-spoils" tags="" position="900,3900" size="100,100">&lt;&lt;if $pompeiiExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="155" name="pompeii-explore2-spoils" tags="" position="900,3900" size="100,100">&lt;&lt;if ($pompeiiExploreQ2 is &quot;C&quot;) and ($pompeiiExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $pompeiiExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Pompeii]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -9223,7 +9225,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -9373,7 +9375,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Hellenistic World&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/greece1b.jpg&quot; alt=&quot;ruins of circular columned temple&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -9474,7 +9476,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -9648,15 +9650,15 @@ You already won this fight. [[Continue on. |Hellenistic]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;Many neolithic forager societies rejected the new agraran, sedentary lifestyle because they wanted to avoid the negative environmental impacts resulting from agriculture and urban growth.&quot;&lt;/p&gt;
+&lt;p&gt;It says: Some presentism&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt;This is false. Forager societies eagerly embraced the innovations of the neolithic revolution.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt;While some forager societies persisted in their traditional lifestyle during the Neolithic Revolution, there is no evidence that they made this choice out of concern for human impacts on the environment.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt; This seems plausible, since evidence shows that people were concerned about the environmental impacts of rising human population density in neolithic settlements.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -9671,12 +9673,12 @@ You already won this fight. [[Continue on. |Hellenistic]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if $hellenisticCombatQ1 is &quot;B&quot;&gt;&gt;
-&lt;&lt;set $rhellenisticCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;B&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Hellenistic]]&lt;/p&gt;
@@ -9692,7 +9694,7 @@ You already won this fight. [[Continue on. |Hellenistic]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: (some dumb circular logic about neolithic hist)&lt;/p&gt;
+&lt;p&gt;It says: (some dumb circular logic)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -9715,12 +9717,12 @@ You already won this fight. [[Continue on. |Hellenistic]]
 ​
 &lt;/div&gt;
 ​
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="169" name="hellenistic-combat2-spoils" tags="" position="600,2600" size="100,100">&lt;&lt;if $hellenisticCombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="169" name="hellenistic-combat2-spoils" tags="" position="600,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ2 is &quot;A&quot;) and ($hellenisticCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hellenisticCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Hellenistic]]&lt;/p&gt;
@@ -9747,15 +9749,13 @@ This quest is complete. [[Continue with the role play scenario. |Alexandria]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="171" name="alex-explore1-spoils" tags="" position="800,2500" size="100,100">&lt;&lt;if $alexExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="171" name="alex-explore1-spoils" tags="" position="800,2500" size="100,100">&lt;&lt;if ($alexExploreQ1 is &quot;A&quot;) and ($alexExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $alexExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Alexandria]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -9782,15 +9782,13 @@ This quest is complete. [[Continue with the role play scenario. |Alexandria]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="173" name="alex-explore2-spoils" tags="" position="900,2500" size="100,100">&lt;&lt;if $alexExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="173" name="alex-explore2-spoils" tags="" position="900,2500" size="100,100">&lt;&lt;if ($alexExploreQ2 is &quot;C&quot;) and ($alexExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $alexExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Alexandria]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -9840,27 +9838,25 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="176" name="cannae-explore1-spoils" tags="" position="800,3100" size="100,100">&lt;&lt;if $cannaeExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="176" name="cannae-explore1-spoils" tags="" position="800,3100" size="100,100">&lt;&lt;if ($cannaeExploreQ1 is &quot;A&quot;) and ($cannaeExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $cannaeExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Cannae]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Cannae]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="177" name="cannae-explore2-spoils" tags="" position="900,3100" size="100,100">&lt;&lt;if $cannaeExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="177" name="cannae-explore2-spoils" tags="" position="900,3100" size="100,100">&lt;&lt;if ($cannaeExploreQ2 is &quot;C&quot;) and ($cannaeExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $cannaeExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Cannae]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -9870,7 +9866,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -10014,7 +10010,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -10161,7 +10157,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Did Rome Fall?&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/rome2.jpg&quot; alt=&quot;aqueduct&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -10295,7 +10291,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Rome: From Republic to Empire&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/rome1.jpg&quot; alt=&quot;babies nursing from wolf&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -10455,15 +10451,15 @@ You already won this fight. [[Continue on. |Rome2]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;Many neolithic forager societies rejected the new agraran, sedentary lifestyle because they wanted to avoid the negative environmental impacts resulting from agriculture and urban growth.&quot;&lt;/p&gt;
+&lt;p&gt;It says: presentism&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt;This is false. Forager societies eagerly embraced the innovations of the neolithic revolution.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt;While some forager societies persisted in their traditional lifestyle during the Neolithic Revolution, there is no evidence that they made this choice out of concern for human impacts on the environment.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt; This seems plausible, since evidence shows that people were concerned about the environmental impacts of rising human population density in neolithic settlements.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -10478,12 +10474,12 @@ You already won this fight. [[Continue on. |Rome2]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="183" name="rome2-combat1-spoils" tags="" position="500,4200" size="100,100">&lt;&lt;if $rome2CombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="183" name="rome2-combat1-spoils" tags="" position="500,4200" size="100,100">&lt;&lt;if ($rome2CombatQ1 is &quot;B&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome2Combat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Rome2]]&lt;/p&gt;
@@ -10499,7 +10495,7 @@ You already won this fight. [[Continue on. |Rome2]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: (some dumb circular logic about neolithic hist)&lt;/p&gt;
+&lt;p&gt;It says: (some dumb circular logic)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -10522,12 +10518,12 @@ You already won this fight. [[Continue on. |Rome2]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="185" name="rome2-combat2-spoils" tags="" position="600,4200" size="100,100">&lt;&lt;if $rome2CombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="185" name="rome2-combat2-spoils" tags="" position="600,4200" size="100,100">&lt;&lt;if ($rome2CombatQ2 is &quot;A&quot;) and ($rome2CombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome2Combat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Rome2]]&lt;/p&gt;
@@ -10554,15 +10550,13 @@ This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="187" name="barb-explore1-spoils" tags="" position="800,4100" size="100,100">&lt;&lt;if $barbExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="187" name="barb-explore1-spoils" tags="" position="800,4100" size="100,100">&lt;&lt;if ($barbExploreQ1 is &quot;A&quot;) and ($barbExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $barbExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Barbarian]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -10589,14 +10583,14 @@ This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="189" name="barb-explore2-spoils" tags="" position="900,4100" size="100,100">&lt;&lt;if $barbExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="189" name="barb-explore2-spoils" tags="" position="900,4100" size="100,100">&lt;&lt;if ($barbExploreQ2 is &quot;C&quot;) and ($barbExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $barbExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Barbarian]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -10643,15 +10637,13 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="195" name="asking-explore1-spoils" tags="" position="800,4700" size="100,100">&lt;&lt;if $askingExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="195" name="asking-explore1-spoils" tags="" position="800,4700" size="100,100">&lt;&lt;if ($askingExploreQ1 is &quot;A&quot;) and ($askingExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $askingExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |AS-king]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -10678,15 +10670,13 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="197" name="asking-explore2-spoils" tags="" position="900,4700" size="100,100">&lt;&lt;if $askingExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="197" name="asking-explore2-spoils" tags="" position="900,4700" size="100,100">&lt;&lt;if ($askingExploreQ2 is &quot;C&quot;) and ($askingExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $askingExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |AS-king]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -11354,7 +11344,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -11508,7 +11498,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -11663,7 +11653,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Viking Age&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/darkages.jpg&quot; alt=&quot;helmet&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -12376,15 +12366,15 @@ You already won this fight. [[Continue on. |Viking]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;Many neolithic forager societies rejected the new agraran, sedentary lifestyle because they wanted to avoid the negative environmental impacts resulting from agriculture and urban growth.&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;presentism.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt;This is false. Forager societies eagerly embraced the innovations of the neolithic revolution.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt;While some forager societies persisted in their traditional lifestyle during the Neolithic Revolution, there is no evidence that they made this choice out of concern for human impacts on the environment.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt; This seems plausible, since evidence shows that people were concerned about the environmental impacts of rising human population density in neolithic settlements.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -12399,12 +12389,12 @@ You already won this fight. [[Continue on. |Viking]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="viking-combat1-spoils" tags="" position="500,5000" size="100,100">&lt;&lt;if $vikingCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="viking-combat1-spoils" tags="" position="500,5000" size="100,100">&lt;&lt;if ($vikingCombatQ1 is &quot;B&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $vikingCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
@@ -12419,7 +12409,7 @@ You already won this fight. [[Continue on. |Viking]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: (some dumb circular logic about neolithic rev)&lt;/p&gt;
+&lt;p&gt;It says: (some dumb circular logic)&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -12442,12 +12432,12 @@ You already won this fight. [[Continue on. |Viking]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="viking-combat2-spoils" tags="" position="600,5000" size="100,100">&lt;&lt;if $vikingCombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="215" name="viking-combat2-spoils" tags="" position="600,5000" size="100,100">&lt;&lt;if ($vikingCombatQ2 is &quot;A&quot;) and ($vikingCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $vikingCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chalice&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Gold ring&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Gold ring&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
@@ -12480,15 +12470,13 @@ This quest is complete. [[Continue with the role play scenario. |Defence]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="defence-explore1-spoils" tags="" position="800,4900" size="100,100">&lt;&lt;if $defenceExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="219" name="defence-explore1-spoils" tags="" position="800,4900" size="100,100">&lt;&lt;if ($defenceExploreQ1 is &quot;A&quot;) and ($defenceExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $defenceExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Defence]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -12515,15 +12503,13 @@ This quest is complete. [[Continue with the role play scenario. |Defence]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="221" name="defence-explore2-spoils" tags="" position="900,4900" size="100,100">&lt;&lt;if $defenceExploreQ2 is &quot;C&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="221" name="defence-explore2-spoils" tags="" position="900,4900" size="100,100">&lt;&lt;if ($defenceExploreQ2 is &quot;C&quot;) and ($defenceExploreQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $defenceExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Defence]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -12551,15 +12537,13 @@ This quest is complete. [[Continue with the role play scenario. |Hastings]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="223" name="hastings-explore1-spoils" tags="" position="800,5500" size="100,100">&lt;&lt;if $hastingsExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="223" name="hastings-explore1-spoils" tags="" position="800,5500" size="100,100">&lt;&lt;if ($hastingsExploreQ1 is &quot;A&quot;) and ($hastingsExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hastingsExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Hastings]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -12586,15 +12570,13 @@ This quest is complete. [[Continue with the role play scenario. |Hastings]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="225" name="hastings-explore2-spoils" tags="" position="900,5500" size="100,100">&lt;&lt;if $hastingsExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $hastingsExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="225" name="hastings-explore2-spoils" tags="" position="900,5500" size="100,100">&lt;&lt;if ($hastingsExploreQ2 is &quot;C&quot;) and ($hastingsExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $hastingsExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Hastings]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
@@ -13068,7 +13050,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Viking Age&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/darkages.jpg&quot; alt=&quot;helmet&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -13332,7 +13314,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -13499,7 +13481,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Age of Knights&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/hma.jpg&quot; alt=&quot;knight&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -13634,7 +13616,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Medieval Peasants&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/peasants.jpg&quot; alt=&quot;shearing sheep and reaping wheat&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -14189,7 +14171,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Hellenistic World&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/greece1b.jpg&quot; alt=&quot;ruins of circular columned temple&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -15155,7 +15137,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -15295,7 +15277,7 @@ Caption
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -15441,7 +15423,7 @@ Caption
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -15589,7 +15571,7 @@ caption
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -16720,7 +16702,7 @@ caption
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
 
@@ -17249,7 +17231,7 @@ You already won this fight. [[Continue on. |Knights]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;some dumb circular logic this topic&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;some dumb circular logic&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -17272,22 +17254,22 @@ You already won this fight. [[Continue on. |Knights]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="294" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if $knightsCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="294" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if ($knightsCombatQ1 is &quot;B&quot;) and ($knightsCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $knightsCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Knights]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="295" name="knights-combat2-spoils" tags="" position="600,5800" size="100,100">&lt;&lt;if $knightsCombatQ2 is &quot;A&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="295" name="knights-combat2-spoils" tags="" position="600,5800" size="100,100">&lt;&lt;if ($knightsCombatQ2 is &quot;A&quot;) and ($knightsCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $knightsCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chalice&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Gold ring&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Gold ring&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Knights]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
@@ -17336,27 +17318,27 @@ This quest is complete. [[Continue with the role play scenario. |Eleanor]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="298" name="el-explore1-spoils" tags="" position="800,5700" size="100,100">&lt;&lt;if $elExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="298" name="el-explore1-spoils" tags="" position="800,5700" size="100,100">&lt;&lt;if ($elExploreQ1 is &quot;A&quot;) and ($elExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $elExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Eleanor]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Eleanor]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="299" name="el-explore2-spoils" tags="" position="900,5700" size="100,100">&lt;&lt;if $elExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $elExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="299" name="el-explore2-spoils" tags="" position="900,5700" size="100,100">&lt;&lt;if ($elExploreQ2 is &quot;C&quot;) and ($elExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $elExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Eleanor]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -17407,38 +17389,38 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="302" name="hattin-explore1-spoils" tags="" position="800,6300" size="100,100">&lt;&lt;if $hattinExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="302" name="hattin-explore1-spoils" tags="" position="800,6300" size="100,100">&lt;&lt;if ($hattinExploreQ1 is &quot;A&quot;) and ($hattinExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hattinExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Hattin]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Hattin]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="hattin-explore2-spoils" tags="" position="900,6300" size="100,100">&lt;&lt;if $hattinExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $hattinExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="hattin-explore2-spoils" tags="" position="900,6300" size="100,100">&lt;&lt;if ($hattinExploreQ2 is &quot;C&quot;) and ($hattinExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $hattinExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Hattin]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Hattin]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="304" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if $peasCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="304" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if ($peaseCombatQ1 is &quot;B&quot;) and ($peasCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $peasCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Peasants]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
@@ -17488,7 +17470,7 @@ You already won this fight. [[Continue on. |Peasants]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;some dumb circular logic this topic&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;some dumb circular logic&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -17533,12 +17515,12 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="308" name="peas-combat2-spoils" tags="" position="600,6600" size="100,100">&lt;&lt;if $peasCombatQ2 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="308" name="peas-combat2-spoils" tags="" position="600,6600" size="100,100">&lt;&lt;if ($peasCombatQ2 is &quot;A&quot;) and ($peasCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $peasCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Tautology Troll and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chalice&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Gold ring&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Gold ring&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Peasants]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
@@ -17565,27 +17547,27 @@ This quest is complete. [[Continue with the role play scenario. |Forester]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="310" name="for-explore1-spoils" tags="" position="800,6500" size="100,100">&lt;&lt;if $forExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="310" name="for-explore1-spoils" tags="" position="800,6500" size="100,100">&lt;&lt;if ($forExploreQ1 is &quot;A&quot;) and ($forExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $forExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Forester]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Forester]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="311" name="for-explore2-spoils" tags="" position="900,6500" size="100,100">&lt;&lt;if $forExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $forExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="311" name="for-explore2-spoils" tags="" position="900,6500" size="100,100">&lt;&lt;if ($forExploreQ2 is &quot;C&quot;) and ($forExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $forExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Forester]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -17636,27 +17618,27 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="314" name="love-explore1-spoils" tags="" position="800,7100" size="100,100">&lt;&lt;if $loveExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="314" name="love-explore1-spoils" tags="" position="800,7100" size="100,100">&lt;&lt;if ($loveExploreQ1 is &quot;A&quot;) and ($loveExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $loveExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Love]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Love]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="love-explore2-spoils" tags="" position="900,7100" size="100,100">&lt;&lt;if $loveExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $loveExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="love-explore2-spoils" tags="" position="900,7100" size="100,100">&lt;&lt;if ($loveExploreQ2 is &quot;C&quot;) and ($loveExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $loveExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Love]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -17707,7 +17689,7 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;some dumb circular logic this topic&quot;&lt;/p&gt;
+&lt;p&gt;It says: &quot;some dumb circular logic&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -17730,46 +17712,22 @@ You already won this fight. [[Continue on. |Renaissance]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="318" name="ren-combat2-spoils" tags="" position="600,7400" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
-You already won this fight. [[Continue on. |Renaissance]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="318" name="ren-combat2-spoils" tags="" position="600,7400" size="100,100">&lt;&lt;if ($renCombatQ2 is &quot;A&quot;) and ($renCombatQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $renCombat2 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Tautology Troll!&lt;/h3&gt;
-&lt;img src=&quot;images/mobs/monster4.jpg&quot; alt=&quot;manuscript illumination of monster with horns&quot; width=&quot;100%&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;some dumb circular logic this topic&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-&lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ2&quot; &quot;A&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ2&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ2&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
-&lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;ren-combat2-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="319" name="ren-combat1-spoils" tags="" position="500,7400" size="100,100">&lt;&lt;if $renCombatQ1 is &quot;B&quot;&gt;&gt;
+&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Renaissance]]&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="319" name="ren-combat1-spoils" tags="" position="500,7400" size="100,100">&lt;&lt;if ($renCombatQ1 is &quot;B&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Longbow&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Longbow&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Chain mail&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Chain mail&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Renaissance]]&lt;/p&gt;
@@ -17944,27 +17902,27 @@ This quest is complete. [[Continue with the role play scenario. |Witch]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="327" name="witch-explore1-spoils" tags="" position="800,7300" size="100,100">&lt;&lt;if $witchExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="327" name="witch-explore1-spoils" tags="" position="800,7300" size="100,100">&lt;&lt;if ($witchExploreQ1 is &quot;A&quot;) and ($witchExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $witchExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Witch]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Witch]] to continue with the role play scenario.&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="328" name="witch-explore2-spoils" tags="" position="900,7300" size="100,100">&lt;&lt;if $witchExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $witchExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="328" name="witch-explore2-spoils" tags="" position="900,7300" size="100,100">&lt;&lt;if ($witchExploreQ2 is &quot;C&quot;) and ($witchExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $witchExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Witch]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -18015,27 +17973,27 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="331" name="art-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if $artExploreQ2 is &quot;C&quot;&gt;&gt;
-&lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="331" name="art-explore2-spoils" tags="" position="900,7900" size="100,100">&lt;&lt;if ($artExploreQ2 is &quot;C&quot;) and ($artExploreQ2 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $artExplore2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Wise choice. Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Fur cloak&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Fur cloak&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Lance&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Ring&quot;&gt;&gt;&lt;&lt;set $ring to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done! A successful quest completed! Carry on with [[the role play scenario. |Artist]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Artist]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="332" name="art-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if $artExploreQ1 is &quot;A&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="332" name="art-explore1-spoils" tags="" position="800,7900" size="100,100">&lt;&lt;if ($artExploreQ1 is &quot;A&quot;) and ($artExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $artExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Horse&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;run $Inventory.push(&quot;Shield&quot;)&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Artist]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
@@ -18045,7 +18003,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Renaissance&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/newworlds.jpg&quot; alt=&quot;Queen Elizabeth holding the globe&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -18146,7 +18104,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Renaissance&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/newworlds.jpg&quot; alt=&quot;Queen Elizabeth holding the globe&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -18377,7 +18335,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: The Age of Knights&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/hma.jpg&quot; alt=&quot;knight&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -18910,7 +18868,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
-&lt;li&gt;Loot: $Inventory&lt;/li&gt;
+&lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Unit completed: Medieval Peasants&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/peasants.jpg&quot; alt=&quot;shearing sheep and reaping wheat&quot; width=&quot;150px&quot; height=&quot;100px&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
