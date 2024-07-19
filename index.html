@@ -680,14 +680,53 @@ importScripts(
 Config.passages.nobr = true;
 
 
-// copy text btn 
-function copybtn(copy) {
-  var text = document.getElementById( copygtp ).innerHTML;
-  navigator.clipboard.writeText( text );
-}
+// copy text btns
+window.cpyGT = () => navigator.clipboard.writeText(document.getElementById("copygt").innerText);
+
+window.cpyBab = () => navigator.clipboard.writeText(document.getElementById("copybab").innerText);
 
 
-// need copy buttons for "victory" passage ids: copygt, copycites-gt, copyb, copycites-b, </script><tw-passagedata pid="1" name="Portals" tags="black" position="100,3000" size="100,100">&lt;&lt;set $PlayerName to $PlayerName&gt;&gt;
+window.cpyAssyr = () => navigator.clipboard.writeText(document.getElementById("copyassyr").innerText);
+
+
+window.cpyLach = () => navigator.clipboard.writeText(document.getElementById("copylach").innerText);
+
+window.cpyHelot = () => navigator.clipboard.writeText(document.getElementById("copyhelot").innerText);
+
+window.cpyPer = () => navigator.clipboard.writeText(document.getElementById("copypericles").innerText);
+
+window.cpyAlex = () => navigator.clipboard.writeText(document.getElementById("copyalex").innerText);
+
+window.cpyCann = () => navigator.clipboard.writeText(document.getElementById("copycann").innerText);
+
+window.cpySpr = () => navigator.clipboard.writeText(document.getElementById("copyspr").innerText);
+
+window.cpyPomp = () => navigator.clipboard.writeText(document.getElementById("copypomp").innerText);
+
+window.cpyBarb = () => navigator.clipboard.writeText(document.getElementById("copybarb").innerText);
+
+window.cpyAsk = () => navigator.clipboard.writeText(document.getElementById("copyasking").innerText);
+
+window.cpyDefence = () => navigator.clipboard.writeText(document.getElementById("copydefence").innerText);
+
+window.cpyHast = () => navigator.clipboard.writeText(document.getElementById("copyhast").innerText);
+
+window.cpyEl = () => navigator.clipboard.writeText(document.getElementById("copyel").innerText);
+
+window.cpyKnights = () => navigator.clipboard.writeText(document.getElementById("copyknights").innerText);
+
+window.cpyFor = () => navigator.clipboard.writeText(document.getElementById("copyfor").innerText);
+
+window.cpyLove = () => navigator.clipboard.writeText(document.getElementById("copylove").innerText);
+
+window.cpyWitch = () => navigator.clipboard.writeText(document.getElementById("copywitch").innerText);
+
+window.cpyArt = () => navigator.clipboard.writeText(document.getElementById("copyart").innerText);
+
+
+
+
+</script><tw-passagedata pid="1" name="Portals" tags="black" position="100,3000" size="100,100">&lt;&lt;set $PlayerName to $PlayerName&gt;&gt;
 
 &lt;header&gt;
 &lt;ul&gt;
@@ -1437,7 +1476,7 @@ function copybtn(copy) {
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyGT()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-gt&quot;&gt;
@@ -1451,7 +1490,7 @@ function copybtn(copy) {
 &lt;p&gt;“Pyramid Quarry,&quot; Ancient Egypt Research Associates, accessed [date], https://aeraweb.org/great-pyramid-quarry/ &lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyGTs()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;/div&gt;
 
@@ -5047,7 +5086,15 @@ image
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;The password is incorrect. Back to [[Our History Rewrite]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">function cpyGT() {
+  var copyText = document.getElementById(&quot;copygt&quot;).innerHTML;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  
+  navigator.clipboard.writeText(copyText.value);
+}
+
+&lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
@@ -6328,7 +6375,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyAssyr()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-assyr&quot;&gt;
@@ -6413,7 +6460,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copyb&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copybab&quot;&gt;
 &lt;&lt;if (def $brse1) and ($brse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $brse1&gt;&gt; (Royal Standard)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $brsa1) and ($brsa1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $brsa1&gt;&gt; (Royal Standard)&lt;/p&gt;
@@ -6499,7 +6546,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;&lt;if (def $bha4) and ($bha4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $bha4&gt;&gt; (Hammurabi)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyBab()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-b&quot;&gt;
@@ -6704,7 +6751,7 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyLach()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-lach&quot;&gt;
@@ -6889,7 +6936,7 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyHelot()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-helot&quot;&gt;
@@ -7693,7 +7740,7 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyPer()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-pericles&quot;&gt;
@@ -8441,7 +8488,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpySpr()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-spr&quot;&gt;
@@ -8800,7 +8847,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-pomp&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copypomp&quot;&gt;
 &lt;&lt;if (def $pomple1) and ($pomple1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $pomple1&gt;&gt; (Legends)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $pompla1) and ($pompla1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $pompla1&gt;&gt; (Legends)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $pomple2) and ($pomple2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $pomple2&gt;&gt; (Legends)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -8828,7 +8875,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;if (def $pompre4) and ($pompve4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $pompve4&gt;&gt; (Romanitas)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $pompra4) and ($pompva4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $pompva4&gt;&gt; (Romanitas)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyPomp()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-pomp&quot;&gt;
@@ -9436,7 +9483,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;&lt;if (def $alexsexe4) and ($alexsexe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $alexsexe4&gt;&gt; (Hubbard, &quot;Homosexuality&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $alexsexa4) and ($alexsexa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $alexsexa4&gt;&gt; (Hubbard, &quot;Homosexuality&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyAlex()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-alex&quot;&gt;
@@ -10181,7 +10228,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-adrian&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copybarb&quot;&gt;
 &lt;&lt;if (def $adriangete1) and ($adriangete1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $adriangete1&gt;&gt; (Jordanes, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $adriangeta1) and ($adriangeta1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $adriangeta1&gt;&gt; (Jordanes, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
@@ -10251,7 +10298,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyBarb()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-adrian&quot;&gt;
@@ -10315,7 +10362,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-asking&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copyasking&quot;&gt;
 &lt;&lt;if (def $askingbedee1) and ($askingbedee1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $askingbedee1&gt;&gt; (Bede, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $askingbedea1) and ($askingbedea1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $askingbedea1&gt;&gt; (Bede, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
@@ -10401,8 +10448,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;if (def $askingoa4) and ($askingoa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $askingoa4&gt;&gt; (Orton, &quot;Germanic Paganism&quot;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
+&lt;button onclick=&quot;cpyAsk()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-asking&quot;&gt;
@@ -11677,7 +11724,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-defence&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copydefence&quot;&gt;
 &lt;&lt;if (def $defde1) and ($defde1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $defde1&gt;&gt; (Dudo, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $defda1) and ($defda1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $defda1&gt;&gt; (Dudo, &lt;em&gt;History&lt;/em&gt;)&lt;/p&gt;
@@ -11764,7 +11811,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyDefence()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-defence&quot;&gt;
@@ -13074,7 +13121,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-hastings&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copyhast&quot;&gt;
 &lt;&lt;if (def $hastrge1) and ($hastrge1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $hastrge1&gt;&gt; (&lt;em&gt;Beowulf&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $hastrga1) and ($hastrga1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $hastrga1&gt;&gt; (&lt;em&gt;Beowulf&lt;/em&gt;)&lt;/p&gt;
@@ -13161,7 +13208,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyHast()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-hastings&quot;&gt;
@@ -13505,7 +13552,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copy-el&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copyel&quot;&gt;
 &lt;&lt;if (def $elmane1) and ($elmane1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elmane1&gt;&gt; (Codex Manesse)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $elmana1) and ($elmana1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elmana1&gt;&gt; (Codex Manesse)&lt;/p&gt;
@@ -13575,7 +13622,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;/if&gt;&gt;
 
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyEl()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-el&quot;&gt;
@@ -13686,7 +13733,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;if (def $forppe4) and ($forppe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $forppe4&gt;&gt;&lt;p&gt; (Goldberg, &lt;em&gt;Franks&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $forppa4) and ($forppa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $forppa4&gt;&gt;&lt;p&gt; (Goldberg, &lt;em&gt;Franks&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyFor()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-for&quot;&gt;
@@ -14223,7 +14270,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;if (def $cannre4) and ($cannre4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $cannre4&gt;&gt; (something)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $cannra4) and ($cannra4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $cannra4&gt;&gt; (something)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyCann()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-cann&quot;&gt;
@@ -18064,7 +18111,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $witchhe4) and ($witchhe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $witchhe4&gt;&gt;&lt;p&gt; (Norton, &quot;Indentured Servant&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $witchha4) and ($witchha4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $witchha4&gt;&gt;&lt;p&gt; (Norton, &quot;Indentured Servant&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyWitch()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-witch&quot;&gt;
@@ -18128,7 +18175,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
-&lt;div class=&quot;row copynotes&quot; id=&quot;copyknights&quot;&gt;
+&lt;div class=&quot;row copynotes&quot; id=&quot;copyart&quot;&gt;
 &lt;&lt;if (def $knje1) and ($knje1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje1&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $knja1) and ($knja1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knja1&gt;&gt;&lt;p&gt;(&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $knje2) and ($knje2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje2&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -18165,7 +18212,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $knce4) and ($knce4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $knca4) and ($knca4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyArt()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-kn&quot;&gt;
@@ -18396,7 +18443,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $knce4) and ($knce4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $knca4) and ($knca4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyKnights()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-kn&quot;&gt;
@@ -18929,7 +18976,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $lovesexe4) and ($lovesexe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $lovesexe4&gt;&gt;&lt;p&gt;(Karras, &lt;em&gt;Sexuality&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $lovesexa4) and ($lovesexa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $lovesexa4&gt;&gt;&lt;p&gt;(Karras, &lt;em&gt;Sexuality&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyLove()&quot;&gt;Copy text&lt;/button&gt;
 
 &lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
 &lt;div class=&quot;copynotes&quot; id=&quot;copycites-love&quot;&gt;
