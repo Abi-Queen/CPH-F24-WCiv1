@@ -680,14 +680,12 @@ importScripts(
 Config.passages.nobr = true;
 
 
-// copy text btns
+// copy notes btns
 window.cpyGT = () => navigator.clipboard.writeText(document.getElementById("copygt").innerText);
 
 window.cpyBab = () => navigator.clipboard.writeText(document.getElementById("copybab").innerText);
 
-
 window.cpyAssyr = () => navigator.clipboard.writeText(document.getElementById("copyassyr").innerText);
-
 
 window.cpyLach = () => navigator.clipboard.writeText(document.getElementById("copylach").innerText);
 
@@ -724,8 +722,46 @@ window.cpyWitch = () => navigator.clipboard.writeText(document.getElementById("c
 window.cpyArt = () => navigator.clipboard.writeText(document.getElementById("copyart").innerText);
 
 
+// copy refs btns
+window.cpyGTs = () => navigator.clipboard.writeText(document.getElementById("copygts").innerText);
 
+window.cpyBabs = () => navigator.clipboard.writeText(document.getElementById("copybabs").innerText);
 
+window.cpyAssyrs = () => navigator.clipboard.writeText(document.getElementById("copyassyrs").innerText);
+
+window.cpyLachs = () => navigator.clipboard.writeText(document.getElementById("copylachs").innerText);
+
+window.cpyHelots = () => navigator.clipboard.writeText(document.getElementById("copyhelots").innerText);
+
+window.cpyPers = () => navigator.clipboard.writeText(document.getElementById("copypericless").innerText);
+
+window.cpyAlexs = () => navigator.clipboard.writeText(document.getElementById("copyalexs").innerText);
+
+window.cpyCanns = () => navigator.clipboard.writeText(document.getElementById("copycanns").innerText);
+
+window.cpySprs = () => navigator.clipboard.writeText(document.getElementById("copysprs").innerText);
+
+window.cpyPomps = () => navigator.clipboard.writeText(document.getElementById("copypomps").innerText);
+
+window.cpyBarbs = () => navigator.clipboard.writeText(document.getElementById("copybarbs").innerText);
+
+window.cpyAsks = () => navigator.clipboard.writeText(document.getElementById("copyaskings").innerText);
+
+window.cpyDefences = () => navigator.clipboard.writeText(document.getElementById("copydefences").innerText);
+
+window.cpyHasts = () => navigator.clipboard.writeText(document.getElementById("copyhasts").innerText);
+
+window.cpyEls = () => navigator.clipboard.writeText(document.getElementById("copyels").innerText);
+
+window.cpyKnightss = () => navigator.clipboard.writeText(document.getElementById("copyknightss").innerText);
+
+window.cpyFors = () => navigator.clipboard.writeText(document.getElementById("copyfors").innerText);
+
+window.cpyLoves = () => navigator.clipboard.writeText(document.getElementById("copyloves").innerText);
+
+window.cpyWitchs = () => navigator.clipboard.writeText(document.getElementById("copywitchs").innerText);
+
+window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("copyarts").innerText);
 </script><tw-passagedata pid="1" name="Portals" tags="black" position="100,3000" size="100,100">&lt;&lt;set $PlayerName to $PlayerName&gt;&gt;
 
 &lt;header&gt;
@@ -1402,7 +1438,7 @@ window.cpyArt = () => navigator.clipboard.writeText(document.getElementById("cop
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -1478,8 +1514,9 @@ window.cpyArt = () => navigator.clipboard.writeText(document.getElementById("cop
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyGT()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-gt&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copygts&quot;&gt;
+
 &lt;&lt;if (def $gtgtpe1) and ($gtgtpe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Tepe Telegrams,&quot; The Göbekli Tepe Research Project, accessed [date], https://www.dainst.blog/the-tepe-telegrams/tag/t-pillars/&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $gtmgte1) and ($gtmgte1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Modeling Göbekli Tepe,&quot; World History Encyclopedia, accessed [date]. https://www.worldhistory.org/video/737/modeling-gobekli-tepe/&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -1496,7 +1533,7 @@ window.cpyArt = () => navigator.clipboard.writeText(document.getElementById("cop
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -4717,52 +4754,62 @@ image
 &lt;div class=&quot;portals&quot;&gt; 
 &lt;h3&gt;In the Beginning&lt;/h3&gt;
 &lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$beginPW&quot; &quot;&quot; &quot;Begin-rewrite&quot;&gt;&gt;&lt;/p&gt;
-&lt;img src=&quot;images/pyramids-leonardo-ramos_unsplash.jpg&quot; alt=&quot;pyramids in the desert&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+&lt;img src=&quot;images/pyramids_leonardo-ramos_unsplash.jpg&quot; alt=&quot;pyramids in the desert&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[ironage-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/ironage.jpg&quot; alt=&quot;archer in chariot&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39; &quot;Iron Age Empires&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; 
+&lt;h3&gt;Iron Age Empires&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$ironPW&quot; &quot;&quot; &quot;ironage-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/ironage.jpg&quot; alt=&quot;archer in chariot&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[greece-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/greece1.jpg&quot; alt=&quot;two Greek warriors fighting with spears and shields&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;Ancient Greece&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$greecePW&quot; &quot;&quot; &quot;greece-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/greece1.jpg&quot; alt=&quot;two Greek warriors fighting with spears and shields&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[hellenistic-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/greece1b.jpg&quot; alt=&quot;ruins of a circle of columns on a mountainside&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;The Hellenistic World&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$hellenisticPW&quot; &quot;&quot; &quot;ironage-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/rome1b.jpg&quot; alt=&quot;ruins of a circle of columns on a mountainside&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[rome1-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/rome1.jpg&quot; alt=&quot;statue of wolf nursing two human babies&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;Rome: From Republic to Empire&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$rome1PW&quot; &quot;&quot; &quot;rome1-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/rome1.jpg&quot; alt=&quot;statue of wolf nursing two human babies&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[rome2-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/rome2.jpg&quot; alt=&quot;aqueduct with Roman arches crossing a river&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;Did Rome fall?&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$rome2PW&quot; &quot;&quot; &quot;rome2-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/darkages.jpg&quot; alt=&quot;acqueduct with Roman arches crossing a river&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[viking-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/darkages.jpg&quot; alt=&quot;ornamented metal helmet&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;The Viking Age&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$vikingPW&quot; &quot;&quot; &quot;viking-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/viking-module.jpg&quot; alt=&quot;picture stone depicting viking ship with warriors&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;portals&quot;&gt; 
+&lt;h3&gt;Medieval Knights&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$knightsPW&quot; &quot;&quot; &quot;knights-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/hma.jpg&quot; alt=&quot;mounted knight receiving helmet and shield from two women on foot&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[knights-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/hma.jpg&quot; alt=&quot;mounted knight receiving helmet and shield from two women on foot&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;Medieval Peasants&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$peasantsPW&quot; &quot;&quot; &quot;peasants-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/peasants.jpg&quot; alt=&quot;men and women shearing sheep and reaping wheat&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[peasants-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/peasants.jpg&quot; alt=&quot;men and women shearing sheep and reaping wheat&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;portals&quot;&gt; 
-&lt;h3&gt;[[renaissance-rewrite]]&lt;/h3&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/newworlds.jpg&quot; alt=&quot;Queen Elizabeth wearing ornate clothing&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&#39;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;h3&gt;The Renaissance&lt;/h3&gt;
+&lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$renaissancePW&quot; &quot;&quot; &quot;renaissance-rewrite&quot;&gt;&gt;&lt;/p&gt;
+&lt;img src=&quot;images/newworlds.jpg&quot; alt=&quot;Queen Elizabeth wearing ornate clothing&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -4801,8 +4848,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="ironage-rewrite" tags="" position="3300,2000" size="100,100">&lt;&lt;if $ironPW is &quot;Nile&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Iron Age Empires&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the ancient West! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4833,8 +4880,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="greece-rewrite" tags="" position="3300,2400" size="100,100">&lt;&lt;if $greecePW is &quot;agora&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Ancient Greece&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the ancient Greece. Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4865,8 +4912,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="hellenistic-rewrite" tags="" position="3300,2800" size="100,100">&lt;&lt;if $hellenisticPW is &quot;scrolls&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;The Hellenistic World&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the Hellenistic World. Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4897,8 +4944,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="rome1-rewrite" tags="" position="3300,3200" size="100,100">&lt;&lt;if $rome1PW is &quot;forum&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Rome: From Republic to Empire&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of Rome! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4929,8 +4976,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="rome2-rewrite" tags="" position="3300,3600" size="100,100">&lt;&lt;if $rome2PW is &quot;barbarians&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Did Rome fall?&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of late antiquity! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4961,8 +5008,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="viking-rewrite" tags="" position="3300,4000" size="100,100">&lt;&lt;if $vikingPW is &quot;runes&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;The Viking Age&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the Viking Age! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -4993,8 +5040,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="knights-rewrite" tags="" position="3300,4400" size="100,100">&lt;&lt;if $knightsPW is &quot;lance&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Medieval Knights&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the medieval aristocracy! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -5025,8 +5072,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="55" name="peasants-rewrite" tags="" position="3300,4800" size="100,100">&lt;&lt;if $peasantsPW is &quot;wodwo&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;Medieval Peasants&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of the medieval peasantry! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -5057,8 +5104,8 @@ image
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="renaissance-rewrite" tags="" position="3300,5200" size="100,100">&lt;&lt;if $renaissancePW is &quot;galleon&quot;&gt;&gt;
 &lt;div class=&quot;beginhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
-&lt;h1&gt;In the Beginning, There was Beer...&lt;/h1&gt;
-&lt;p&gt;You and your comrades have written a new history of the dawn of civilization. Open the branching pathways to explore it.&lt;/p&gt;
+&lt;h1&gt;The Renaissance&lt;/h1&gt;
+&lt;p&gt;You and your comrades have written a new history of renaissance Europe! Open the branching pathways to explore it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -6299,7 +6346,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -6377,8 +6424,8 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyAssyr()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-assyr&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyassyrs&quot;&gt;
 &lt;&lt;if (def $assyfe1) and ($assyfe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Assyrian Friezes,&quot; Cal Poly Humboldt, HIST 110, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $assyboe1) and ($assyboe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;The Black Obelisk of Shalmaneser II&quot;, transl. A. H. Sayce, &lt;em&gt;Babylonian and Assyrian Literature&lt;/em&gt;, in Cal Poly Humboldt, HIST 110, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -6388,12 +6435,12 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;&lt;if (def $assyse1) and ($assyse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Simon Anglim et al., &lt;em&gt;Fighting Techniques of the Ancient World, 3000 BC - AD 500: Equipment, Combat Skills, and Tactics&lt;/em&gt; (New York: St Martin&#39;s Press, 2002)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyAssyrs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -6456,7 +6503,7 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -6546,10 +6593,10 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 &lt;&lt;if (def $bha4) and ($bha4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $bha4&gt;&gt; (Hammurabi)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
-&lt;button onclick=&quot;cpyBab()&quot;&gt;Copy text&lt;/button&gt;
+&lt;button onclick=&quot;cpybab()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-b&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copybabs&quot;&gt;
 
 &lt;&lt;if (def $brse1) and ($brse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Royal Standard of Ur,&quot; British Museum, accessed [date], https://www.britishmuseum.org/collection/object/W_1928-1010-3&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
@@ -6563,12 +6610,12 @@ This quest is complete. [[Continue with the role play scenario. |Assyria]]
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpybabs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:.&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -6677,7 +6724,7 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -6753,9 +6800,9 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyLach()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-lach&quot;&gt;
-&lt;&lt;if (def $lachfre1) and ($lachfre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Osama S. M. Amin, &quot;Siege of Lachish Reliefs at the British Museum,&quot; World History Encyclopedia, https://etc.worldhistory.org/photos/siege-lachish-reliefs-british-museum/&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copylachs&quot;&gt;
+&lt;&lt;if (def $lachfre1) and ($lachfre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Osama S. M. Amin, &quot;The Siege of Lachish Reliefs at the British Museum,&quot; World History Encyclopedia, https://etc.worldhistory.org/photos/siege-lachish-reliefs-british-museum/&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $gtmgte1) and ($gtmgte1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Nazek Khalid Matty, &lt;em&gt;Sennacherib&#39;s Campaign Against Judah and Jerusalem in 701 B.C.: A Historical Reconstruction&lt;/em&gt; (Berlin: de Gruyter, 2016)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
@@ -6764,12 +6811,12 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;&lt;if (def $gtrockse1) and ($gtrockse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Simon Anglim et al., &lt;em&gt;Fighting Techniques of the Ancient World, 3000 BC - AD 500: Equipment, Combat Skills, and Tactics&lt;/em&gt; (New York: St Martin&#39;s Press, 2002)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyLachs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:.&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -6862,7 +6909,7 @@ You already won this fight. [[Continue on. |Greece]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -6938,8 +6985,8 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyHelot()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-helot&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyhelots&quot;&gt;
 &lt;&lt;if (def $helotxe1) and ($helotxe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Xenophon, &lt;em&gt;On the Spartan Constitution&lt;/em&gt;, in Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $helottyre1) and ($helottyre1 isnot &quot;&quot;)&gt;&gt; &lt;p&gt;Tyrtaeus, &lt;em&gt;Honor&lt;/em&gt;, in D. Kagan et al., &lt;em&gt;The Western Heritage, Combined Volume, Tenth Edition&lt;/em&gt; (New York: Pearson, 2010)&lt;/p&gt; &lt;&lt;/if&gt;&gt;
@@ -6949,12 +6996,12 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;&lt;if (def $helotwe1) and ($helotwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Paul Cartledge, &lt;em&gt;The Spartans: An Epic History&lt;/em&gt; (New York: Macmillan: 2002)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyHelots()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:.&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -7649,7 +7696,7 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -7742,8 +7789,8 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyPer()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-pericles&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copypericless&quot;&gt;
 &lt;&lt;if (def $pericleslyse1) and ($pericleslyse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Aristophanes, &lt;em&gt;Lysistrata&lt;/em&gt;, in Perry, &lt;em&gt;Sources of the Western Tradition, Volume 1: from Ancient Times to the Enlightenment, Eighth Edition&lt;/em&gt; (Boston: Wadsworth, 201&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $periclessoce1) and ($gtmgte1 isnot &quot;&quot;)&gt;&gt; &lt;p&gt;Plato, &lt;em&gt;Apology&lt;/em&gt;, transl. Walter Hamilton, in Bernard Knox, ed., &lt;em&gt;The Norton Book of Classical Literature&lt;/em&gt; (New York: Norton, 1993)&lt;/p&gt; &lt;&lt;/if&gt;&gt;
@@ -7757,12 +7804,12 @@ This quest is complete. [[Continue with the role play scenario. |Helot]]
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyPers()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:.&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -8397,7 +8444,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -8490,8 +8537,8 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpySpr()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-spr&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copysprs&quot;&gt;
 &lt;&lt;if (def $sprse1) and ($sprse1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Mark Cartwright, &quot;Roman Gladiator,&quot; World History Encyclopedia, https://www.worldhistory.org/gladiator/, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $sprpe1) and ($sprpe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Plutarch, &lt;em&gt;Lives&lt;/em&gt;, Livius.org, https://www.livius.org/sources/content/plutarch/plutarchs-crassus/plutarch-on-spartacus/, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -8504,12 +8551,12 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpySprs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -8843,7 +8890,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -8877,8 +8924,8 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyPomp()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-pomp&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copypomps&quot;&gt;
 &lt;&lt;if (def $pomple1) and ($pomple1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Roman Legends,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $pompve1) and ($pompve1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Babeth Étiève-Cartwright, &quot;20 Frescoes from Pompeii,&quot; World History Encyclopedia, https://www.worldhistory.org/collection/228/20-frescoes-from-pompeii/, accessed [date]&lt;/p&gt;
@@ -8887,12 +8934,12 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;if (def $pompre1) and ($pompre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Romanitas,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyPomps()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -9442,7 +9489,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -9485,8 +9532,8 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyAlex()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-alex&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyalexs&quot;&gt;
 &lt;&lt;if (def $alexepe1) and ($alexepe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Epicurus, &quot;Principal Doctrines,&quot; transl. Jason L. Saunders, in James M. Brophy et al., eds., &lt;em&gt;Perspectives from the Past: Primary Sources in Western Civilization, Volume 1: From the Ancient Near East through the Age of Absolutism,&lt;/em&gt; Fourth Edition (New York: Norton, 2009), pp. 198 - 201.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $alexstoe1) and ($alexstoe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Epictetus, &lt;em&gt;The Manual: Stoicism&lt;/em&gt;, transl. P. E. Matheson, in James M. Brophy et al., eds., &lt;em&gt;Perspectives from the Past: Primary Sources in Western Civilization, Volume 1: From the Ancient Near East through the Age of Absolutism,&lt;/em&gt; Fourth Edition (New York: Norton, 2009), pp. 205 - 210.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -9496,12 +9543,12 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;&lt;if (def $alexsexe1) and ($alexsexe2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Thomas Hubbard, ed., &lt;em&gt;Homosexuality in Greece and Rome: A Sourcebook of Basic Documents&lt;/em&gt; (Berkeley: University of California Press, 2003)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyAlex()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -10224,7 +10271,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -10300,8 +10347,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyBarb()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-adrian&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copybarbs&quot;&gt;
 &lt;&lt;if (def $adriangete1) and ($adriangete1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt;, in Cal Poly Humboldt HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $adriange1) and ($adriange1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;D. H. Green, &lt;em&gt;Language and History in the Early Germanic World&lt;/em&gt; (Cambridge: Cambridge University Press, 1998)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -10311,12 +10358,12 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;if (def $adrianme1) and ($adrianme1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;James Lacey and Williamson Murray, &lt;em&gt;Moment of Battle: The Twenty Clashes that Changed the World&lt;/em&gt; (New York: Bantam Books, 2013)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyBarbs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -10358,7 +10405,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -10451,8 +10498,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;button onclick=&quot;cpyAsk()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-asking&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyaskings&quot;&gt;
 &lt;&lt;if (def $askingbedee1) and ($askingbedee1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Bede, &lt;em&gt;Ecclesiastical History&lt;/em&gt;, in Cal Poly Humboldt HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $askinghroe1) and ($askinghroe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;Beowulf&lt;/em&gt;, Beowulf on Steorarume, https://heorot.dk/beowulf-rede-text.html, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -10464,12 +10511,12 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;if (def $askingoe1) and ($askingoe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Peter Orton, &quot;Pagan Myth and Religion,&quot; in Rory McTurk, ed., &lt;em&gt;A Companion to Old Norse-Icelandic Literature&lt;/em&gt; (London: Blackwell, 2006), pp. 302 - 319.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyAsks()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -10582,10 +10629,10 @@ This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;p&gt;Here&#39;s an interesting question. It might be difficult, or it might be easy. What else would we expect from an epic adventure?&lt;/p&gt;
 &lt;div class=&quot;container gt-explore&quot;&gt;
 &lt;div class=&quot;row transbox explore-spoils-cont&quot;&gt;
-&lt;p&gt;Question text&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;A&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;The term &quot;dark ages&quot; refers to:&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;A&quot;&gt;&gt;The period between the fall of Rome and the early Middle Ages. It&#39;s also known as late antiquity or the sub-Roman period. Historians don&#39;t like the label very much.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;B&quot;&gt;&gt;Historians use the term &quot;dark ages&quot; to classify periods of intense violence when people&#39;s everyday lives were exceptionally difficult.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$barbExploreQ1&quot; &quot;C&quot;&gt;&gt;It&#39;s a useful label because it can be properly used to classify the entire medieval period, which was a time of cultural and technological stagnation.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row transbox&quot; id=&quot;explore-spoils&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -10601,13 +10648,13 @@ This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;&lt;set $barbExplore1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;hr&gt;
-&lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;Correct. &quot;The Dark Ages&quot; has been used so widely and imprecisely in popular culture that it has become problematic as a chronological label. It also has pejorative connotations, implying that the time period was bad in some way. It&#39;s just not a very useful phrse for historians, most of the time. Your score has increased by 2! Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Well done, $PlayerName! Move on with the [[role play scenario. |Barbarian]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
-&lt;p&gt;Looks like you&#39;ve hit a dead end. That&#39;s part of exploring. [[Turn back |Barbarian]] to continue with the role play scenario.&lt;/p&gt;
+&lt;p&gt;Not quite. Try again? Or [[turn back |Barbarian]] to continue with the role play scenario.&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="188" name="barb-explore2" tags="" position="900,4200" size="100,100">&lt;&lt;if $barbExplore2 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;&lt;else&gt;&gt;
@@ -11720,7 +11767,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -11813,8 +11860,8 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyDefence()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-defence&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copydefences&quot;&gt;
 &lt;&lt;if (def $defde1) and ($defde1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Dudo, &lt;em&gt;History of the Normans&lt;/em&gt;, in Cal Poly Humboldt HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $defme1) and ($defme1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;The Battle of Maldon&lt;/em&gt;, Ruters University Old English Poetry Project, https://oldenglishpoetry.camden.rutgers.edu/battle-of-maldon/, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -11827,12 +11874,12 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyDefences()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -13117,7 +13164,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -13210,8 +13257,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyHast()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-hastings&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyhasts&quot;&gt;
 &lt;&lt;if (def $hastrge1) and ($hastrge1 isnot &quot;&quot;)&gt;&gt;&lt;em&gt;Beowulf&lt;/em&gt;, Beowulf on Steorarume, https://heorot.dk/beowulf-rede-text.html, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt; 
 
 &lt;&lt;if (def $hastske1) and ($hastske1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;&quot;Skaldic verse,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -13224,12 +13271,12 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyHasts()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -13548,7 +13595,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -13587,7 +13634,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;if (def $elcra4) and ($elcra4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elcra4&gt;&gt; (Clermont)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $elr1) and ($elr1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elr1&gt;&gt; (Pearsall, &lt;em&gt;Romance&lt;/em&gt;)&lt;/p&gt;
+&lt;&lt;if (def $elre1) and ($elre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elre1&gt;&gt; (Pearsall, &lt;em&gt;Romance&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if (def $elra1) and ($elra1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $elra1&gt;&gt; (Pearsall, &lt;em&gt;Romance&lt;/em&gt;)&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
@@ -13624,8 +13671,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyEl()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-el&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyels&quot;&gt;
 &lt;&lt;if (def $elmane1) and ($elmane1 isnot &quot;&quot;)&gt;&gt;Codex Manesse, University of Heidelberg, https://digi.ub.uni-heidelberg.de/en/bpd/glanzlichter/codex_manesse.html, accessed [date]]&lt;/p&gt;&lt;&lt;/if&gt;&gt; 
 
 &lt;&lt;if (def $elcre1) and ($elcre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Council of Clermont,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -13636,12 +13683,12 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyEls()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -13683,7 +13730,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -13735,8 +13782,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyFor()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-for&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyfors&quot;&gt;
 &lt;&lt;if (def $forbe1) and ($forbe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Books of the Hunt,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $forace1) and ($forace1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Hunting Accidents,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt; &lt;&lt;/if&gt;&gt;
@@ -13748,12 +13795,12 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;if (def $forppe1) and ($forppe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Eric J. Goldberg, &lt;em&gt;In the Manner of the Franks: Hunting, Kingship, and Masculinity in Early Medieval Europe&lt;/em&gt; (Philadelphia: University of Pennsylvania Press, 2020).&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyFors()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -14238,7 +14285,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -14272,8 +14319,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyCann()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-cann&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copycanns&quot;&gt;
 &lt;&lt;if (def $cannle1) and ($cannle1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Livy, &lt;em&gt;History of Rome&lt;/em&gt;, transl. D. Spillan and Cyrus Edmonds, Project Gutenberg, https://www.gutenberg.org/cache/epub/10907/pg10907-images.html, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $cannwe1) and ($cannwe1 isnot &quot;&quot;)&gt;&gt; &lt;p&gt;John Warry, &lt;em&gt;Warfare in the Classical World&lt;/em&gt; (Norman: University of Oklahoma Press, 2002)&lt;&lt;/if&gt;&gt;
@@ -14281,12 +14328,12 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;if (def $cannre1) and ($cannre1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;something&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyCanns()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18070,7 +18117,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -18113,23 +18160,24 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyWitch()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-witch&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copywitchs&quot;&gt;
+
 &lt;&lt;if (def $witchwe1) and ($witchwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&quot;Renaissance Images of Witches,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $kngwe1) and ($kngwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;Gui de Warewic&lt;/em&gt; in Judith Weiss, trans., &lt;em&gt;Boeve de Haumtone and Gui de Warewic: Two Anglo-Norman Romances&lt;/em&gt; (Tempe: Arizona Center for Medieval and Renaissance Studies, 2008)&lt;/p&gt; &lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $witchsce1) and ($witchsce1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Reginald Scott, &lt;em&gt;The Discoverie of Witchcraft&lt;/em&gt;, in ref...&lt;/p&gt; &lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $knate1) and ($knate1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Nicholas Hooper and Matthew Bennett, &lt;em&gt;The Cambridge Illustrated Atlas of Warfare: The Middle Ages, 768 - 1487&lt;/em&gt; (Cambridge: Cambridge University Press, 1996)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $witchke1) and ($witchke1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Kounine ref...&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $knce1) and ($knce1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;John France, &quot;Crusaders and Settlers in the East, 1096 - 1291: Christian Attack, Muslim Response,&quot; in David A. Graff and Anne Curry, eds., &lt;em&gt;The Cambridge History of War: Volume 2, War and the Medieval World&lt;/em&gt; (Cambridge: Cambridge University Press, 2020), pp. 266 - 296.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $witchhe1) and ($witchhe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Norton ref...&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyWitchs()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18171,52 +18219,52 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
 &lt;div class=&quot;row copynotes&quot; id=&quot;copyart&quot;&gt;
-&lt;&lt;if (def $knje1) and ($knje1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje1&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knja1) and ($knja1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knja1&gt;&gt;&lt;p&gt;(&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knje2) and ($knje2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje2&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knja2) and ($knja2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knja2&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knje3) and ($knje3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje3&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knja3) and ($knja3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knja3&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knje4) and ($knje4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knje4&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knja4) and ($knja4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knja4&gt;&gt;&lt;p&gt; (&quot;Jerusalem&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqe1) and ($arteqe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqe1&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqa1) and ($arteqa1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqa1&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqe2) and ($arteqe2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqe2&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqa2) and ($arteqa2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqa2&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqe3) and ($arteqe3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqe3&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqa3) and ($arteqa3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqa3&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqe4) and ($arteqe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqe4&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteqa4) and ($arteqa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteqa4&gt;&gt;&lt;p&gt; (Equiano)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $kngwe1) and ($kngwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwe1&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwa1) and ($kngwa1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwa1&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwe2) and ($kngwe2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwe2&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwa2) and ($kngwa2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwa2&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwe3) and ($kngwe3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwe3&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwa3) and ($kngwa3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwa3&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwe4) and ($kngwe4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwe4&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $kngwa4) and ($kngwa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $kngwa4&gt;&gt;&lt;p&gt; (&lt;em&gt;Warewic&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdave1) and ($artdave1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdave1&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdava1) and ($artdava1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdava1&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdave2) and ($artdave2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdave2&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdava2) and ($artdava2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdava2&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdave3) and ($artdave3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdave3&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdava3) and ($artdava3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdava3&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdave4) and ($artdave4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdave4&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artdava4) and ($artdava4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artdava4&gt;&gt;&lt;p&gt; (Davis, &lt;em&gt;Bondage&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $knate1) and ($knate1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knate1&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knata1) and ($knata1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knata1&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knate2) and ($knate2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knate2&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knata2) and ($knata2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knata2&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knate3) and ($knate3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knate3&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knata3) and ($knata3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knata3&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knate4) and ($knate4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knate4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knata4) and ($knata4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knata4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltise1) and ($arteltise1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltise1&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltisa1) and ($arteltisa1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltisa1&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltise2) and ($arteltise2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltise2&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltisa2) and ($arteltisa2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltisa2&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltise3) and ($arteltise3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltise3&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltisa3) and ($arteltisa3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltisa3&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltise4) and ($arteltise4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltise4&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $arteltisa4) and ($arteltisa4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $arteltisa4&gt;&gt;&lt;p&gt; (Eltis, &lt;em&gt;Atlantic Slave Trade&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
-&lt;&lt;if (def $knce1) and ($knce1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce1&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knca1) and ($knca1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca1&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knce2) and ($knce2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce2&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knca2) and ($knca2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca2&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knce3) and ($knce3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce3&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knca3) and ($knca3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca3&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knce4) and ($knce4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knce4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;if (def $knca4) and ($knca4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $knca4&gt;&gt;&lt;p&gt; (Hooper et al., &lt;em&gt;Atlas&lt;/em&gt;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artme1) and ($artme1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artme1&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artma1) and ($artma1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artma1&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artme2) and ($artme2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artme2&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artma2) and ($artma2 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artma2&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artme3) and ($artme3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artme3&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artma3) and ($artma3 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artma3&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artme4) and ($artme4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artme4&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;if (def $artma4) and ($artma4 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;&lt;print $artma4&gt;&gt;&lt;p&gt; (Morgan, &quot;Some Could Suckle&quot;)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyArt()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-kn&quot;&gt;
-&lt;&lt;if (def $knje1) and ($knje1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Sack of Jerusalem,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyarts&quot;&gt;
+&lt;&lt;if (def $arteqe1) and ($arteqe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Olaudah Equiano, &lt;em&gt;Interesting Narrative&lt;/em&gt; ref...&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $kngwe1) and ($kngwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;Gui de Warewic&lt;/em&gt; in Judith Weiss, trans., &lt;em&gt;Boeve de Haumtone and Gui de Warewic: Two Anglo-Norman Romances&lt;/em&gt; (Tempe: Arizona Center for Medieval and Renaissance Studies, 2008)&lt;/p&gt; &lt;&lt;/if&gt;&gt;
 
@@ -18225,12 +18273,12 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $knce1) and ($knce1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;John France, &quot;Crusaders and Settlers in the East, 1096 - 1291: Christian Attack, Muslim Response,&quot; in David A. Graff and Anne Curry, eds., &lt;em&gt;The Cambridge History of War: Volume 2, War and the Medieval World&lt;/em&gt; (Cambridge: Cambridge University Press, 2020), pp. 266 - 296.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyArts()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18445,8 +18493,8 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyKnights()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-kn&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copykns&quot;&gt;
 &lt;&lt;if (def $knje1) and ($knje1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Sack of Jerusalem,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $kngwe1) and ($kngwe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;&lt;em&gt;Gui de Warewic&lt;/em&gt; in Judith Weiss, trans., &lt;em&gt;Boeve de Haumtone and Gui de Warewic: Two Anglo-Norman Romances&lt;/em&gt; (Tempe: Arizona Center for Medieval and Renaissance Studies, 2008)&lt;/p&gt; &lt;&lt;/if&gt;&gt;
@@ -18456,12 +18504,12 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $knce1) and ($knce1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;John France, &quot;Crusaders and Settlers in the East, 1096 - 1291: Christian Attack, Muslim Response,&quot; in David A. Graff and Anne Curry, eds., &lt;em&gt;The Cambridge History of War: Volume 2, War and the Medieval World&lt;/em&gt; (Cambridge: Cambridge University Press, 2020), pp. 266 - 296.&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyKnightss()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -18935,7 +18983,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 
 &lt;hr&gt;
 &lt;h2&gt;Second: Grab your marginalia&lt;/h2&gt;
-&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your Role Play assignment.&lt;/p&gt;
+&lt;p&gt;Below, you&#39;ll find the notes you saved from the primary and secondary sources. &lt;span class=&quot;bi&quot;&gt;Use the copy button&lt;/span&gt; to move this material into Canvas as the foundation of your role play assignment.&lt;/p&gt;
 &lt;p&gt;If you want another look at the sources later, you can also find them in the Source Anthology on Canvas.&lt;/p&gt;
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;cite&quot;&gt;
@@ -18978,8 +19026,8 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;/div&gt;
 &lt;button onclick=&quot;cpyLove()&quot;&gt;Copy text&lt;/button&gt;
 
-&lt;p&gt;At the end of your Role Play Response, list the sources you used like this (use the &quot;copy button&quot; to place these citations in your Canvas submission):&lt;/p&gt;
-&lt;div class=&quot;copynotes&quot; id=&quot;copycites-love&quot;&gt;
+&lt;p&gt;List the sources you used. Use the &quot;copy text&quot; button to place these citations in a &quot;Works Cited&quot; section at the end of your role play response.&lt;/p&gt;
+&lt;div class=&quot;copynotes&quot; id=&quot;copyloves&quot;&gt;
 &lt;&lt;if (def $lovele1) and ($lovele1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;“Scenes of Peasant Life,&quot; Cal Poly Humboldt, HIST 104, Instructor: Queen, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if (def $loveche1) and ($loveche1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Geoffrey Chaucer, &lt;em&gt;Canterbury Tales&lt;/em&gt;, Harvard&#39;s Geoffrey Chaucer Website, https://chaucer.fas.harvard.edu/pages/millers-prologue-and-tale, accessed [date]&lt;/p&gt;&lt;&lt;/if&gt;&gt;
@@ -18989,12 +19037,12 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;&lt;if (def $lovesexe1) and ($lovesexe1 isnot &quot;&quot;)&gt;&gt;&lt;p&gt;Ruth Mazo Karras, &lt;em&gt;Sexuality in the Middle Ages: Doing unto Others, Second Edition&lt;/em&gt; (New York: Routledge, 2012)&lt;/p&gt;&lt;&lt;/if&gt;&gt;
 &lt;/div&gt;
 
-&lt;button onclick=&quot;copybtn( &#39;copy&#39; )&quot;&gt;Copy&lt;/button&gt;
+&lt;button onclick=&quot;cpyLoves()&quot;&gt;Copy text&lt;/button&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;You&#39;re done! &lt;/h2&gt;
-&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s Role Play responses at Our History Rewrite.&lt;/p&gt;
+&lt;p&gt;Congratulations and good work! Now you&#39;re ready to write your Role Play response and submit it in Canvas. I hope you enjoyed your journey through history, and I look forward to discussing your ideas in class. Later in the week, be sure to check out everyone&#39;s role play responses here:&lt;/p&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-4&quot;&gt;
@@ -19257,20 +19305,21 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;&lt;img src=&quot;images/beowulf.jpg&quot; alt=&quot;manuscript page&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Below: Here is what it might have sounded like.&lt;/p&gt;
 &lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0zorjJzrrvA?si=Y0j69Yr9J8lMzYEU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="354" name="suttonhoo" tags="" position="1600,4600" size="100,100">&lt;h1&gt;The Sutton Hoo Ship Burial&lt;/h1&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="354" name="suttonhoo" tags="" position="1600,4600" size="100,100">&lt;h1&gt;The Sutton Hoo Ship Burial&lt;/h1&gt;&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-4 ps-tag&quot;&gt;
+&lt;p&gt;Primary Source&lt;/p&gt;
+&lt;/div&gt;
 &lt;div class=&quot;col-4&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-4 ss-tag&quot;&gt;
 &lt;p&gt;Secondary Source&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The Old English poem &lt;em&gt;Beowulf&lt;/em&gt; begins with an account of a king&#39;s funeral, in which the king&#39;s body is put in a ship along with his treasure, and sent out to sea. The Sutton Hoo ship burial resemles the funeral in the poem (except that the ship and its contents were buried rather than launched out to sea). You can view and learn about the artifacts from this fascinating archaeological site at &lt;a href=&quot;https://www.britishmuseum.org/collection/death-and-memory/anglo-saxon-ship-burial-sutton-hoo&quot; target=&quot;_blank&quot;&gt;this page from the British Museum.&lt;/a&gt;
+&lt;p&gt;The eighth-century English poem &lt;em&gt;Beowulf&lt;/em&gt; begins with a king&#39;s funeral, in which the king&#39;s body is put in a ship along with his treasure, and sent out to sea. Historians and archaeologists were ecstatic when the remains of just such a ship burial were unearthed. It was a bit like what happened to Homer&#39;s &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt; when archaeologists discovered the remains of the Trojan War. An epic poem long assumed to be fictional was suddenly granted a foundation in historical reality.&lt;/p&gt;
+&lt;p&gt;The Sutton Hoo ship burial resemles the funeral in the poem (except that the ship and its contents were buried rather than launched out to sea). You can view and learn about the artifacts from this fascinating archaeological site at &lt;a href=&quot;https://www.britishmuseum.org/collection/death-and-memory/anglo-saxon-ship-burial-sutton-hoo&quot; target=&quot;_blank&quot;&gt;this page from the British Museum.&lt;/a&gt; Note that this is another source that contains both primary and secondary material: The Sutton Hoo artifacts themselves are primary sources, while the information provided by the British Museum is secondary source material.&lt;/p&gt;
 
 &lt;hr&gt;
 &lt;h2&gt;How to use this source&lt;/h2&gt;
@@ -19280,7 +19329,7 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;li&gt;Forms of treasure used by the Anglo-Saxon elite&lt;/li&gt;
 &lt;li&gt;Pre-Christian English ideas about the afterlife&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the Role Play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your Role Play response in Canvas. &lt;/p&gt;
+&lt;p&gt;In the &quot;Marginalia&quot; panel below, enter evidence (such as quotes or details) from the source. Pair each piece of evidence with analysis (idea or reflection) relating to the role play scenario. These will be collected for you and available at the end of the game, so that you can copy and paste them into your role play response in Canvas. &lt;/p&gt;
 
 &lt;div class=&quot;container marginalia&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
