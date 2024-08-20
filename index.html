@@ -1152,8 +1152,8 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -1174,8 +1174,8 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -5608,7 +5608,7 @@ You already won this fight. [[Continue on. |Beginning]]
 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="gt-explore1-spoils" tags="" position="800,100" size="100,100">&lt;&lt;if ($gtExploreQ1 is &quot;A&quot;) and ($gtExploreQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $gtExplore1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Good choice!&lt;/p&gt;
 &lt;p&gt;Exploring can have its rewards. Your score has increased by 2. Choose loot for your inventory: &lt;/p&gt;
@@ -5711,7 +5711,7 @@ This quest is complete. [[Continue with the role play scenario. |GT]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |GT]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Enter" tags="" position="100,1900" size="100,100">&lt;&lt;set $Score to &quot;&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Enter" tags="" position="100,1900" size="100,100">&lt;&lt;set $Score to 0&gt;&gt;
 &lt;&lt;set $sword to false&gt;&gt;
 &lt;&lt;set $book to false&gt;&gt;
 &lt;&lt;set $bow to false&gt;&gt;
@@ -7127,7 +7127,7 @@ You already won this fight. [[Continue on. |Greece]]
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="105" name="begin-combat1-spoils" tags="" position="500,200" size="100,100">&lt;&lt;if ($beginCombatQ1 is &quot;A&quot;) and ($beginCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $beginCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
 &lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
@@ -7139,7 +7139,7 @@ You already won this fight. [[Continue on. |Greece]]
 
 &lt;&lt;elseif ($beginCombatQ1 is &quot;C&quot;) and ($beginCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $beginCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
 &lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
