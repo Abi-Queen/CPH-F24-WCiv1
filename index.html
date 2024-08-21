@@ -5201,7 +5201,73 @@ image
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;The password is incorrect. Back to [[Our History Rewrite]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">.scenarios {
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">ren-spoils
+&lt;&lt;if ($renCombatQ1 is &quot;A&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;p&gt;I mean, it is perfectly sound to be skeptical or even dismissive of any statement about &quot;the feudal system.&quot; This mob should certainly clean up its diction. But it is not wrong in its assertion that a medieval socio-economic and cultural paradigm, characterized by past historians and readily identifiable as (loosely) &quot;feudal&quot; &lt;em&gt;did&lt;/em&gt; come to an end in the early modern or renaissance period. A major transition from &quot;medieval&quot; to &quot;modern&quot; did occur. Personally, &quot;gunpowder&quot; feels more problematic than &quot;feudal&quot; here. What does it even mean by &quot;gunpowder?&quot; As in, projectile weapons? As in, explosive? As in, massed infantry wielding matchlocks? Either way, this thing is sloppy with its speech. It loses this battle. Choose an item for your inventory and enjoy 5 points added to your score!&lt;/p&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
+
+&lt;&lt;else if ($renCombatQ1 is &quot;B&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;p&gt;Nice work flagging technological determinism! This naughty mob. Technology is obviously a huge driver of change on many levels. However, historiographical agruments that technology is the sole direct cause of change are unsound at worst, unfashionable at best. Gunpowder undoubtedly catalyzed the transition from medieval to modern. But we would be miss much if we myopically fixated on gunpowder as the &lt;em&gt;only&lt;/em&gt; (or even the main) cause.&lt;/p&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
+
+&lt;&lt;else if ($renCombatQ1 is &quot;C&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;p&gt;Agreed. This fellow is probably right to point to gunpowder as &lt;em&gt;one of&lt;/em&gt; the most important technological catalysts for Europe&#39;s transition from medieval to modern. But others have a strong claim to rank among these late medieval technological MVPs as well.&lt;/p&gt;
+
+&lt;&lt;else&gt;&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Renaissance]]&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+
+iron-combat1
+
+&lt;&lt;if $ironCombat1 is &quot;done&quot;&gt;&gt;
+You already won this fight. [[Continue on. |Iron]]
+&lt;&lt;else&gt;&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row center&quot;&gt;
+&lt;div class = &quot;col-3&quot;&gt;
+&lt;h3&gt;Here&#39;s your opponent. To win this fight, choose a good response to this creature&#39;s questionable statements about history.&lt;/h3&gt;
+&lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-9&quot;&gt;
+&lt;p&gt;It says, &quot;Civilizations in environments with the correct amount of environmental stress factors were able to develop new technologies which led to growth and advancement. Civilizations in overly harsh environments (like the Arctic) or overly comfortable environments (like the tropics) failed to innovate and grow. Those in difficult environments had no leisure to take risks or invest resources in innovation; they were struggling to simply survive. Those with too bountiful an envirnoment had no reason to take risks or invest resources in innovation. The correct amount of environmental stress is necessary for civilizations to advance.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;div class=&quot;row center&quot;&gt;
+&lt;p&gt;So first, stop laughing. Be serious. Distinguished persons with alphabet soups after their names and ponderous academic titles have written stuff like this in the past. Titanic, towering scholarly figures like Toynbee and von Ranke have written much in this vein. And even though academia has moved on, some folks still carry on mouthing these kinds of happy platitudes today.&lt;/p&gt;
+&lt;p&gt;So, let&#39;s keep this civil and simple. Briefly, how would you categorize the fallacy in this creature&#39;s thesis?&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;A&quot;&gt;&gt;Confirmation bias&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;B&quot;&gt;&gt;Anachronism&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;C&quot;&gt;&gt;Tautology&lt;/label&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;iron-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-4&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;&lt;/if&gt;&gt;
+
+
+.scenarios {
   background-image: url(&quot;images/hallway.jpg&quot;);
   background-position: center;
   background-repeat: no-repeat;
@@ -5640,13 +5706,13 @@ You already won this fight. [[Continue on. |Beginning]]
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-md&quot;&gt;
-&lt;h1&gt;Combat!&lt;/h1&gt;
-&lt;p&gt;This creature throws some hysterical history at you. It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Defeat this creature by choosing the best response to its nonsense:&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
 &lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$beginCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
 &lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$beginCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
@@ -6059,15 +6125,28 @@ This quest is complete. [[Continue with the role play scenario. |Babylon]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Babylon]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="82" name="iron-combat1-spoils" tags="" position="500,1000" size="100,100">&lt;&lt;if ($ironCombatQ1 is &quot;B&quot;) and ($ironCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;&lt;set $ironCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the (mob) and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="82" name="iron-combat1-spoils" tags="" position="500,1000" size="100,100">&lt;&lt;if ($ironCombatQ1 is &quot;A&quot;) and ($ironCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $beginCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Iron]]&lt;/p&gt;
+
+&lt;&lt;elseif ($ironCombatQ1 is &quot;B&quot;) and ($ironCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Iron]]&lt;/p&gt;
+
+&lt;&lt;elseif ($ironCombatQ1 is &quot;C&quot;) and ($ironCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $ironCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Iron]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the (mob). Better luck next time. [[Move on through this time travel portal. |Iron]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Iron]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="83" name="iron-combat2-spoils" tags="" position="600,1000" size="100,100">&lt;&lt;if ($ironCombatQ2 is &quot;A&quot;) and ($ironCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $ironCombat2 to &quot;done&quot;&gt;&gt;
@@ -7030,40 +7109,38 @@ This quest is complete. [[Continue with the role play scenario. |Lachish]]
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="101" name="lachish-link2" tags="" position="1200,1500" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;&lt;img src=&quot;images/map-levant-830bce.jpg&quot; alt=&quot;map of Levant c. 830 BCE&quot; height=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;A map showing the political situation of Lachish c. 830 BCE (the tan color is the Assyrian Empire), from &lt;a href=&quot;https://www.worldhistory.org/image/285/map-of-the-levant-circa-830-bce/&quot; target=&quot;_blank&quot;&gt;World History Encyclopedia&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="102" name="greece-combat1" tags="" position="500,1900" size="100,100">&lt;&lt;if $greeceCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="102" name="greece-combat1" tags="" position="500,1900" size="100,100">&lt;&lt;if ($greeceCombat1 is &quot;done&quot;) and ($greeceCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Greece]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;presentism&quot;&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect respones&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;greece-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="103" name="greece-combat2-spoils" tags="" position="600,1800" size="100,100">&lt;&lt;if ($greeceCombatQ2 is &quot;A&quot;) and ($greeceCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $greeceCombat2 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
@@ -7248,41 +7325,38 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;p&gt;[[Onward! |Beginning]]&lt;/p&gt;
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated by the Tautology Troll. Better luck next time. [[Move on through this time travel portal. |Beginning]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="107" name="iron-combat1" tags="" position="500,1100" size="100,100">&lt;&lt;if $ironCombat1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="107" name="iron-combat1" tags="" position="500,1100" size="100,100">&lt;&lt;if ($ironCombat1 is &quot;done&quot;) and ($ironCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Iron]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Here&#39;s your opponent. To win this fight, choose a good response to this creature&#39;s questionable statements about history.&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says, &quot;Civilizations in environments with the correct amount of environmental stress factors were able to develop new technologies which led to growth and advancement. Civilizations in overly harsh environments (like the Arctic) or overly comfortable environments (like the tropics) failed to innovate and grow. Those in difficult environments had no leisure to take risks or invest resources in innovation; they were struggling to simply survive. Those with too bountiful an envirnoment had no reason to take risks or invest resources in innovation. The correct amount of environmental stress is necessary for civilizations to advance.&quot;&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;So first, stop laughing. Be serious. Distinguished persons with alphabet soups after their names and ponderous academic titles have written stuff like this in the past. Titanic, towering scholarly figures like Toynbee and von Ranke have written much in this vein. And even though academia has moved on, some folks still carry on mouthing these kinds of happy platitudes today.&lt;/p&gt;
-&lt;p&gt;So, let&#39;s keep this civil and simple. Briefly, how would you categorize the fallacy in this creature&#39;s thesis?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;A&quot;&gt;&gt;Confirmation bias&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;B&quot;&gt;&gt;Anachronism&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;C&quot;&gt;&gt;Tautology&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$ironCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;iron-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="108" name="iron-combat2" tags="" position="600,1100" size="100,100">&lt;&lt;if $ironCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Iron]]
 &lt;&lt;else&gt;&gt;
@@ -7317,15 +7391,28 @@ You already won this fight. [[Continue on. |Iron]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="109" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if ($greeceCombatQ1 is &quot;B&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="109" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if ($greeceCombatQ1 is &quot;A&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $greeceCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
+
+&lt;&lt;elseif ($greeceCombatQ1 is &quot;B&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Greece]]&lt;/p&gt;
+
+&lt;&lt;elseif ($greeceCombatQ1 is &quot;C&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $greeceCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Greece]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Greece]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="110" name="greece-combat2" tags="" position="600,1900" size="100,100">&lt;&lt;if $greeceCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Greece]]
@@ -8279,49 +8366,60 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="rome1-combat1" tags="" position="500,3500" size="100,100">&lt;&lt;if $rome1Combat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="rome1-combat1" tags="" position="500,3500" size="100,100">&lt;&lt;if ($rome1Combat1 is &quot;done&quot;) and ($rome1Combat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Rome1]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;presentism...&quot;&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome1CombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;rome1-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="130" name="rome1-combat1-spoils" tags="" position="500,3400" size="100,100">&lt;&lt;if ($rome1CombatQ1 is &quot;B&quot;) and ($rome1CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="130" name="rome1-combat1-spoils" tags="" position="500,3400" size="100,100">&lt;&lt;if ($rome1CombatQ1 is &quot;A&quot;) and ($rome1CombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome1Combat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome1]]&lt;/p&gt;
+
+&lt;&lt;elseif ($rome1CombatQ1 is &quot;B&quot;) and ($rome1CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Rome1]]&lt;/p&gt;
+
+&lt;&lt;elseif ($rome1CombatQ1 is &quot;C&quot;) and ($rome1CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $rome1Combat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Rome1]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Rome1]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Rome1]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="131" name="rome1-combat2" tags="" position="600,3500" size="100,100">&lt;&lt;if $rome1Combat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Rome1]]
@@ -10027,49 +10125,60 @@ map of hannibal&#39;s victories and famous &quot;you do not know how to use it&q
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="165" name="cannae-link2" tags="" position="1200,3100" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;An egineer preparing for a siege like this might have been designing and building ballistas, catapults, battering rams, siege engines. They would be using math and scrolls to design each machine, finding building materials and labor, and overseeing construction.&lt;/p&gt;
 images with captions
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="166" name="hellenistic-combat1" tags="" position="500,2700" size="100,100">&lt;&lt;if $hellenisticCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="166" name="hellenistic-combat1" tags="" position="500,2700" size="100,100">&lt;&lt;if ($hellenisticCombat1 is &quot;done&quot;) and ($hellenisticCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Hellenistic]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: Some presentism&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;hellenistic-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;B&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="167" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;A&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
+
+&lt;&lt;elseif ($hellenisticCombatQ1 is &quot;B&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Hellenistic]]&lt;/p&gt;
+
+&lt;&lt;elseif ($hellenisticCombatQ1 is &quot;C&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Hellenistic]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Hellenistic]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="168" name="hellenistic-combat2" tags="" position="600,2700" size="100,100">&lt;&lt;if $hellenisticCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Hellenistic]]
@@ -10865,49 +10974,60 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="182" name="rome2-combat1" tags="" position="500,4300" size="100,100">&lt;&lt;if $rome2Combat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="182" name="rome2-combat1" tags="" position="500,4300" size="100,100">&lt;&lt;if ($rome2Combat1 is &quot;done&quot;) and ($rome2Combat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Rome2]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: presentism&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;rome2-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="183" name="rome2-combat1-spoils" tags="" position="500,4200" size="100,100">&lt;&lt;if ($rome2CombatQ1 is &quot;B&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="183" name="rome2-combat1-spoils" tags="" position="500,4200" size="100,100">&lt;&lt;if ($rome2CombatQ1 is &quot;A&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome2Combat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
+
+&lt;&lt;elseif ($rome2CombatQ1 is &quot;B&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Rome2]]&lt;/p&gt;
+
+&lt;&lt;elseif ($rome2CombatQ1 is &quot;C&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $rome2Combat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Rome2]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Rome2]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="184" name="rome2-combat2" tags="" position="600,4300" size="100,100">&lt;&lt;if $rome2Combat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Rome2]]
@@ -12802,50 +12922,62 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="212" name="viking-combat1" tags="" position="500,5100" size="100,100">&lt;&lt;if $vikingCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="212" name="viking-combat1" tags="" position="500,5100" size="100,100">&lt;&lt;if ($vikingCombat1 is &quot;done&quot;) and ($vikingCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Viking]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: &quot;presentism.&quot;&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;viking-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="viking-combat1-spoils" tags="" position="500,5000" size="100,100">&lt;&lt;if ($vikingCombatQ1 is &quot;B&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="viking-combat1-spoils" tags="" position="500,5000" size="100,100">&lt;&lt;if ($vikingCombatQ1 is &quot;A&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $vikingCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Chalice&quot;&gt;&gt;&lt;&lt;set $chalice to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
+
+&lt;&lt;elseif ($vikingCombatQ1 is &quot;B&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Viking]]&lt;/p&gt;
+
+&lt;&lt;elseif ($vikingCombatQ1 is &quot;C&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $vikingCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="214" name="viking-combat2" tags="" position="600,5100" size="100,100">&lt;&lt;if $vikingCombat2 is &quot;done&quot;&gt;&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
+&lt;&lt;/if&gt;&gt;
+</tw-passagedata><tw-passagedata pid="214" name="viking-combat2" tags="" position="600,5100" size="100,100">&lt;&lt;if $vikingCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Viking]]
 &lt;&lt;else&gt;&gt;
 
@@ -18162,40 +18294,38 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;In 1186, near the Kingdom of Jerusalem, 140 crusader knights, led by a group of Templars, met a force of Muslims numbering around 7,000. Ignoring a truce that had been agreed to between the two armies, the crusaders attacked, crying, &quot;Christ is our life, and death is our reward!&quot; Only four survived, one of whom was the Templar Grand Master, Gerard de Ridefort, who had ordered the charge. He was also among the leaders at Hattin. There again, he survived an otherwise bloody defeat for the crusaders.&lt;/p&gt;
 &lt;p&gt;The graphic below represents the numerical disparity between the 140 crusaders and the 7,000 Muslims at the Springs of Cresson in 1186.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/cresson.jpg&quot; alt=&quot;pie chart showing few crusaders and majority of Muslims&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="291" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if $knightsCombat1 is &quot;done&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="291" name="knights-combat1" tags="" position="500,5900" size="100,100">&lt;&lt;if ($knightsCombat1 is &quot;done&quot;) and ($knightsCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: An example of presentism&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$knightsCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;knights-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="292" name="knights-combat2" tags="" position="600,5900" size="100,100">&lt;&lt;if $knightsCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Knights]]
 &lt;&lt;else&gt;&gt;
@@ -18230,15 +18360,28 @@ You already won this fight. [[Continue on. |Knights]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="293" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if ($knightsCombatQ1 is &quot;B&quot;) and ($knightsCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="293" name="knights-combat1-spoils" tags="" position="500,5800" size="100,100">&lt;&lt;if ($knightsCombatQ1 is &quot;A&quot;) and ($knightsCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $knightsCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Potion&quot;&gt;&gt;&lt;&lt;set $potion to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Book&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Knights]]&lt;/p&gt;
+
+&lt;&lt;elseif ($knightsCombatQ1 is &quot;B&quot;) and ($knightsCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Knights]]&lt;/p&gt;
+
+&lt;&lt;elseif ($knightsCombatQ1 is &quot;C&quot;) and ($knightsCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $knightsCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Knights]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Knights]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="294" name="knights-combat2-spoils" tags="" position="600,5800" size="100,100">&lt;&lt;if ($knightsCombatQ2 is &quot;A&quot;) and ($knightsCombatQ2 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $knightsCombat2 to &quot;done&quot;&gt;&gt;
@@ -18391,50 +18534,61 @@ This quest is complete. [[Continue with the role play scenario. |Hattin]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Hattin]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if ($peaseCombatQ1 is &quot;B&quot;) and ($peasCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="303" name="peas-combat1-spoils" tags="" position="500,6600" size="100,100">&lt;&lt;if ($peasCombatQ1 is &quot;A&quot;) and ($peasCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $peasCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
-&lt;p&gt;Excellent choice! You have defeated the Presentism Poltergeist and boosted your score by 5! Choose loot for your inventory: &lt;/p&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Bow&quot;&gt;&gt;&lt;&lt;set $bow to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Peasants]]&lt;/p&gt;
+
+&lt;&lt;elseif ($peasCombatQ1 is &quot;B&quot;) and ($peasCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Peasants]]&lt;/p&gt;
+
+&lt;&lt;elseif ($peasCombatQ1 is &quot;C&quot;) and ($peasCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;set $peasCombat1 to &quot;done&quot;&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
+&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;[[Onward! |Peasants]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
-&lt;p&gt;You have been defeated by the Presentism Poltergeist. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Peasants]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="304" name="peas-combat1" tags="" position="500,6700" size="100,100">&lt;&lt;if $peasCombat1 is &quot;done&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="304" name="peas-combat1" tags="" position="500,6700" size="100,100">&lt;&lt;if ($peasCombat1 is &quot;done&quot;) and ($peasCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Peasants]]
 &lt;&lt;else&gt;&gt;
-
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Oh no! It&#39;s a Presentism Poltergeist!&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says: An example of presentism&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;Longbows didn&#39;t exist or longbow as social equalizer &quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Well ...? What&#39;s the best response to this statement?&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;B&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;C&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$peasCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;peas-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
-
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="305" name="peas-combat2" tags="" position="600,6700" size="100,100">&lt;&lt;if $peasCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Peasants]]
 &lt;&lt;else&gt;&gt;
@@ -18620,38 +18774,38 @@ This quest is complete. [[Continue with the role play scenario. |Love]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Love]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="ren-combat1" tags="" position="500,7500" size="100,100">&lt;&lt;if $renCombat1 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="315" name="ren-combat1" tags="" position="500,7500" size="100,100">&lt;&lt;if ($renCombat1 is &quot;done&quot;) and ($renCombat1 isnot &quot;&quot;)&gt;&gt;
 You already won this fight. [[Continue on. |Renaissance]]
-&lt;&lt;else&gt;&gt;
 
+&lt;&lt;else&gt;&gt;
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class = &quot;col-3&quot;&gt;
-&lt;h3&gt;Here&#39;s your opponent. To win this fight, choose a good response to this creature&#39;s questionable statements about history.&lt;/h3&gt;
+&lt;div class = &quot;col-md&quot;&gt;
 &lt;img src=&quot;images/mobs/creeper1.jpg&quot; alt=&quot;manuscript illumination of demon with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-9&quot;&gt;
-&lt;p&gt;It says, &quot;Gunpowder was the new technology that ended the medieval feudal system.&quot;&lt;/p&gt;
+&lt;div class=&quot;col-md&quot;&gt;
+&lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
+&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;Choose a response to this mob&#39;s hysterical history.&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;A&quot;&gt;&gt;This statement has little meaning, since there was no feudal system.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;B&quot;&gt;&gt;This is a gross oversimplification. Gunpowder is just a tool, and technology cannot be the sole driver for social and cultural change.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;C&quot;&gt;&gt;Gunpowder was a game-changer, sure. But this statement ignores other similarly or equally impactful technologies such as the printing press or the stern-post rudder.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;A&quot;&gt;&gt; This statement has little meaning, since there was no feudal system.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;B&quot;&gt;&gt; This is a gross oversimplification. Gunpowder is just a tool, and technology cannot be the sole driver for social and cultural change.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$renCombatQ1&quot; &quot;C&quot;&gt;&gt; Gunpowder was a game-changer, sure. But this statement ignores other similarly or equally impactful technologies such as the printing press or the stern-post rudder.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 explore-link&quot;&gt;
+&lt;div class=&quot;col-md explore-link&quot;&gt;
 &lt;&lt;link &quot;Victory or defeat?&quot;&gt;&gt;&lt;&lt;replace &quot;#combat-spoils&quot;&gt;&gt;&lt;&lt;include &quot;ren-combat1-spoils&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="316" name="ren-combat2" tags="" position="600,7500" size="100,100">&lt;&lt;if $renCombat2 is &quot;done&quot;&gt;&gt;
@@ -18700,13 +18854,13 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="318" name="ren-combat1-spoils" tags="" position="500,7400" size="100,100">&lt;&lt;if ($renCombatQ1 is &quot;A&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;&lt;set $Score to $Score +5&gt;&gt;
 &lt;p&gt;I mean, it is perfectly sound to be skeptical or even dismissive of any statement about &quot;the feudal system.&quot; This mob should certainly clean up its diction. But it is not wrong in its assertion that a medieval socio-economic and cultural paradigm, characterized by past historians and readily identifiable as (loosely) &quot;feudal&quot; &lt;em&gt;did&lt;/em&gt; come to an end in the early modern or renaissance period. A major transition from &quot;medieval&quot; to &quot;modern&quot; did occur. Personally, &quot;gunpowder&quot; feels more problematic than &quot;feudal&quot; here. What does it even mean by &quot;gunpowder?&quot; As in, projectile weapons? As in, explosive? As in, massed infantry wielding matchlocks? Either way, this thing is sloppy with its speech. It loses this battle. Choose an item for your inventory and enjoy 5 points added to your score!&lt;/p&gt;
 &lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
 
-&lt;&lt;else if ($renCombatQ1 is &quot;B&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;elseif ($renCombatQ1 is &quot;B&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Nice work flagging technological determinism! This naughty mob. Technology is obviously a huge driver of change on many levels. However, historiographical agruments that technology is the sole direct cause of change are unsound at worst, unfashionable at best. Gunpowder undoubtedly catalyzed the transition from medieval to modern. But we would be miss much if we myopically fixated on gunpowder as the &lt;em&gt;only&lt;/em&gt; (or even the main) cause.&lt;/p&gt;
@@ -18714,10 +18868,14 @@ You already won this fight. [[Continue on. |Renaissance]]
 &lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
 &lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
 
-&lt;&lt;else if ($renCombatQ1 is &quot;C&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;elseif ($renCombatQ1 is &quot;C&quot;) and ($renCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $renCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score + 5&gt;&gt;
 &lt;p&gt;Agreed. This fellow is probably right to point to gunpowder as &lt;em&gt;one of&lt;/em&gt; the most important technological catalysts for Europe&#39;s transition from medieval to modern. But others have a strong claim to rank among these late medieval technological MVPs as well.&lt;/p&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/li&gt;
+&lt;p&gt;[[Onward! |Renaissance]]&lt;/p&gt;
+
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Renaissance]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;
