@@ -203,7 +203,7 @@ text-decoration: underline;
 
 /* combat, doors, questions */
 .question {
-  background-color: #f3fefe;
+  background-color: #fffcf0;
   border: 2px solid #4e4e4d;
   color: black;
   border-radius: 15px;
@@ -1041,7 +1041,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;p&gt;Defeat a hostile mob to boost your score and win loot! Or skip combat and scroll down to move on through this time travel portal.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/greek-combat.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;rome1-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/combat-rome1.jpg&quot; alt=&quot;Roman legion in battle with horses and shields&quot; width=&quot;80%&quot;&gt;&#39; &quot;rome1-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1212,7 +1212,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;div class=&quot;row&quot;&gt;
 &lt;div class=&quot;col-md ps&quot; id=&quot;sourcedoorstext&quot;&gt;
 &lt;div class=&quot;transbox sourcelist&quot;&gt;
-&lt;h3&gt;Primary Sources&lt;/h3&gt;
+&lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The pillars of Gobekli Tepe |Pillars]]&lt;/li&gt;
@@ -1221,7 +1221,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;/div&gt;
 &lt;div class=&quot;col-md ss&quot; id=&quot;sourcedoorstext&quot;&gt;
 &lt;div class=&quot;transbox sourcelist&quot;&gt;
-&lt;h3&gt;Secondary Sources&lt;/h3&gt;
+&lt;h2&gt;Secondary Sources&lt;/h2&gt;
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[A model of Gobekli Tepe |GT Model]]&lt;/li&gt;
@@ -1253,39 +1253,42 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;/ul&gt;
 &lt;/footer&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Babylon" tags="" position="800,500" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Babylon" tags="" position="800,500" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
 &lt;div class=&quot;container&quot;&gt;
 
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a young scribe in Babylon&lt;/h1&gt;
 &lt;p&gt;Mesopotamia, c. 1700 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;babylon-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;babylon-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;It&#39;s c. 1700 BCE in Babylon during the reign of Hammurabi. You are a young scribe in the  &lt;&lt;linkappend &quot;palace complex.&quot;&gt;&gt; 
 &lt;&lt;include &quot;babylon-link1&quot;&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt; Life is miserable. You are bored and angry, exhausted from doing chores and trying to learn this impossible script while dodging beatings from your teachers and hazing from the older boys. Everyone tells you how lucky you are, how great your city&#39;s gods and king are. They love stories like the 
@@ -1298,7 +1301,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -1315,9 +1318,10 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -1338,6 +1342,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -1349,9 +1354,10 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;li&gt;Your skills, knowledge, economic status&lt;/li&gt;
 &lt;li&gt;The current political and economic situation&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -1386,26 +1392,26 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;div class=&quot;col-md victory-link&quot;&gt;
 &lt;p&gt;[[Victory! |Begin-victory-b]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: In the Beginning Portal |Beginning]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="10" name="Begin-victory-gt" tags="" position="2100,300" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Begin-victory-gt" tags="" position="2100,300" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;header class=&quot;center&quot;&gt;
@@ -2550,24 +2556,25 @@ An artist&#39;s impression of construction work at Gobekli Tepe
 A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in cuneiform script on a clay tablet
 &lt;p&gt;&lt;img src=&quot;images/gilgamesh-clay.jpg&quot; alt=&quot;clay tablet inscribed with cuneiform script&quot; height=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.britishmuseum.org/collection/image/107404001&quot;&gt;British Museum&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Assyria" tags="" position="800,1100" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="Assyria" tags="" position="800,1100" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you&#39;ve just joined the Assyrian army&lt;/h1&gt;
 &lt;p&gt;Mesopotamia, c. 800 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;assyria-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -2580,32 +2587,32 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;assyria-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
-&lt;p&gt;You saw the smoke a day before arriving at the city. Now you see that it doesn’t rise from the city itself, but from the imperial camp coiled around its walls. The road to the camp is broad and well-traveled, busy with camels and horses. A ribbon of thick, riparian growth shows where a small river passes through the camp to skirt the city walls. You remember crossing the Euphrates a few weeks ago, the terror and awe, and then the feeling of relief and even pride. You’d never seen &lt;&lt;linkappend &quot;anything like it.&quot;&gt;&gt;&lt;&lt;include &quot;Assyrian-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
+&lt;p&gt;You saw the smoke a day before arriving at the city. Now you see that it doesn’t rise from the city itself, but from the imperial camp coiled around its walls. The road to the camp is broad and well-traveled, busy with camels and horses. A ribbon of thick, riparian growth shows where a small river passes through the camp to skirt the city walls. You remember crossing the Euphrates a few weeks ago, the terror and awe, and then the feeling of relief and even pride. You’d never seen &lt;&lt;linkappend &quot;anything like it.&quot;&gt;&gt;&lt;&lt;include &quot;Assyria-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
 &lt;p&gt;You’d never seen anything more than your poor, small village with its low, mud huts and its herds of skinny goats until the army came a few months ago.&lt;/p&gt;
 
 &lt;p&gt;They came to your village looking for taxes and conscripts for the imperial army. Some of the boys had fought and screamed. Some of their families had fought or tried to hide, and the rich ones had given everything they had to keep their sons home. And now here you are - not that you know where “here” is.&lt;/p&gt;
 
 &lt;p&gt;You’re smart enough to realize that your life has almost no value to your commanders. You don’t necessarily want to go home (after all, it wasn’t much, and the sargeants here make a big show of executing deserters in memorably messy ways). Strangely, you value yourself. You have decided that you are more than meat to be fed into the imperial war machine. You want to survive. Maybe even move up in the world. &lt;&lt;linkappend &quot;Power. Wealth. A future.&quot;&gt;&gt; 
-&lt;&lt;include &quot;Assyrian-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; 
-&lt;p&gt;There’s opportunity, as well as horroa and death, all around you here. What do you do?&lt;p&gt;
+&lt;&lt;include &quot;Assyria-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; There’s opportunity, as well as horror and death, all around you here. What do you do?&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 &lt;hr&gt;
+
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
+
 &lt;p&gt;Question&lt;/p&gt;
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -2613,11 +2620,12 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
+&lt;hr&gt;
 
 &lt;p&gt;One of my favorite places is the Assyrian room in the British Museum. It&#39;s usually quiet and fairly empty (in contrast to the Egyptian or Roman exhibits, clogged with heaving masses of sweaty tourists). The Assyrian room is a temple. A holy shrine to so many things. Like brutal, hypocritical, racist imperialism? Meet our fellow travelers here in ancient West: nineteenth-century European imperialists.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/stanley.jpg&quot; alt=&quot;photo of Victorian-era man holding a rifle with Black servant nearby&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
@@ -2632,16 +2640,16 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 
 &lt;p&gt;Nowadays, imperialism is out of fashion. Right out. Decolonization is the  watchword, and many feel outraged that these ancient artifacts remain in the colonizers&#39; hands. They believe they should be returned, with apologies, to the regimes currently in power in these locations. Do you agree?&lt;/p&gt;
 
-&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Yes, obviously. It&#39;s ludicrous that the British museum in London continues to hold artifacts that belong to Syria.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#tespA&quot;&gt;&gt;It doesn&#39;t seem fair, does it? Western nations should prioritize taking steps to redress and dismantle these legacies of colonial injustice.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Yes, obviously. It&#39;s ludicrous that the British museum in London continues to hold artifacts that belong to Syria.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#tespA&quot;&gt;&gt;It doesn&#39;t seem fair, does it? Western nations should prioritize taking steps to redress and dismantle these legacies of colonial injustice.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;I do not agree because this issue is more complex. For instance, the regimes in these parts of the world have little connection to the civilizations that created the artifacts, and they are so unstable that the artifacts would be in real danger of damage or destruction.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Fair points. Also, it&#39;s possible that a much smaller and less diverse group of people would go to see them if they were housed in, say, Aleppo or Baghdad?&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -2652,9 +2660,10 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;ul&gt;
 &lt;li&gt;Your past experience, skills, physical and intellectual abilities&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -2662,6 +2671,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;hr&gt;
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;The Sources&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -2700,29 +2710,35 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Iron Age Empires Portal |Iron]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="25" name="Lachish" tags="" position="800,1300" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Lachish" tags="" position="800,1300" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, your city is besieged by the Assyrians&lt;/h1&gt;
 &lt;p&gt;Lachish, c. 800 BCE&lt;/p&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;lachish-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -2735,9 +2751,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;lachish-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;The Assyrian army spreads like a lake of ants around the city of Lachish, smoke from its cooking fires rising up around you like the walls of a cage, wrapping you in a feeling of crushing, hopeless imprisonment. You focus on setting aside panic. The enemy is busy building siege engines and ramps and digging, raiding the countryside and practicing their maneuvers. More seem to arrive &lt;&lt;linkappend &quot;every day.&quot;&gt;&gt;&lt;&lt;include &quot;Lachish-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
 &lt;p&gt;The city of Lachish is strong. But it’s also divided. Backed by the money and military of King Hezekiah at Jerusalem, the local elite have adopted the cult of Yaweh, pushing everyone to conform. Now the seething mass of death and destruction outside the walls has ignited the explosive resentments that divide the city’s population. Nomadic folk who fled into the city from the countryside have never had much good to say about city people - and vice versa. Slaves aren’t sure who’s scarier now - their masters or the Assyrians. Canaanites and Philistines, Egyptians and Hebrews have never trusted each other much (at all).&lt;/p&gt;
 
@@ -2746,14 +2762,16 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 &lt;hr&gt;
+
 &lt;p&gt;Some silly etymology related to this era&lt;/p&gt;
 &lt;hr&gt;
+
 &lt;p&gt;Question&lt;/p&gt;
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
@@ -2762,21 +2780,21 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;According to the Hebrew Bible, the patriarchs (Abraham, Isaac, and Jacob) produced twelve tribes of the Hebrew nation. By the time of the Assyrian siege of Lachish, those tribes had split into two kingdoms: Ten tribes were in the Kingdom of Israel, and two were in the Kingdom of Judah. Israel chose to resist Assyria. Long story short, nobody ever saw them again. They are remembered as &quot;the ten lost tribes of Israel.&quot;&lt;/p&gt;
-&lt;p&gt;But this isn&#39;t the end of the story. Surprisingly, the ten lost tribes of Isreal figure quite prominently in the history of the United States. It started in New York in the 1820s. Amid the evangelistic fervor of the Second Great Awakening, Joseph Smith experienced a vision. An angel named Moroni appeared and showed him golden tablets inscribed with a script Smith identified as &quot;reformed Egyptian.&quot; Miraculously, Smith was able to translate the tablets. (Aside from a single friend of Smith&#39;s, nobody else has ever seen the original tablets or any other ancient examples of a &quot;reformed Egyptian&quot; script or language). The tablets contained passages from the King James Bible and foretold the coming of Christ. They also revealed the fate of the ten lost tribes of Israel: These tribes had come to the Americas and become the ancestors of the Native Americans. With these golden tablets, Smith founded Mormonism and the Church of Jesus Christ and the Latter Day Saints (LDS). It is a major world religion today. (Note that the academic community does not accept Smith&#39;s theory about the ten lost tribes of Israel.)&lt;/p&gt;
-
+&lt;p&gt;But this isn&#39;t the end of the story. Surprisingly, the ten lost tribes of Isreal figure quite prominently in the history of the United States. It started in New York in the 1820s. Amid the evangelistic fervor of the Second Great Awakening, Joseph Smith experienced a vision. An angel named Moroni appeared and showed him golden tablets inscribed with a script Smith identified as &quot;reformed Egyptian.&quot; Miraculously, Smith was able to translate the tablets. (Aside from a single friend of Smith&#39;s, nobody else has ever seen the original tablets or any other ancient examples of a &quot;reformed Egyptian&quot; script or language). The tablets contained passages from the King James Bible and foretold the coming of Christ. They also revealed the fate of the ten lost tribes of Israel: These tribes had come to the Americas and become the ancestors of the Native Americans. With these golden tablets, Smith founded Mormonism and the Church of Jesus Christ and the Latter Day Saints (LDS). It is a major world religion today. (Note that the academic community does not accept Smith&#39;s theory about the ten lost tribes of Israel as historical fact.)&lt;/p&gt;
 &lt;hr&gt;
+
 &lt;p&gt;Considering the Mormons&#39; belief that the Native Americans were the descendants of the ten lost tribes of Israel, how do you think they treated them while establishing their theocratic state in 19th-century Utah?&lt;/p&gt;
 &lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;They strove to convert the Native Americans to Mormonism.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;Yes, Mormon missionaries actively cultivated positive relationships with neighboring indigenous communities with a focus on conversion. They also fought and violently displaced the tribes at various times.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Nineteenth-century antisemitism and racism disinclined the Mormons to view the Native Americans with any sympathy.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;True enough. For instance, they were fine with falsely blaming Native Americans for the infamous Mountain Meadows Massacre on 9/11, 1857.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-
 &lt;hr&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -2784,8 +2802,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-
-&lt;hr&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -2798,9 +2815,10 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;li&gt;Your family and personal relationships and community network&lt;/li&gt;
 &lt;li&gt;Your socio-economic class&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -2847,8 +2865,6 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
 &lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
@@ -2856,6 +2872,8 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;li&gt;[[Back: Iron Age Empires Portal |Iron]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="lachish-evidence" tags="" position="1600,1400" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;h1&gt;Matty, &lt;em&gt;Sennacherib&#39;s Campaign&lt;/em&gt;&lt;/h1&gt;
@@ -3188,24 +3206,25 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Helot" tags="" position="800,1900" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Helot" tags="" position="800,1900" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a young Helot woman&lt;/h1&gt;
 &lt;p&gt;Sparta, 465 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;helot-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -3218,9 +3237,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;helot-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You are a young Helot woman. It’s 465 BCE, and another Helot rebellion is raging &lt;&lt;linkappend &quot;across the Peloponnesus.&quot;&gt;&gt;&lt;&lt;include &quot;Helot-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
 &lt;p&gt;Your people do this every couple of generations. It never works, but what the hell. What have you got to lose, really? As usual, Sparta’s allies have come trudging in to help the noble Spartans beat their slaves back into the ground. Again.&lt;/p&gt;
 
@@ -3228,7 +3247,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -3246,7 +3265,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -3258,8 +3277,8 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;Ancient Greek pottery showing Odysseus listening to the sirens&#39; song&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/waterhouse-penelope.jpg&quot; alt=&quot;men speaking through window as woman weaves&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Odysseus&#39; wife, Penelope, tricking her suitors by weaving her father&#39;s funeral shroud all day (and unraveling it at night), by Pre-Raphaelite painter John William Waterhouse (England, 1912)&lt;/p&gt;
-
 &lt;hr&gt;
+
 &lt;p&gt;The event that earns Paris the dubious &quot;reward&quot; of Helen is known as:&lt;/p&gt;
 &lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;The Oedipus Cycle&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;Good guess. That&#39;s a different Greek thing ... similar though, in its merciless, sardonic surrender to inexorabile Fate.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;The Judgment of Paris&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Quite so. Never, &lt;em&gt;ever&lt;/em&gt;, agree to serve as a judge in a beauty contest between Greek goddesses. Useful lesson in life.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
@@ -3269,7 +3288,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;hr&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -3281,16 +3300,18 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;li&gt;Your past experience, skills, physical and intellectual abilities&lt;/li&gt;
 &lt;li&gt;Your family and personal relationships and community network&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
-
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;The Sources&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -3315,46 +3336,48 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;div class=&quot;col-md victory-link&quot;&gt;
 &lt;p&gt;[[Victory! |Greece-victory-h]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Ancient Greece Portal |Greece]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="30" name="Pericles" tags="" position="800,2100" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="Pericles" tags="" position="800,2100" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are Pericles&lt;/h1&gt;
 &lt;p&gt;Athens, 414 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;pericles-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -3367,9 +3390,8 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;pericles-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You are Pericles, and you didn’t die of plague in 429 BCE. It is now 414, and as &lt;em&gt;strategos,&lt;/em&gt; you have kept Athens mostly on top of this conflict with Sparta and her Peloponnesian League. Just barely. But now Persia has built Sparta a navy. Shit. Soooooo predictable. What are we going to do about those knuckle-dragging fascists?&lt;/p&gt;
 &lt;p&gt;So, that’s a problem. But the worst threat is inside the gates. The young men of Athens are going mad, pent up behind the Long Walls, dying of plague and longing for a real fight. They follow Alcibiades like sheep. Glamorous, rich, impossibly beautiful Alcibiades. &lt;&lt;linkappend &quot;Depraved, lecherous, rebellious Alcibiades.&quot;&gt;&gt;&lt;&lt;include &quot;Pericles-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; He was your student, your protege, once upon a time. But you serve the people, Alcibiades serves himself alone. Along with Socrates and a gaggle of dirty comic playwrights, he is uprooting everything you&#39;re fighting for, everything Athens stands for. They mock the gods and the city itself, tearing at the solidarity you&#39;ve been nurturing during these long, bitter years of war with Sparta, screaching for war while you work for peace.&lt;/p&gt;
 
@@ -3378,7 +3400,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -3396,14 +3418,13 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Minerva&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Yes.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Juno&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;Nope, this would be the Roman equivalent of Hera, wife of Zeus (or Jove, to the Romans).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
@@ -3421,7 +3442,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-
+&lt;div clas=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -3433,9 +3454,10 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;li&gt;Athens&#39; strengths and weaknesses at this point in the Peloponnesian War&lt;/li&gt;
 &lt;li&gt;Ideals of patriotism and masculinity in Classical Athens&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -3472,26 +3494,26 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;div class=&quot;col-md victory-link&quot;&gt;
 &lt;p&gt;[[Victory! |Greece-victory-p]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Ancient Greece Portal |Greece]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="31" name="Pericles-link1" tags="" position="1100,2300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Pericles-link1" tags="" position="1100,2300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Aristocratic Athenian leader Alcibiades was popular for his personal beauty, wealth, wild lifestyle, and defiance of traditional authority. He destroyed Athenian democracy, ensured Athens&#39; deafeat in the Peloponnesian War, betrayed Athens to fight for Sparta, betrayed Sparta and slept with the Spartan king&#39;s wife, and fought for Persia. He was a student and close friend of the controversial philosopher Socrates. Like Socrates, Alcibiades was tried and sentenced to death for basically desecrating the gods. While Socrates was convicted of atheism and &quot;corrupting the youth,&quot; and famously sentenced to drink poison hemlock, Alcibiades was convicted of vandalizing statues of the gods (in particular, by breaking the phalluses off statues of their statues around the city). Unlike Socrates, however, Alcibiades fled Athens and was not executed.&lt;/p&gt;
 &lt;hr&gt;
 &lt;div class=&quot;container&quot;&gt;
@@ -4279,39 +4301,39 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;Thrace&#39;s aristocracy had a strong tradition of hunting on horseback. Thracian horsemen had a reputation for excellence on the battlefield, and were sought after by Roman generals for service as auxilliaries. Ancient sources suggest that Spartacus was a Thracian cavalryman who had served in the auxilliaries and fought under Roman command. One story says that Spartacus&#39; passion for horses led him to slaughter his own favorite horse at the beginning of his last desperate battle with Rome, as a symbol of his commitment to victory or death. Nobody&#39;s sure about that story ... who knows?. Spartacus did fight on foot in that last battle, and his body was never found.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/thracian.jpg&quot; alt=&quot;carving of horseman with spear above dog attacking boar&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Relief of Thracian hunter on horseback with spear and dogs, pursuing boar&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Pompeii" tags="" position="800,3700" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="42" name="Pompeii" tags="" position="800,3700" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a wealthy Roman&lt;/h1&gt;
 &lt;p&gt;Italy, 78 CE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;pompeii-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;pompeii-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;The sounds of building ricochet through the air: sawing, hammering, chiseling, digging. In the background, the slow chant of slaves carrying blocks of stone. You edge away from the burning sun, into the shade of the newly-constructed, empty house. Seeing the new &lt;em&gt;domus&lt;/em&gt; so complete, with walls and roof and windows, fills you with a delicious sense of contenment. You reach out and touch the nearest wall, then frown as you notice that some of the wet paint has stuck to your fingertips, smudging the foliar border framing a bright red frescoe of &lt;&lt;linkappend &quot;a handsome woman playing a kithara.&quot;&gt;&gt;&lt;&lt;include pompeii-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; This will be the &lt;em&gt;triclinium&lt;/em&gt;. The floor is bare and empty, waiting for a tile mosaic. Maybe a lively Nile River or dockyard scene there? And what about the other walls? You need to decide how to decorate the other walls and floors.&lt;/p&gt;
 &lt;p&gt;You think of the frescoes and mosaics in your neighbor&#39;s house: &lt;&lt;linkappend &quot;everything from stories of the gods to exotic African animals to flowers and fruit.&quot;&gt;&gt;&lt;&lt;include &quot;pompeii-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt; They&#39;re an old patrician family, though, and your parents were slaves. Well-educated, literate, and highly capable, your father was freed by his owner, an old senator. As a free man, your father prospered wthin the political and financial network of his former owner. You and your children remain fiercely loyal to the old senator&#39;s heirs, and you grow richer all the time. Still, your parents were nobody and you&#39;ll never have the power or prestige of your patrician neighbors - and they&#39;ll never let you forget it. But still, there&#39;s no reason a pleb as rich as you should live in a hovel. You sigh, moving slowly back outside and savouring again that feeling of contentment. The &lt;em&gt;domus&lt;/em&gt; is all but done. What to paint on these walls?&lt;/p&gt;
 &lt;p&gt;You look out toward Pompeii. Your home clings to the lovely slopes of Mount Vesuvius, just above the bustling town. It&#39;s 78 CE. Vespasian sits the imperial throne, carrying on the legacy of the Flavian dynasty. Life could hardly be better - if, of course, a person could live in a decent house... You glance around at the bare  What would this world be without the majesty of the empire? There would be no wine, clean water, law and order, schools and plays and libraries and baths, and the &lt;&lt;linkappend &quot;grand colosseum Vespasian has begun building in Rome.&quot;&gt;&gt;&lt;&lt;include &quot;Pompeii-link3&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
@@ -4319,7 +4341,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -4332,14 +4354,12 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -4356,9 +4376,11 @@ image
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -4369,14 +4391,15 @@ image
 &lt;ul&gt;
 &lt;li&gt;item&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;hr&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
 
@@ -4415,14 +4438,16 @@ image
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Rome: Republic to Empire |Rome1]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="43" name="villas" tags="" position="1600,3800" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="43" name="villas" tags="" position="1600,3800" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;h1&gt;Roman Interior Design&lt;/h1&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -5138,7 +5163,10 @@ image
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;The password is incorrect. Back to [[Our History Rewrite]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">&lt;&lt;set $beginCombat1 to &quot;&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">question background color:   background-color: #f3fefe;
+
+
+&lt;&lt;set $beginCombat1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $ironCombat1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $greeceCombat1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $rome1Combat1 to &quot;&quot;&gt;&gt;
@@ -8027,39 +8055,39 @@ This quest is complete. [[Continue with the role play scenario. |Pericles]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Pericles]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="Spartacus" tags="" position="800,3500" size="100,100">&lt;header&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="128" name="Spartacus" tags="" position="800,3500" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are Spartacus&#39; romantic partner&lt;/h1&gt;
 &lt;p&gt;Italy, 73 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;spartacus-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;spartacus-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;It&#39;s nearly midsummer and the night is warm, even high on the peak of Mount Vesuvius. Spartacus and his captains sit around the dying fire. They&#39;ve been here for hours, roasting quail, talking, arguing. A decision must be made. Spartacus wants to lead the slave army north and across the Alps, out of Rome. After all, the legions are busy with Mithridates in the East and Sertorius in the West. The mountain passes are all but deserted. But the others are delirious with victory and plunder. Camped here on Vesuvius, surrounded by &lt;&lt;linkappend &quot;the richest farmland in Italy,&quot;&gt;&gt;&lt;&lt;include &quot;spartacus-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;
 your slave army grows bigger and richer every day. The original farmers of Campania were the citizen soldiers who built Rome generations ago. But most are long gone, crowded out by rich patricians who live in the city. Now it&#39;s just slaves and plunder in every direction.&lt;/p&gt;
 &lt;p&gt;You hear Crixus say (again) that the longer we stay, the stronger we get. He’s not wrong, but you know Spartacus wants to leave. You watch his face in the firelight, and see the memories marching behind his eyes. Back home in Thrace, he fought for the legions. &lt;&lt;linkappend &quot;Romans know the worth of Thracian cavalry, of great horsemen like Spartacus.&quot;&gt;&gt;&lt;&lt;include &quot;spartacus-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; And Spartacus knows the worth of the legions. The fugitive gladiators and laborers camped down below fight like demons, and last week, they got lucky and caught a small Roman force by surprise and scored an easy victory. Now they think they&#39;re invincible. But a real legion would roll right over them like a wave up a sandy beach - effortless and inexorable - before marching back to Rome, nailing slaves to crosses along the Appian Way as an example to the rest. Crixus falls silent at last, and Spartacus&#39; eyes focus again as others chorus agreement: Stay and fight on! Every slave in Italy will be with us by fall! And it&#39;s almost harvest time... &lt;/p&gt;
@@ -8067,7 +8095,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -8088,7 +8116,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
@@ -8110,6 +8138,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -8124,9 +8153,10 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;li&gt;Your physical aptitudes and limitations&lt;/li&gt;
 &lt;li&gt;Your knowledge and skills&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -8159,6 +8189,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
@@ -8172,14 +8203,16 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Rome: Republic to Empire |Rome1]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="129" name="rome1-combat1" tags="" position="500,3500" size="100,100">&lt;&lt;if $rome1Combat1 is &quot;done&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="129" name="rome1-combat1" tags="" position="500,3500" size="100,100">&lt;&lt;if $rome1Combat1 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Rome1]]
 &lt;&lt;else&gt;&gt;
 
@@ -8972,8 +9005,7 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;p&gt;Defeat a hostile mob to boost your score and win loot! Or skip combat and scroll down to move on through this time travel portal.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
-&lt;&lt;link &#39;&lt;img src=&quot;images/greek-combat.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;hellenistic-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;/div&gt;
+&lt;&lt;link &#39;&lt;img src=&quot;images/combat-alex.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;hellenistic-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -9461,39 +9493,39 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p&gt;The great colosseum in Rome was built in the 70s CE&lt;/p&gt;
 &lt;img src=&quot;images/colosseum.jpg&quot; alt=&quot;ruins of the colliseum&quot;&gt;
 &lt;p&gt;Image from Cole and Symes, &lt;em&gt;Western Civilizations, Volume One, Sixth Brief Edition&lt;/em&gt; (New York: Norton, 2020)&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="159" name="Cannae" tags="" position="800,2900" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="159" name="Cannae" tags="" position="800,2900" size="100,100">&lt;div clas=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are besieging the city of Rome&lt;/h1&gt;
 &lt;p&gt;Rome, 215 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;cannae-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;cannae-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;&lt;em&gt;Note: This role play scenario is set in an alternative version of history. In reality, Hannibal&#39;s stunning victory at Cannae (216 BCE) was bootless because he failed to follow up, which enabled the Romans to regroup, rally their supporters, and oust Hannibal by forcing him to return home to defend Carthage. I have re-imagined this bit of history. Instead of post-Cannae paralysis, Hannibal lunges for Rome itself (kind of like Pyrrhus did, in the century before). This is the setting for this role play scenario.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;You are a Carthaginian engineer in the army of Hannibal. He has teamed up with Celts in the north and the Numidians in the south. Your army has defeated legion after legion in northern Italy and dirven the Romans back to the city itself. The walls are 30 feet tall and 13 feet thick. You have a leading role in planning and carrying out the siege.&lt;/p&gt;
@@ -9503,7 +9535,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -9517,14 +9549,13 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p id=&quot;zrespA.&quot;&gt;&lt;&lt;link &quot;Yep.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Sorry.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;No, it was new.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;Awesome. It&#39;s fun to pick up new tid-bits.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -9545,6 +9576,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -9559,9 +9591,10 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;li&gt;The bigger picture of international realtions around the Mediterranean.&lt;/li&gt;
 &lt;li&gt;If Rome falls, what will take its place?&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -9569,6 +9602,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;The Sources&lt;/h2&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -9595,26 +9629,26 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;div class=&quot;col-md victory-link&quot;&gt;
 &lt;p&gt;[[Victory! |Hellenistic-victory-c]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Hellenistic Portal |Hellenistic]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="160" name="Hellenistic-victory-a" tags="" position="2100,2700" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="160" name="Hellenistic-victory-a" tags="" position="2100,2700" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;header class=&quot;center&quot;&gt;
@@ -9723,40 +9757,40 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="161" name="Alexandria" tags="" position="800,2700" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="161" name="Alexandria" tags="" position="800,2700" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a philosopher&lt;/h1&gt;
 &lt;p&gt;Alexandria, c. 200 BCE&lt;/p&gt;
 &lt;/div&gt;
 
-
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;alex-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 &quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;h2&gt;Explore?&lt;/h2&gt;
 &lt;p&gt;Open the doors to explore, or skip them and continue on with the role play scenario.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;alex-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You recline on your couch in second-century BCE Alexandria, in a cloud of sweet music and savory aromas. This &lt;&lt;linkappend &quot;symposium-style dinner party&quot;&gt;&gt;&lt;&lt;include &quot;alex-link1&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; has become a kind of weekly ritual for your group of philosophical comrades. You’ve spent the week, as usual, drifting contentedly around the schools and library, lost in contemplation and study, composing a new philosophical treatise and antcipating the counter-arguments of your scholarly rivals.&lt;/p&gt;
 
 &lt;p&gt;All your life, you’ve been fascinated by knowledge and ideas. Alexandria is a paradise. You’ve dabbled in physics, medicine, mathematics, poetics, ontology and metaphysics. Lately, you’ve been thinking more about politics. You’ve even begun writing a short treatise on the purpose of life.&lt;/p&gt;
@@ -9767,7 +9801,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -9780,15 +9814,13 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
-
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -9808,6 +9840,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -9818,9 +9851,10 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;ul&gt;
 &lt;li&gt;Your personality, upbringing, education, socio-economic status&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -9856,26 +9890,26 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-4&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4 victory-link&quot;&gt;
+&lt;div class=&quot;col-md victory-link&quot;&gt;
 &lt;p&gt;[[Victory! |Hellenistic-victory-a]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;col-4&quot;&gt;
-&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Hellenistic Portal |Hellenistic]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="162" name="alex-link1" tags="" position="1100,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="162" name="alex-link1" tags="" position="1100,2600" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;The conquests of Alexander the Great and the successor states they established, amplified the expansion of Hellenistic culture begun with Greek colonial expansion in the Archaic Period. Today, ruins of Hellenistic architecture like the hippodrome and theater below survive throughout the Middle East, North Africa, and the whole Mediterranean region.&lt;/p&gt;
 &lt;p&gt;Greek colonial expansion:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/map-greek-colonies.jpg&quot; alt=&quot;map of Greek coastal expansion around Mediterranean&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
@@ -10113,24 +10147,25 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;else&gt;&gt;
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Cannae]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="178" name="Barbarian" tags="" position="800,4300" size="100,100">&lt;header&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="178" name="Barbarian" tags="" position="800,4300" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a barbarian boy&lt;/h1&gt;
 &lt;p&gt;Germania, 411&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container centerl&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;barb-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -10143,9 +10178,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;barb-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You stalk down to the shore of the great river and pause for a moment to draw a deep breath before casting your hook far out into the current. Too far. This is the worst place for fishing. And it&#39;s right next to the Roman road where anyone might see you - fishing like a lowborn commoner. You put up your hood and scowl, blinking mist-drops from your eyelashes and feeling the cold seep into your toes. You&#39;ve always loved fishing, even though your kin have been chiefs in this land for hundreds of years and your friends call you a &lt;em&gt;ceorl&lt;/em&gt; for this odd habit.&lt;/p&gt;
 &lt;p&gt;Fishing was just an excuse to get out of the house. Your parents were arguing again, about you again, and you felt like your head was about to burst. When they do this, you usually flee with sword and shield to the fort to spar with your friends. But it&#39;s Sunday and nobody will be there. You cast again, still scowling, but feeling better by the moment, watching the waves rise and swirl, listening to the cadence of the river&#39;s rush, deafening against the silence of a foggy morning. Nearby, &lt;&lt;linkappend &quot;the great fortress of Vindobona&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include barb-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; looms through the mist, dark and massive above the river.&lt;/p&gt;
 &lt;p&gt;Feeling minuscule beside the walls, you hear your parents&#39; voices in your head: &quot;Nobody builds like that any more. Where would we even get the stone?&quot; You are so tired of hearing about &quot;the good old days&quot; when the power of Rome was real, when there was drinkable wine, fine cloth, clear glass, good iron tools and swords, a library, a real bath house, coins worth their face value. When people could travel a good, straight Roman road that didn&#39;t rattle a cart to tatters, shelter safety behind strong Roman walls, and find justice from a Roman magistrate. The days when people stayed and fought for the land of their ancestors instead of fleeing west every time the a horde of screaming savages appeared on the horizon... And on and on it goes. You shake your head to silence this rehearsal of their eternal, aimless grumbling. Who cares about yesterday? Old men. Not you. You want to know about tomorrow.&lt;/p&gt;
@@ -10156,8 +10190,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;&lt;linkappend 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -10175,7 +10208,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -10187,8 +10220,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;Above: Salisbury Cathedral in England (c. 1250) is a beautiful example of the gothic style.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/alphonso-psalter.jpg&quot; alt=&quot;illuminated manuscript&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Renaissance &quot;moderns&quot; applied the term &quot;gothic&quot; to medieval scripts too, like this psalter from England, c. 1300.&lt;/p&gt;
-
 &lt;hr&gt;
+
 &lt;p&gt;In 500 years, how do you think people will view our own early 21st-century West?&lt;/p&gt;
 &lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;As a kind of golden age they can hardly imagine. The end of a long stretch of western ascendancy when people in the West enjoyed unparalleled luxury and freedom.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;This seems like a reasonable guess to me. Most western populations today enjoy a higher standard of living and more freedom than most people have in human history. Maybe it has been an anomaly. Or maybe it has set a new and higher standard for the future. But what about the non-western people of the world?&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;As a dark age of oppression and injustice, when the ruling elite used new technologies and global capitalism to weild unprecedented power over the masses and destroy global natural resources for profit.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;I wonder how this will turn out for all of us. New technologies have always posed risks as well as benefits. The historical record suggests that the vast majority of human societies have been divided by strata of rich and poor, powerful and weak. But does that mean it should always be this way? How much can new technologies change these &quot;eternal&quot; aspects of human society? Wait and see?&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
@@ -10198,24 +10231,26 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;text&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;text&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;Will you follow your father&#39;s advice and work on becoming a smith? Or will you follow your mother&#39;s advice, and work toward a role in the Roman administration or the church? Or will you focus on the training yard and try to get some combat experience, hoping for a military career? What opportunities will this choice bring you in the future?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What are some lucky or unlucky events that might shape your success in your chosen path? Is there any way to plan ahead to mitigate the impact of such luck or unluck?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;item&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
 
@@ -10257,31 +10292,34 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="179" name="AS-king" tags="" position="800,4500" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="179" name="AS-king" tags="" position="800,4500" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are Cwichelm, King of Wessex&lt;/h1&gt;
 &lt;p&gt;Anglo-Saxon England, c. 640&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;asking-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -10294,9 +10332,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;asking-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;The great fire roars, washing the hall with heat and golden light. Torches dance in the shadowy corners and alcoves. The laughter and loud voices rise up to the tall, timbered roof. You breathe deeply, smelling the meat and bread and woodsmoke, &lt;&lt;linkappend &quot;savoring these hall joys - the fruits and the seeds of victory.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; From your high seat above the mead benches, you watch in silence. The young men posturing and boasting, testing their prestige and the mettle of their comrades, nettling and heckling, hoping for a fight. The older men sit calmly on the benches, like great stones in the river, worn smooth by the storm of swords and spears.&lt;/p&gt;
 
 &lt;p&gt;All is as it should be. You watch your daughter and your wife move gracefully down the hall, &lt;&lt;linkappend &quot;filling mead horns,&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; exchanging quiet words with the warriors. You note with approval the way they navigate the hierarchies and subtle currents of enmity or friendship that unite the war band. Your daughter gives a fine twist of gold, a pendant, to your oldest friend and stands in conversation with him for a long time. Next in her path is her uncle’s son, Osric, an insolent youth whose mother’s family has been pushing him into competition with your own sons. Fortunately, he’s as strong as a newborn lamb. He won’t last long, but she’s right to make him wait, to let the hall see her making him wait. She talks with your old friend for a very long time and refills his horn twice, smiling sweetly, laughing softly, beautiful and gold-adorned. You see Osric struggling for calm, trying not to hear her or look at her … and failing miserably. The boy’s incapable of anything. That’s good.&lt;/p&gt;
@@ -10307,7 +10344,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -10326,7 +10363,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -10346,6 +10383,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -10359,6 +10397,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;li&gt;Your wife&#39;s priest and his relationships with others in your political circle and the community more widely&lt;/li&gt;
 &lt;li&gt;People&#39;s pagan practices and the stance of pagan religious leaders regarding this new religion&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
 &lt;hr&gt;
@@ -10402,14 +10441,16 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="180" name="Rome2-victory-a" tags="" position="2100,4300" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="180" name="Rome2-victory-a" tags="" position="2100,4300" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;header class=&quot;center&quot;&gt;
@@ -11616,23 +11657,25 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="204" name="Hastings" tags="" position="800,5300" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="204" name="Hastings" tags="" position="800,5300" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are King Harold Godwinson&lt;/h1&gt;
 &lt;p&gt;England, c. 1066&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;defence-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -11645,9 +11688,8 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;defence-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;It is September 30, 1066. You stand very still, at the very end of the labyrinth of tunnels under &lt;&lt;linkappend &quot;York Minster.&quot;&gt;&gt;&lt;&lt;include hastings-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
 
 &lt;p&gt;In the small, dark room, treasure is heaped up like a dragon, higher than your head. It glints in the torchlight, coils of torques and hack silver and coin, ring mail and swords and helmets seeming to heave and move. It took twelve men to carry the gold bar underneath it all. Harald had brought it with him his days leading the &lt;&lt;linkappend &quot;Verangian guard in Byzantium.&quot;&gt;&gt;&lt;&lt;include hastings-link2&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; You can’t take your eyes off it. And it’s not greed. You have money. At any gathering, you’re always the richest one (kings not excepted). It was a long, long time ago when you stopped caring if people called you greedy or ambitious or selfish. You genuinely have no idea what it feels like to give a shit. Money is so fucking boring. But this isn’t money. This is power. This gold is &lt;em&gt;alive&lt;/em&gt;, as if &lt;&lt;linkappend &quot;the treasure had become the man himself,&quot;&gt;&gt;&lt;&lt;include hastings-link3&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; as if the ghost of Harald Hardrada himself had risen from the mead benches of Valhalla to stand before you and stare you in the face - and you can’t look away.&lt;/p&gt;
@@ -11656,7 +11698,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -11676,7 +11718,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
@@ -11701,6 +11743,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -11713,9 +11756,10 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;li&gt;Military considerations: Strengths and weaknesses of the English and Norman forces&lt;/li&gt;
 &lt;li&gt;Ideals of kingship and military leadership in Anglo-Saxon England&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -11761,31 +11805,34 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Viking Age Portal |Viking]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="205" name="Defence" tags="" position="800,5100" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="205" name="Defence" tags="" position="800,5100" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are in a coastal Northumbrian village&lt;/h1&gt;
 &lt;p&gt;Northumbria, England, c. 800&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;defence-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -11798,16 +11845,15 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;defence-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;Icy wind sweeps across the ocean, lifting white caps from the surface of the sea and cutting through your wool sleeves to sting your skin, goading you into a trot as you near the shelter of home.&lt;/p&gt;
 
 &lt;p&gt;Inside the house, it&#39;s smoky and warm. As your eyes adjust to the dim light, you see the others are here already. The big benches lining the table in the center of your long hall are full. You toss your cloak &lt;&lt;linkappend &quot;to a slave&quot;&gt;&gt;&lt;&lt;include defence-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; and say, “The new dog had trouble moving the ewes and the new thralls are fools. Is everyone here?” Nobody speaks. Since last week’s Danish raid on the neighboring village, you’ve all been on edge, constantly scanning the horizon, jumping at the sound of a cry. You glance at the heap of blankets in the corner, where a couple of children sit close together, watching you with huge eyes. They were among the few to escape the raid and reach the safety of your village. Their parents were not so fortunate. You called this meeting to make a plan for when the Northmen come. Because they will. Your village is large, &lt;&lt;linkappend &quot;stretching from the docks in the bay to the monastery on the hill.&quot;&gt;&gt;&lt;&lt;include defence-link2&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; You sit down on the bench in your usual place next to your two oldest sons, and accept a horn of mead from your wife. You nod at your father, old but still strong, at the head of the table. Let him get things started&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Pet the Zombie&lt;/h2&gt;
 &lt;p&gt;History is the ultimate undead: Dead (sometimes &lt;em&gt;long&lt;/em&gt; dead) but still alive, all around us, in our heads shaping our thoughts and feelings. You can&#39;t escape. Embrace the horror. Pet the zombie.&lt;/p&gt;
@@ -11815,10 +11861,9 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;hr&gt;
 
 &lt;p&gt;Most of the time, Viking defence plans didn&#39;t work. Early in the Viking Age, the raiders won, carrying off captives for the slave trade and whatever treasure they could find. And around the tenth century, they started colonizing. Like the ancient Greeks, Vikings were highly successful seafaring colonizers. And like the Greeks, this habit created a wide diaspora of Viking cultural influence, including language change. They didn&#39;t always raid. They were traders first and foremost, and that involves communication. So Scandinavian loan words seeped into the langauages of the people they traded with and raided and pushed aside as colonizers. The modern English we speak today bears deep imprints from the Vikings, including the words egg, law, and knife.&lt;/p&gt;
+&lt;hr&gt;
 
 &lt;p&gt;Where do you think our English word &quot;slave&quot; comes from?&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Question&lt;/p&gt;
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;From the Latin word &lt;em&gt;servus&lt;/em&gt;. Literate people in the Middle Ages wrote in Latin.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;So, that would make all kinds of sense. But Latin &lt;em&gt;servus&lt;/em&gt; is not the ancestor of our English word &lt;em&gt;slave.&lt;/em&gt; Instead, it comes from the word &quot;Slav,&quot; as in the Slavic peoples of Eastern Europe who were the last Europeans to remain pagan, and therefore legally enslavable (since church policy forbad enslavement of fellow Christians).&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &#39;From the Old English &lt;em&gt;þeow&lt;/em&gt;, meaning &quot;slave.&quot;&#39;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;Well, that&#39;s a great guess, since &lt;em&gt;þeow&lt;/em&gt; is the most common Old English word for &quot;slave.&quot; But it&#39;s not related to our modern Englith word &lt;em&gt;slave&lt;/em&gt;, which actually comes from &quot;Slav.&quot; The Slavic peoples of Eastern Europe were the last Europeans to remain pagan, and therefore legally enslavable (since church policy forbad enslavement of fellow Christians). So &quot;Slav&quot; evolved into our English word &lt;em&gt;slave&lt;/em&gt;.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
@@ -11827,7 +11872,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container link&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
@@ -11852,6 +11897,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
 &lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
 &lt;ol&gt;
@@ -11864,9 +11910,10 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;li&gt;Your skills, resources, tools&lt;/li&gt;
 &lt;li&gt;The political structure of your community (such as its relationship with the monastery or the royal government&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -11914,14 +11961,16 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Viking Age Portal |Viking]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="206" name="Viking-victory-d" tags="" position="2100,5100" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="206" name="Viking-victory-d" tags="" position="2100,5100" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;header class=&quot;center&quot;&gt;
@@ -13598,24 +13647,25 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="236" name="Eleanor" tags="" position="800,5900" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="236" name="Eleanor" tags="" position="800,5900" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are Eleanor of Aquitaine&lt;/h1&gt;
 &lt;p&gt;France, c. 1170&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;el-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -13628,9 +13678,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;el-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;&lt;em&gt;Note: In reimagining the historical figures in this role play scenario, I have altered the dates a bit. They all lived in the twelfth century, and were active in France and Germany during Twelfth Century Renaissance. However, the their careers did not intertwine as much as this (fictional!) role play scenario suggests. Just FYI. Here are the real dates:&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Eleanor of Aquitaine: 1122 - 1204&lt;/li&gt;
@@ -13669,22 +13718,10 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;hr&gt;
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What is your monastic order like? What are its goals? What are some of its rules? How might your passion for chilvalric romance and the legends of King Arthur influence your monastic order&#39;s interpretation of Christianity and the monastic vocation, especially the role of women?&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What is your advice to Bernard of Clairvaux regarding a prospective third crusade? What are the results?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Your sense of identity, both as an aristocrat and as a woman&lt;/li&gt;
-&lt;li&gt;Your experience of life at court, in marriage, and on crusade&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;row center question&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
@@ -13709,11 +13746,26 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Nah.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;Well, sort of... but there&#39;s more to it than a blanket negative. We&#39;d miss quite a lot of interesting historical inquiry if we just go with a simple &quot;no&quot; here (though you&#39;re forgiven if you think that&#39;s not such a bad thing...).&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What is your monastic order like? What are its goals? What are some of its rules? How might your passion for chilvalric romance and the legends of King Arthur influence your monastic order&#39;s interpretation of Christianity and the monastic vocation, especially the role of women?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What is your advice to Bernard of Clairvaux regarding a prospective third crusade? What are the results?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your sense of identity, both as an aristocrat and as a woman&lt;/li&gt;
+&lt;li&gt;Your experience of life at court, in marriage, and on crusade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
-&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -13756,14 +13808,16 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="237" name="Knights-victory-e" tags="" position="2100,5900" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="237" name="Knights-victory-e" tags="" position="2100,5900" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;header class=&quot;center&quot;&gt;
@@ -15437,24 +15491,25 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/footer&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="254" name="Witch" tags="" position="800,7500" size="100,100">&lt;header&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="254" name="Witch" tags="" position="800,7500" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;div class=&quot;row&quot;&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, a witch hunt is coming.&lt;/h1&gt;
 &lt;p&gt;A rural village, c. 1600&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;witch-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -15468,9 +15523,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;witch-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;&lt;em&gt;Note: The subject of this role play scenario is a real person. Thomasine Hall was raised in England in the early 1600s as a girl. As a teenager, they assumed a male gender identity, joined a mercenary company, and fought on the continent before immigrating to the Virginia colony as a male indentured servant.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;And now, back to the role play scenario ... &lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -15480,6 +15534,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;Your mother is the reason you came home. Filial duty. And you actually like the old crone. You always learn something from her stories, once you sort out what&#39;s real from what she imagined. It was good to see the miller, too, and a few others. You should leave now, but you&#39;re worried about your mother. In hard times, more is expected of people like her. The impossible is expected - like bringing stillborn babies to life. The families will need someone to blame. They want to avoid the appearance of guilt, of deserving such punishments from God. The village will need someone to blame, for the same reason. They will reach for order and justice in this senseless world where &lt;&lt;linkappend &quot;innocent babies die before drawing a breath.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include witch-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; They need someone to blame.&lt;/p&gt;
 &lt;p&gt;Once they go looking for witches, they always find them. They&#39;ll be looking for anyone outside the usual, anyone different. And you are ... different. Your name is Thomas now, and you&#39;ve spent the last decade in Germany and the Low Countries serving as a mercenary. But you grew up here as Thomasine in long hair and dresses, standing with the women in church, making lace and selling it in that market square. (You still make lace when you&#39;re short of cash - no uncommon occurrence in the life of a mercenary.) But to most people, you are a man. A few folk here, like your old friend, the clothier, remember you as a little girl. &lt;&lt;linkappend &quot;They aren&#39;t bothered that you&#39;re different in this way.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include witch-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; But that difference will be a deadly danger when they start looking for witches.&lt;/p&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -15504,20 +15559,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What will you do? Stay in the village or leave? Why?&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;How will the nonbinary nature of your gender identity impact your situation in a rural village witch hunt?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Your skills, knowledge, resources (such as money, weapons, transportation, status and social connections).&lt;/li&gt;
-&lt;li&gt;Current social and economic conditions in your village (e.g., prosperity or hardship, stability or fragmentation).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;row center question&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
@@ -15534,7 +15577,21 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What will you do? Stay in the village or leave? Why?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;How will the nonbinary nature of your gender identity impact your situation in a rural village witch hunt?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your skills, knowledge, resources (such as money, weapons, transportation, status and social connections).&lt;/li&gt;
+&lt;li&gt;Current social and economic conditions in your village (e.g., prosperity or hardship, stability or fragmentation).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the role play response as the foundation of your submission.&lt;/p&gt;
 
@@ -15575,29 +15632,34 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="255" name="Artist" tags="" position="800,7700" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="255" name="Artist" tags="" position="800,7700" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
-&lt;h1&gt;$PlayerName, you an artist&lt;/h1&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
+&lt;h1&gt;$PlayerName, you are an African artist&lt;/h1&gt;
 &lt;p&gt;Florence, Italy, c. 1620&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;art-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -15610,14 +15672,14 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;art-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;&lt;&lt;linkappend &quot;You sit bowed over your papers and brushes, silent and motionless, deep in thought.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include art-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; You feel at home here in the busy workshop run by your friend, &lt;&lt;linkappend &quot;Artemisia Gentileschi, at the court of the Grand Duchess Christina of Tuscany.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include art-link4&gt;&gt;&lt;&lt;/linkappend&gt;&gt; It&#39;s a busy place, the sounds of creation almost deafening. All around you, people are grinding pigmants, mixing paints, cutting canvas, hammering frames, the clink of brushes on cups, and a ceaseless current of voices chattering, muttering, laughing, occasionally shouting a request to the servants whose feet are never still. It feels like the courtyard of your father&#39;s home on any day of the year: full of women hulling rice, weaving cloth, chasing children, washing and sweeping and chattering all the while. You sit and stare at your paper, white and unblemished. The workshop has the same busy, happy feel and the noise doesn&#39;t interrupt your ruminations as you think about your new project: How can I make them see that slavery is a sin? That Africans are people just like them?&lt;/p&gt;
 &lt;p&gt;The idea has been growing in your mind since you&#39;ve started attending some of the court meetings. The Grand Duchess Christina is the sun in a heliocentric system. Great minds are drawn to her court, and you relish the conversations and the controversy, the letters and treatises read aloud and debated for hours. They argue about everything from the stars to the scripture. Usually you love it. But last week they were talking about the Indians in the New World, asking if they really had souls. They started mapping out differences between the English, the French, the Germans, the Italians, between Florentines and Venitians, Sicilians and Romans. Soon, they were comparing Moors and Indians and Arabs and, inevitably, &lt;&lt;linkappend &quot;Africans.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include art-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; Eyes began to slide your way, and people edged away from you until you were standing in an empty space and your face began to burn.&lt;/p&gt;
 &lt;p&gt;Now, staring at the blank paper, your cheeks heat up again, remembering the feeling. You remember, too, hearing about how a Spanish priest condemned his own countrymen for their cruelty toward the Indians. You&#39;ve seen some of those images, and &lt;&lt;linkappend &quot;felt their power.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include art-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; Protestant heretics have been doing the same, making woodcuts and pelting every city north of the Alps with evil caricatures of the pope and calls for reform. Those images, too, had power ... which means &lt;em&gt;you&lt;/em&gt;, in this workshop, have power too.&lt;/p&gt;
 &lt;p&gt;So what can you create to fight against that system whose grasp you felt in court? The &quot;natural&quot; system they are imagining, which will place some people in slavery and some in liberty? The system that suddenly made you feel like an alien in your own home? You hear Artemisia&#39;s voice and look up. Maybe she can help with this project. Or maybe it&#39;s something you will need to do alone.&lt;/p&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -15647,21 +15709,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;hr&gt;
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;Not written yet...&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;Not written yet...&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;row center question&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
@@ -15675,10 +15724,25 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What kinds of imagery, symbolism, and text will you use? How do you imagine people will respond?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;Describe one of your pieces in detail, and explain what impact you hope it will have.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
 
@@ -15705,6 +15769,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
@@ -15718,29 +15783,34 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Renaissance Portal |Renaissance]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="256" name="Love" tags="" position="800,6900" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="256" name="Love" tags="" position="800,6900" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are in love&lt;/h1&gt;
 &lt;p&gt;A rural village, c. 1300&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;love-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -15753,9 +15823,8 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;love-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;It&#39;s summer solstice. &lt;&lt;linkappend &quot;The St John&#39;s Eve bonfire&quot;&gt;&gt;&lt;&lt;include love-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; roars up into heaven, loud and hot and glorious.&lt;/p&gt;
 
 &lt;p&gt;You lounge in the shadows, avoiding the heat of the flames. The night is still warm, and you feel the urgency of its haste. &lt;em&gt;There&#39;s not much time.&lt;/em&gt; Midsummer nights begin and end in a single breath. Carefully cradling a cup brimming with good mead, you watch the one you love. Jostling against their friends, laughing and singing, they dance around the roaring bonfire. They&#39;re like a spirit, like a flame. You take another drink, feeling miserable and excited at the same time, desperate to make something happen before dawn. &lt;em&gt;Not much time.&lt;/em&gt; You&#39;ve been in love with them for at least a year now, but barely exchanged a few words.&lt;/p&gt;
@@ -15764,6 +15833,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 
 &lt;p&gt;Your cup feels so light. The fire&#39;s rage is cooling. You look east and see a glow. &lt;em&gt;Not much time.&lt;/em&gt; You get up and move toward the one you want.&lt;/p&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;div class=&quot;container center question&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -15782,25 +15852,11 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 &lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
-
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-
-&lt;hr&gt;
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What do you say to your beloved? What are they like? Why do you love them?&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;How will you achieve some kind of romantic union with this person? How will you deal with the family problem? Is marriage possible? Or desirable?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
@@ -15809,8 +15865,6 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
 &lt;p&gt;History of the history&lt;/p&gt;
-image
-caption
 
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
@@ -15822,7 +15876,21 @@ caption
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What do you say to your beloved? What are they like? Why do you love them?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;How will you achieve some kind of romantic union with this person? How will you deal with the family problem? Is marriage possible? Or desirable?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
 
@@ -15849,7 +15917,6 @@ caption
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;hr&gt;
 
 &lt;h2&gt;All done?&lt;/h2&gt;
 &lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
@@ -15863,31 +15930,34 @@ caption
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="257" name="Hattin" tags="" position="800,6100" size="100,100">&lt;header&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="257" name="Hattin" tags="" position="800,6100" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are the king of Jerusalem&lt;/h1&gt;
 &lt;p&gt;Near the Sea of Galillee, 1187&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;hattin-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -15900,9 +15970,8 @@ caption
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;hattin-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You&#39;re dreaming of rippling meadows, shady glens, rushing brooks, of the pennants on your father&#39;s castle spiraling idly on a breeze. Of deer silently browsing in the shadows, fairies dancing in a ring, peasant wenches singing to their geese on the river bank. &lt;&lt;linkappend &quot;The Poitou of your youth is cool and green.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include hattin-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; It disappears in a blast of blazing sunlight and wind hot as dragon&#39;s breath. Someone has opened the tent flap and they are talking to you. You force yourself to sit up and open your eyes but it takes a few moments to will yourself to hear them as the hellish heat of Palestine crushes you. After a decade in Holy Land, you still have to struggle to function in the heat. King of Jerusalem? King of Hades.&lt;/p&gt;
 &lt;p&gt;Slowly, you realize they are telling you that &lt;&lt;linkappend &quot;Saladin has taken Tiberias.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;include hattin-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; A deep bark of laughter escapes your chest before you choke it back and maintain your poise. Ah, what the hell. You laugh loud enough to wake the dead. Then, you send for the others and while you wait, drinking warm, dirty water and savoring every sip as if it were a cool riesling from the castle cellars of Poitiers, you think about your options.&lt;/p&gt;
 &lt;p&gt;Gerard de Ridefort is a fanatic, &lt;&lt;linkappend &quot;especially since Cresson.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include hattin-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; He&#39;s supported you so far because your interests aligned. He will want to attack. Raynald de Chatillon is as explosive. This whole thing is his fault, for breaking the truce you had negotiated with Saladin. He will want to attack. Raymond of Tripoli will want to ransom his wife. Perhaps ... She had held Tiberias with a small garrison, until now. The Hospitallers will want to do whatever the Templars don&#39;t want to do. And you, Gui de Lusignan, King of Jerusalem? What do you want to do? You want to go home. But you also want to be king of Jerusalem. You know it&#39;s suicidal folly to pursue Saladin toward Tiberias, into the hills at Hattin. That&#39;s obviously what he wants, for equally obvious reasons. He&#39;ll have the heights and the water, and you&#39;ll have no room to maneuver.&lt;/p&gt;
@@ -15929,22 +15998,8 @@ caption
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;hr&gt;
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;So, what do you do?&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What are some results of your choice? For yourself, for the crusades, for history more broadly?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Your political situation, especially rivalries with other crusader leaders&lt;/li&gt;
-&lt;li&gt;The military strengths and weaknesses of yourself and your enemy&lt;/li&gt;
-&lt;li&gt;Your sense of self, identity, duty, as a crusader and as a knight&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;container&quot;&gt;
-&lt;div class=&quot;row center question&quot;&gt;
+&lt;div class=&quot;container center question&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Fellow Travelers&lt;/h2&gt;
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey (score +2).&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
@@ -15958,11 +16013,27 @@ caption
 &lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;No.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;If you&#39;re interested in this corner of history, it&#39;s worth viewing.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;So, what do you do?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What are some results of your choice? For yourself, for the crusades, for history more broadly?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your political situation, especially rivalries with other crusader leaders&lt;/li&gt;
+&lt;li&gt;The military strengths and weaknesses of yourself and your enemy&lt;/li&gt;
+&lt;li&gt;Your sense of self, identity, duty, as a crusader and as a knight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
 &lt;hr&gt;
-&lt;div class=&quot;container&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Tips for Getting Started&lt;/h2&gt;
 &lt;&lt;linkreplace &quot;Click here to show tips and suggestions for approaching this role play assignment.&quot;&gt;&gt;&lt;&lt;include tips&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;/div&gt;
@@ -16007,14 +16078,16 @@ caption
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: The Age of Knights Portal |Knights]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="258" name="witch-images" tags="" position="1500,7400" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="258" name="witch-images" tags="" position="1500,7400" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;h1&gt;Imagining Witches&lt;/h1&gt;
 &lt;div class=&quot;row&quot;&gt;
@@ -17476,24 +17549,25 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;li&gt;[[Back: Renaissance Rewrite |renaissance-rewrite]]&lt;/li&gt;
 &lt;li&gt;[[Back: Our History Rewrite |Our History Rewrite]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="284" name="Forester" tags="" position="800,6700" size="100,100">&lt;header&gt;
+&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="284" name="Forester" tags="" position="800,6700" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
 &lt;li&gt;Score: $Score&lt;/li&gt;
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;em&gt;Reminder: Opening links on this page is optional. They can boost your game score a bit, but feel free to skip them.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;title-box&quot;&gt;
+&lt;div class=&quot;row title-box&quot;&gt;
 &lt;h1&gt;$PlayerName, you are a forester in the Black Forest&lt;/h1&gt;
 &lt;p&gt;Swabia, in the Holy Roman Empire, c. 1100&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_annie-spratt_unsplash.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;for-explore1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -17506,9 +17580,8 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;&lt;link &#39;&lt;img src=&quot;images/door_lunar-sea-art_pixaby.jpg&quot; alt=&quot;doorway&quot; width=&quot;80%&quot;&gt;&#39; &quot;for-explore2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
 
-&lt;div class=&quot;scenario&quot;&gt;
+&lt;div class=&quot;row scenario&quot;&gt;
 &lt;p&gt;You wade through shadows, deep in the oldest part of the forest. At times, dapples of golden sunlight slide over you. Your are silent and slow, pausing often to listen. The cadence of your movements is that of a deer: step, pause, a few more steps, pause. It’s a pattern of sound that raises no alarm in an animal who hears it. With the wind in your face, you could stalk nearly within arms length of a great antlered stag this way. But you’re not hunting now. You are going to check a wolf trap. You take in the sound and feel and light of the forest only with the surface of your mind. Most of your thoughts wrestle and with a problem, like a mastiff worrying a meaty bone, turning it this way and that, chewing, biting, mauling it over and over. You’re digesting a plan, exploring contingencies, considering possibilities and fallbacks and timing and catastrophes.&lt;/p&gt;
 
 &lt;p&gt;You have decided to kill &lt;&lt;linkappend &quot;the margrave.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include for-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; It shouldn&#39;t be a problem, really, and you’re not especially concerned about it. But a lifetime in the forest has taught you the necessity of planning ahead and being prepared. And the wisdom of waiting. Like all wild things, you wait well. Your father saw to that, raising you as a forester from your earliest days, just as his father had taught him, and his father before him, in a line back into the mists of legend. You know every tree and ravine and rookery, every wolf pack and the lair of every bear in these mountains. The forest may belong to the margrave today, but it will always belong to you and yours.&lt;/p&gt;
@@ -17519,9 +17592,9 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 
 &lt;p&gt;But the priest and his friends at the monastery tell you that this margrave has chosen an anti-king to depose your emperor. The priest and monks don’t like the margrave or the anti-king (or the pope, you gather). They told you the margrave is a traitor who wants to make war on the emperor. But you’ve heard others at market day saying that the emperor is excommunicated, and we owe him no allegiance. That his bishops and monks are powerless to perform the sacraments. You think of your wife. She will have another child soon. What if she dies? Or the child dies? Will they be trapped forever in the cold nothing of purgatory because the priest can&#39;t bury them in the churchyard and say the blessing? It doesn&#39;t make sense. The priest and the monks say they can still give communion to the living and bless the dead. Those folk at the market say they can&#39;t. You don&#39;t understand it. But you do understand that the margrave is a traitor to the emperor. Maybe killing him will help.&lt;/p&gt;
 
-&lt;p&gt;This new margrave got your best dog killed, too. Ignored your advice. Let his own huntsmen go after a bad-tempered boar after you told them not to. The boar is still out here somewhere, but not all the margrave&#39;s dogs, nor your own. The dog with you now is one of old Blade&#39;s granddaughters. Blade had been your father&#39;s dog before. He died as a hound should, but the margrave and his huntsmen treated you like a lowborn serf. Who knows what they&#39;ll do next, and who will pay the cost of their folly?&lt;/p&gt;. 
+&lt;p&gt;You look back at your dog, seeing again her resemblance to her grandfather, old Boar Bane. A few months ago, Boar Bane was gored to death by a boar the size of a bear, and it was the Margrave&#39;s doing. Boar Bane died in glory, but your eyes sting and your neck burns as you remember. He was your friend and your father&#39;s friend, loyal through a dozen deadly encounters, and you burn for vengeance. You shake your head in rage, remembering how you told the margrave&#39;s chief huntsman to leave that boar alone. That the time wasn&#39;t right. The margrave&#39;s dogs and retinue were young and untried. The margrave looked down from his horse, looked right through you, spoke right over you, ordered the chase. And old Boar Bane paid the price.&lt;/p&gt;. 
 
-&lt;p&gt;Making your slow return home, your dog at your heels and the fresh wolf pelt tied in a bundle on your back, your mind returns to its planning. The margrave will hunt here soon. You will attend the hunt, telling the huntsmen where to find what they want - fox, bear, boar, wolves, deer. How will you make sure the margrave doesn’t survive the day’s sport? And make sure you are never suspected?&lt;/p&gt;
+&lt;p&gt;Making your slow return home with the fresh wolf pelt tied in a bundle on your back, and Boar Bane&#39;s granddaughter at your heels, your mind returns to its planning. The margrave will hunt here soon. You will attend the hunt, telling the huntsmen where to find what they want - fox, bear, boar, wolves, deer. How will you make sure the margrave doesn’t survive the day’s sport? And make sure you are never suspected?&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;container center question&quot;&gt;
@@ -17546,19 +17619,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;zombie&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
-
 &lt;hr&gt;
-&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
-&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What is your plan for killing this guy?&lt;/li&gt;
-&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What are the results of your choices? For you, for your community, or for the broader sweep of history?&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center question&quot;&gt;
@@ -17580,7 +17641,21 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;div class=&quot;row&quot; id=&quot;travelers&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;
+&lt;h2&gt;OK, $PlayerName, it&#39;s decision time!&lt;/h2&gt;
+&lt;p&gt;Here&#39;s what you need to figure out:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 1: &lt;/span&gt;What is your plan for killing this guy?&lt;/li&gt;
+&lt;li&gt;&lt;span class=&quot;bi&quot;&gt;Role Play Assignment Prompt 2: &lt;/span&gt;What are the results of your choices? For you, for your community, or for the broader sweep of history?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 &lt;hr&gt;
+
 &lt;h2&gt;Marginalia: Building your Role Play Response&lt;/h2&gt;
 &lt;p&gt;As you decide what to do, why, and what might result, &lt;span class=&quot;bi&quot;&gt;you need to find supporting evidence &lt;/span&gt; from the primary and secondary sources listed below. With each source, you will find a &lt;span class=&quot;bi&quot;&gt;&quot;Marginalia&quot; panel &lt;/span&gt;where you can enter quotes and details from the source, along with notes about your own ideas and analysis. These notes will print on the &quot;Victory!&quot; screen at the end of the game, where you can copy and paste them into the Role Play response as the foundation of your submission.&lt;/p&gt;
 
@@ -17621,14 +17696,16 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;li&gt;[[Back: Medieval Peasants |Peasants]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="285" name="hattin" tags="" position="1700,6200" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="285" name="hattin" tags="" position="1700,6200" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;h1&gt;The Battle of Hattin in Context&lt;/h1&gt;
 &lt;div class=&quot;row&quot;&gt;
