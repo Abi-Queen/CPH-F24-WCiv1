@@ -12947,16 +12947,16 @@ You already won this fight. [[Continue on. |Viking]]
 &lt;/div&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
-&lt;p&gt;It says, &quot;During the Neolithic Revolution, people switched from a forager lifestyle to an agrarian one because farming provided more food, leisure, and safety.&quot;&lt;/p&gt;
+&lt;p&gt;This creature is in a happy mood and it&#39;s letting us off easy here. It gives you a list of representations of the Middle Ages in popular culture today. Which one is historically accurate?&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;p&gt;Can you find it? Which one of these representations of medieval history is factual?&lt;/p&gt;
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt; There&#39;s so much wrong with this statement. Perhaps most glaring is this conflation of &quot;people&quot; with &quot;a person.&quot; It&#39;s classic, old fashioned positivism. In an effort to cobble together a grand metanarrative with convenient &quot;lessons&quot; about humanity, it makes unwarranted generalizations about individuals&#39; decisions. It&#39;s a teleological mess with very shaky foundations in any actual evidence.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt; Honestly, it doesn&#39;t sound that wrong. Agrarian societies &lt;em&gt;did&lt;/em&gt; have more food than forager societies, and probably more leisure and safety too, in various ways. The statement seems plausible as it stands.&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt; Based on current scholarship, this statement is simply wrong. First, neolithic agrarian societies were as violent (i.e., dangerous) as forager societies. Second, for a neolithic individual, farming was more laborious than foraging. Food shortages were common. Based on the existing evidence as it is known today, neolithic farmers had &lt;em&gt;less&lt;/em&gt; food and leisure than neolithic foragers, not more.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;A&quot;&gt;&gt; Crowds including children attended gruesome public executions.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;B&quot;&gt;&gt; Vikings wore horned helmets.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$vikingCombatQ1&quot; &quot;C&quot;&gt;&gt; &lt;em&gt;Jus primae noctae&lt;/em&gt; allowed a nobleman to have sex with a peasant woman in his domain on her wedding night.&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -12971,23 +12971,19 @@ You already won this fight. [[Continue on. |Viking]]
 &lt;/div&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="213" name="viking-combat1-spoils" tags="" position="500,5000" size="100,100">&lt;&lt;if ($vikingCombatQ1 is &quot;A&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $vikingCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;set $Score to $Score + 5&gt;&gt;
+&lt;p&gt;You got it! This is actually realistic. Medieval people were generally much more familiar with death and violence on a daily basis than we are today.&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Shield&quot;&gt;&gt;&lt;&lt;set $shield to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Treasure&quot;&gt;&gt;&lt;&lt;set $treasure to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
 
 &lt;&lt;elseif ($vikingCombatQ1 is &quot;B&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;You are right that agrarian societies produced more food than forager societies, overall. However, on an individual basis, farming often offered less food and more work. Current scholarship supports the idea that, &quot;The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate to a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history&#39;s biggest fraud.&quot; (Harari, &lt;em&gt;Sapiens: A Brief History of Humankind&lt;/em&gt;). That&#39;s a fairly extreme thesis, but even more moderate positions fall short of imagining that daily life for individual neolithic farmers was easier or more bountiful than life for of a neolithic foragers.&lt;/p&gt;
+&lt;p&gt;They did not. There are some horned helmets on artifacts from various other early medieval Germanic societies, but the Vikings specifically did not seem to have favored this kind of headgear.&lt;/p&gt;
 &lt;p&gt;Better luck next time! [[Onward! |Viking]]&lt;/p&gt;
 
 &lt;&lt;elseif ($vikingCombatQ1 is &quot;C&quot;) and ($vikingCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;&lt;set $vikingCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Absolutely. Scholarship on this history changes dramatically and rapidly, so we can expect to hear new theories soon. But, as of today, you are quite correct. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Helmet&quot;&gt;&gt;&lt;&lt;set $helmet to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Gold&quot;&gt;&gt;&lt;&lt;set $gold to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;[[Onward! |Viking]]&lt;/p&gt;
+&lt;p&gt;Nope. This is fiction. Ancient legends like the Sumerian epic of Gilgamesh or the Roman story of Tarquin reflect anxiety about elite men abusing their power by sexually assaulting women belonging to lower social strata. And there&#39;s plenty of evidence that medieval knights sexually abused peasant women. However, this was illegal.&lt;/p&gt;
+&lt;p&gt;Better luck next time! [[Onward! |Viking]]&lt;/p&gt;
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Viking]]&lt;/p&gt;
