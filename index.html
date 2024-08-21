@@ -144,9 +144,6 @@ body .passage {
   font-style: italic;
 }
 
-.big {
-  font-size: 24pt;
-}
 
 
 /* headings */
@@ -355,7 +352,7 @@ header li {
 }
 
 .rome1hero {
-  background-image: url("images/bg/bg-rome2.jpg");
+  background-image: url("images/bg/bg-rome1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: fill;
@@ -409,24 +406,26 @@ header li {
   color: white;
 }
 
+.transbox-arch {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.transbox-arch a {
+  font-size: 20pt;
+  font-weight: bold;
+  line-height: 2;
+}
+
 .transbox a {
   font-size: 14pt;
   font-weight: bold;
-  color: white;
 }
 
-.transbox-scenarios {
-  text-align: center;
-  background-color: rgba(255,255, 255, .5);
-  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
-  color: white;
-  margin: 50px;
-}
-
-.transbox-scenarios a {
-  font-size: 14pt;
-  font-weight: bold;
-  color: white;
+.transbox ul {
+  list-style: none;
 }
 
 .transbox-hero {
@@ -444,7 +443,7 @@ header li {
   height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
@@ -891,16 +890,17 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;/div&gt;
 &lt;hr&gt;
 
-&lt;div class=&quot;row scenarios&quot;&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
+&lt;p&gt;[[Forager at Göbekli Tepe |GT]]&lt;/p&gt;
+&lt;p&gt;[[Scribe at Babylon |Babylon]]&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
-&lt;p class=&quot;big&quot;&gt;[[Forager at Göbekli Tepe |GT]]&lt;/p&gt;
-&lt;p class=&quot;big&quot;&gt;[[Scribe at Babylon |Babylon]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
 &lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
@@ -915,6 +915,9 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;&lt;set $lachishExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $lachishExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -922,17 +925,16 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;ironhero&quot;&gt;
+&lt;div class=&quot;row ironhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;Iron Age Empires&lt;/h1&gt;
 &lt;p&gt;We&#39;re spending another week in Mesopotamia, but we&#39;ll also venture south into Egypt (pyramids!), and forge ahead through time into the Iron Age with the Hebrews, the Assyrian, and more of Babylon.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -942,30 +944,36 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-assyria.jpg&quot; alt=&quot;cavalry attacking with spears&quot; width=&quot;80%&quot;&gt;&#39; &quot;iron-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[With the Assyrian army |Assyria]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[The siege of Lachish |Lachish]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="4" name="Greece" tags="" position="500,2000" size="100,100">&lt;&lt;set $helotExplore1 to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Greece" tags="" position="500,2000" size="100,100">&lt;&lt;set $helotExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $helotExplore2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $periclesExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $periclesExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -973,17 +981,16 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;greecehero&quot;&gt;
+&lt;div class=&quot;row greecehero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;Ancient Greece: Hoplite &amp; Polis&lt;/h1&gt;
 &lt;p&gt;Turning from Mesopotamia, we lauch out west across &quot;the wine-dark sea&quot;, as Homer calls it. Arriving on the shores of Ancient Greece, we find ourselves surrounded by wonders: fabulous creatures like centaurs, legendary heroes like Achilles and Hector, the crafty and cantankerous Olympian gods, and ranks of hoplite warriors. The struggles between the superpowers of the ancient Greek world echo quite uncannily the global conflicts of our own twenty and twenty-first centuries: diplomatic failures, incompatible enemies, strained truces, impossibly complex alliances, the influence of popular opinion on the tides of war ... blood, in short, is what this week is all about.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -993,30 +1000,36 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;&lt;link &#39;&lt;img src=&quot;images/greek-combat.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;greece-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[A rebel slave in Sparta |Helot]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[Pericles in Athens |Pericles]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="5" name="Rome1" tags="" position="500,3600" size="100,100">&lt;&lt;set $spartacusExplore1 to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Rome1" tags="" position="500,3600" size="100,100">&lt;&lt;set $spartacusExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $spartacusExplore2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $pompeiiExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $pompeiiExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -1024,17 +1037,16 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;rome1hero&quot;&gt;
+&lt;div class=&quot;row rome1hero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;Rome I: From Republic to Empire&lt;/h1&gt;
 &lt;p&gt;Fighting its way to dominance in the Hellenistic World and transforming from a republic to an empire, Rome developed a culture of contradictions - venerating tradition but embracing innovation, idolizing the citizen soldier but pauperizing him,  elaborately superstitious but immanently pragmatic. Driven by the engine of the unstoppable legions, Rome spread across Europe to become the largest and longest-lasting empire in history.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -1044,26 +1056,29 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-rome1.jpg&quot; alt=&quot;Roman legion in battle with horses and shields&quot; width=&quot;80%&quot;&gt;&#39; &quot;rome1-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p&gt;[[With Spartacus at the crossroads |Spartacus]]&lt;/p&gt;
 &lt;p&gt;[[Interior decoration in Pompeii |Pompeii]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="0,0" size="100,100">&lt;&lt;set $PlayerName to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="StoryInit" tags="" position="0,0" size="100,100">&lt;&lt;set $PlayerName to &quot;&quot;&gt;&gt;
 
 &lt;&lt;set $Score to 0&gt;&gt;
 
@@ -1225,8 +1240,11 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[A model of Gobekli Tepe |GT Model]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Foragers and agriculturalists at Gobekli Tepe |GT Curry]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Building monoliths and pyramids |Rocks]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1373,8 +1391,11 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The Royal Standard of Ur (c. 2500 BCE) |Royal Standard]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Epic of Gilgamesh (c. 2200 BCE) |Gilgamesh]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Advice to a Scribe (c. 1880 BCE) |scribe-egypt]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Code of Hammurabi (c. 1790 BCE) |Hammurabi]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2681,6 +2702,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Assyrian Palace Art |friezes]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Black Obelisk of Shalmaneser III |obelisk]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2691,7 +2713,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Secondary source |mil-empire]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Assyrian siege warfare |assyrian-sieges]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2835,6 +2859,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Assyrian depictions of the siege |lachish-friezes]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Bible stories |bible-stories]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2845,8 +2870,11 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Archaeological and artistic evidence |lachish-evidence]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Ancient Israel and Judah |miller-israel]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Assyrian siege warfare |lachish-sieges]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3321,6 +3349,7 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Tyrtaeus (c. 625 BCE) |tyrtaeus]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Xenophon (c. 380 BCE) |xenophon]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3331,7 +3360,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Helots in Sparta |cartledge-helots]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[About women in Sparta |cartledge-women]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3474,7 +3505,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Pericles&#39; famous &quot;Funeral Oration&quot; |funeral-oration]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[A popular, bawdy comedy about the Peloponnesian War |lysistrata]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Socrates&#39; trial and execution |apology]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3485,7 +3518,9 @@ A surviving fragment of the &lt;em&gt;Epic of Gilgamesh&lt;/em&gt;, recorded in 
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Military history of the Peloponnesian War |warry-sicily]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[About Thucydides&#39; account of Sicily and Alcibiades |nichols-thucydides]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4411,6 +4446,7 @@ image
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The Romans&#39; favorite legends about themselves |roman-legends]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Frescoes and mosaics from Roman villas |villas]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4421,6 +4457,8 @@ image
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[&lt;em&gt;Romanitas&lt;/em&gt; |romanitas]]&lt;/li&gt;
+&lt;hr&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -5163,7 +5201,32 @@ image
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;The password is incorrect. Back to [[Our History Rewrite]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">question background color:   background-color: #f3fefe;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Scraps" tags="" position="0,600" size="100,100">.scenarios {
+  background-image: url(&quot;images/hallway.jpg&quot;);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transbox-scenarios {
+  text-align: center;
+  background-color: rgba(255,255, 255, .5);
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  color: white;
+  margin: 50px;
+}
+
+.transbox-scenarios a {
+  font-size: 14pt;
+  font-weight: bold;
+  color: white;
+}
+
+question background color:   background-color: #f3fefe;
 
 
 &lt;&lt;set $beginCombat1 to &quot;&quot;&gt;&gt;
@@ -8173,7 +8236,9 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Roman depictions of slavery |gladiators]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Plutarch&#39;s account of the rebellion |plutarch-spartacus]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[A slave rebellion in Sicily |sicily-slaves]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -8184,7 +8249,9 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Spartacus&#39; rebellion |strauss]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Roman slave trade |bradley]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -8981,6 +9048,9 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;set $cannaeExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $cannaeExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -8988,17 +9058,16 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;hellenistichero&quot;&gt;
+&lt;div class=&quot;row hellenistichero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;The Hellenistic World&lt;/h1&gt;
 &lt;p&gt;The conquests of Alexander the Great reshaped the ancient West, creating a degree of cultural and economic unity founded on the intellectual, technological, and military acheivements of the Greeks. As Alexander&#39;s successors squabbled in the east, a new power was rising in the west: Rome.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9008,25 +9077,29 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-alex.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;hellenistic-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[A philosopher in Alexandria |Alexandria]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[Attacking Rome |Cannae]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="143" name="spartacus-link3" tags="" position="1300,3300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="143" name="spartacus-link3" tags="" position="1300,3300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Above: Marble bas relief (Rome, c. 30 BCE).
 &lt;p&gt;&lt;img src=&quot;images/gladiators-marble.jpg&quot; alt=&quot;carving of gladiators in combat&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 
@@ -9151,6 +9224,9 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;set $askingExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $askingExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -9158,17 +9234,16 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;rome2hero&quot;&gt;
+&lt;div class=&quot;row rome2hero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;Did Rome Fall?&lt;/h1&gt;
 &lt;p&gt;Well, that&#39;s an impossible question. The story of Rome in late antiquity is not a linear &quot;rise or fall&quot; kind of narrative. It&#39;s more of a dynamic transformation So let&#39;s get know the Germanic tribes who will transform the Roman Empire into the kingdoms of modern Europe: Franks in France, Anglo-Saxons in England, and so on. It&#39;s an apocalyptic landscape littered with the ruins of an empire: crumbling roads and bridges, the odd hoard of old imperial coins, a few glass jars - the remnants of a great civilization that had fallen into memory, reminding everyone that life on earth is transitory and brief, that wealth and power are vain, and eternity awaits in heaven (or in that other place...).&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9178,30 +9253,36 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/greek-combat.jpg&quot; alt=&quot;black figure pottery illustration of ancient Greek warriors fighting with shield and spear&quot; width=&quot;80%&quot;&gt;&#39; &quot;rome2-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[A barbarian |Barbarian]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[An Anglo-Saxon king |AS-king]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="147" name="Viking" tags="" position="500,5200" size="100,100">&lt;&lt;set $defenceExplore1 to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="147" name="Viking" tags="" position="500,5200" size="100,100">&lt;&lt;set $defenceExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $defenceExplore2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $hastingsExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $hastingsExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -9209,17 +9290,16 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;vikingshero&quot;&gt;
+&lt;div class=&quot;row vikingshero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;The Viking Age&lt;/h1&gt;
 &lt;p&gt;Key developments of the early medieval period include the birth of Islam, the Vikings, the unification (and conquest) of England, and the emergence of modern France and the Holy Roman Empire under Charlemagne. Let&#39;s focus on Vikings!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9229,30 +9309,36 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-viking.jpg&quot; alt=&quot;illuminated manuscript illustration of ship full of warriors with spears and shields&quot; width=&quot;80%&quot;&gt;&#39; &quot;viking-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[A Viking defence plan |Defence]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[The Norman Conquest of England |Hastings]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="148" name="Knights" tags="" position="500,6000" size="100,100">&lt;&lt;set $elExplore1 to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="148" name="Knights" tags="" position="500,6000" size="100,100">&lt;&lt;set $elExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $elExplore2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $hattinExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $hattinExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -9260,17 +9346,16 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;knightshero&quot;&gt;
+&lt;div class=&quot;row knightshero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;The Age of Knights&lt;/h1&gt;
 &lt;p&gt;A long time ago, historian Lynn White penned this oft-quoted remark about medieval knights: &quot;Antiquity imagined the centaur; the early Middle Ages made him master of Europe.&quot; In the most basic sense, a knight is a dude on a horse. The French word for &quot;knght,&quot; &lt;em&gt;chivalier&lt;/em&gt;, simply means &quot;horseman.&quot; But, obviously there&#39;s a lot more to being a knight than riding a horse. What about chivalry, tournaments, castles, courtly love and damsels (in distress?), King Arthur and Camelot, the crusades in the Holy Land? So much to explore!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9280,30 +9365,36 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-knights.jpg&quot; alt=&quot;manuscript illumination of knights jousting&quot; width=&quot;80%&quot;&gt;&#39; &quot;knights-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[The richest woman in Europe |Eleanor]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[King of Jerusalem |Hattin]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="149" name="Peasants" tags="" position="500,6800" size="100,100">&lt;&lt;set $forExplore1 to &quot;&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="149" name="Peasants" tags="" position="500,6800" size="100,100">&lt;&lt;set $forExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $forExplore2 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $loveExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $loveExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -9311,17 +9402,16 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;peashero&quot;&gt;
+&lt;div class=&quot;row peashero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;Medieval Peasants&lt;/h1&gt;
 &lt;p&gt;Let&#39;s get our hands dirty with the medieval peasants! Were they, as the aristocracy believed, phenomenally dumb and bestial, caked with mud and hardly sentient? Of course not! The common folk of medieval society were a widely diverse and dynamic group of individuals and communities, often real weilding wealth and power. It&#39;s really no surprise that the nobility felt threatened by the commons - a fear manifested in their efforts to construct an elevated code of chivalry to define their own class, alongside a debased image of peasants as barely human.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container question center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9331,26 +9421,29 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-peas.jpg&quot; alt=&quot;medieval infantry in battle&quot; width=&quot;80%&quot;&gt;&#39; &quot;peas-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[A forester in Germany |Forester]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[At a midsummer bonfire |Love]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="150" name="Password" tags="" position="100,1800" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="150" name="Password" tags="" position="100,1800" size="100,100">&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;p&gt;Please enter the password: &lt;&lt;textbox &quot;$Password&quot; &quot;&quot; &quot;Enter&quot;&gt;&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -9359,6 +9452,9 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;set $artExplore1 to &quot;&quot;&gt;&gt;
 &lt;&lt;set $artExplore2 to &quot;&quot;&gt;&gt;
 
+&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
 &lt;header&gt;
 &lt;ul&gt;
 &lt;li&gt;Name: $PlayerName&lt;/li&gt;
@@ -9366,17 +9462,15 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;li&gt;Loot: &lt;&lt;include &quot;Inventory&quot;&gt;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/header&gt;
+&lt;/div&gt;
 
-&lt;div class=&quot;container&quot;&gt;
-
-&lt;div class=&quot;renhero&quot;&gt;
+&lt;div class=&quot;row renhero&quot;&gt;
 &lt;div class=&quot;transbox-hero&quot;&gt;
 &lt;h1&gt;The Renaissance&lt;/h1&gt;
 &lt;p&gt;In renaissance Europe, the brilliance of new art and science, and even a new map of the world, forms a striking contrast with the dark, apocalyptic landscape of witch hunts, religious persecution, failed states, and incessant war.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;container center&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class=&quot;col-md center&quot;&gt;
 &lt;h2&gt;Combat!&lt;/h2&gt;
@@ -9386,26 +9480,29 @@ This quest is complete. [[Continue with the role play scenario. |Spartacus]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/combat-ren.jpg&quot; alt=&quot;knights and landsknecht in battle&quot; width=&quot;80%&quot;&gt;&#39; &quot;ren-combat1&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
+&lt;hr&gt;
 
-&lt;div class=&quot;container scenarios&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
 &lt;h2&gt;Role Play Scenarios&lt;/h2&gt;
 &lt;p class=&quot;center&quot;&gt;To move through this time travel portal, select a role play scenario.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row transbox&quot;&gt;
+&lt;div class=&quot;row scenarios&quot;&gt;
+&lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p class=&quot;big&quot;&gt;[[In an English witch hunt |Witch]]&lt;/p&gt;
 &lt;p class=&quot;big&quot;&gt;[[An African artist in Italy |Artist]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
 &lt;/div&gt;
+&lt;hr&gt;
 
+&lt;div class=&quot;row&quot;&gt;
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/footer&gt;</tw-passagedata><tw-passagedata pid="152" name="pompeii-explore1" tags="" position="800,3800" size="100,100">&lt;&lt;if $pompeiiExplore1 is &quot;done&quot;&gt;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="152" name="pompeii-explore1" tags="" position="800,3800" size="100,100">&lt;&lt;if $pompeiiExplore1 is &quot;done&quot;&gt;&gt;
 This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 
 &lt;&lt;else&gt;&gt;
@@ -9621,7 +9718,10 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The Punic Wars |warry-hellenistic]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[A podcast... |bastards]]&lt;/li&gt;
+&lt;hr&gt;
+&lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -9871,7 +9971,9 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Epicureanism |epicurus&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Stoicism |epictetus]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[People |theophrastus]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -9882,6 +9984,7 @@ This quest is complete. [[Continue with the role play scenario. |Pompeii]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Homosexuality in Ancient Greece |homosexuality]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10262,7 +10365,9 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10273,7 +10378,9 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10412,6 +10519,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Converting the Anglo-Saxon kingdoms |bede]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[King Hrothgar |hrothgar]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -10422,7 +10530,9 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The Sutton Hoo ship burial |suttonhoo]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[About the arrival of Christianity in Anglo-Saxon England |naismith]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[What we can and can&#39;t know about Germanic paganism |orton]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -11776,7 +11886,9 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Viking poetry |skaldic]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Ring-giving |rg]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Bayeux Tapestry |bt]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -11787,6 +11899,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Battle of Hastings |conquest]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -11931,6 +12044,7 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[A Viking raid |dudo]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[The Battle of Maldon |maldon]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -11941,8 +12055,11 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Arms and armor at the Battle of Maldon |brooks]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Slave Raiding and Slave Trading |slave-raiding]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[A Most Vile People |vile]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -13781,6 +13898,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The pope calls for crusade |crusade]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Codex Manesse |manesse]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -13791,6 +13909,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Women and courtly romance |romance]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -15603,6 +15722,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Images of witches |witch-images]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[An English witch trial |scott]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -15613,7 +15733,9 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Early modern masculinity |roper]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[A non-binary person |thomasine]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -15763,8 +15885,11 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The origins of anti-black racism |bondage]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Gender and slavery |eltis]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[European descriptions of African women |morgan]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -15902,6 +16027,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Scenes from peasant life |life]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[From Chaucer&#39;s &lt;em&gt;Canterbury Tales&lt;/em&gt; |miller]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -15912,6 +16038,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Peasant life and relationships |penifader]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Medieval sexuality |sexuality]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
@@ -16049,6 +16176,7 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Crusaders take Jerusalem |sack]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[An ideal knight |warewic]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -16059,7 +16187,9 @@ battle often viewed as confrontation btwn old fashioned gmc shield wall style co
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[The Battle of Hattin in context |hattin]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Crusader warfare |crusader]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -17667,7 +17797,9 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Books of the Hunt |ms-hunts]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Hunting &quot;accidents&quot; |hunt-death]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[Sir Gawain and the Green Knight |gawain]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -17678,6 +17810,7 @@ your slave army grows bigger and richer every day. The original farmers of Campa
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About hunting in the Middle Ages |orme]]&lt;/li&gt;
+&lt;hr&gt;
 &lt;li&gt;[[About peasants, poaching, and foresters in early medieval Europe |goldberg]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook and class lectures.&lt;/li&gt;
 &lt;/ul&gt;
