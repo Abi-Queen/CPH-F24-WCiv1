@@ -373,7 +373,7 @@ header li {
   background-image: url("images/bg/bg-rome2.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: contain;
   height: 500px;
 }
 
@@ -1078,7 +1078,7 @@ window.cpyArts = () => navigator.clipboard.writeText(document.getElementById("co
 &lt;div class=&quot;row scenarios&quot;&gt;
 &lt;div class=&quot;row transbox-arch&quot;&gt;
 &lt;p&gt;[[With Spartacus at the crossroads |Spartacus]]&lt;/p&gt;
-&lt;p&gt;[[Interior decoration in Pompeii |Pompeii]]&lt;/p&gt;
+&lt;p&gt;[[Interior decoration at Pompeii |Pompeii]]&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4407,10 +4407,10 @@ An artist&#39;s impression of construction work at Gobekli Tepe
 &lt;/div&gt;
 
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;The sounds of building are a cacophany: sawing, hammering, chiseling, digging, the slow chant of slaves carrying timber and stone. You edge away from the burning sun, into the shade of your newly-constructed, empty &lt;em&gt;domus&lt;/em&gt;. It&#39;s almost done. You sigh with delicious sense of contenment. You reach out and touch the nearest wall, but frown as you notice that some of the wet paint has stuck to your fingertips, and you&#39;ve smudged the foliar border framing a bright red frescoe of &lt;&lt;linkappend &quot;a handsome woman playing a kithara.&quot;&gt;&gt;&lt;&lt;include pompeii-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; This will be the &lt;em&gt;triclinium&lt;/em&gt;. The floor is bare and empty, waiting for a tile mosaic. Maybe a lively Nile River or dockyard scene there? And what about the other walls? You need to decide how to decorate the other walls and floors.&lt;/p&gt;
-&lt;p&gt;You think of the frescoes and mosaics in your neighbor&#39;s house: &lt;&lt;linkappend &quot;everything from stories of the gods to exotic African animals to flowers and fruit.&quot;&gt;&gt;&lt;&lt;include &quot;pompeii-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt; They&#39;re an old patrician family, though, and your parents were slaves. Well-educated, literate, and highly capable, your father was freed by his owner, an old senator. As a free man, your father prospered wthin the political and financial network of his former owner. You and your children remain fiercely loyal to the old senator&#39;s heirs, and you grow richer all the time. Still, your parents were nobody and you&#39;ll never have the power or prestige of your patrician neighbors - and they&#39;ll never let you forget it. But still, there&#39;s no reason a pleb as rich as you should live in a hovel. You sigh, moving slowly back outside and savouring again that feeling of contentment. The &lt;em&gt;domus&lt;/em&gt; is all but done. What to paint on these walls?&lt;/p&gt;
-&lt;p&gt;You look out toward Pompeii. Your home clings to the lovely slopes of Mount Vesuvius, just above the bustling town. It&#39;s 78 CE. Vespasian sits the imperial throne, carrying on the legacy of the Flavian dynasty. Life could hardly be better - if, of course, a person could live in a decent house... You glance around at the bare  What would this world be without the majesty of the empire? There would be no wine, clean water, law and order, schools and plays and libraries and baths, and the &lt;&lt;linkappend &quot;grand colosseum Vespasian has begun building in Rome.&quot;&gt;&gt;&lt;&lt;include &quot;Pompeii-link3&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
-&lt;p&gt;That&#39;s it! Your walls will celebrate the beauty and splendor of Rome! Its heritage and power and everything it stands for. Everything &lt;em&gt;you&lt;/em&gt; stand for. The patricians can look down their noses at you, but you are a true Roman. That&#39;s what will go on these new, blank walls.&lt;/p&gt;
+&lt;p&gt;The sounds of building are a cacophany: sawing, hammering, chiseling, digging, the slow chant of slaves carrying timber and stone. You edge away from the burning sun, into the shade of your newly-constructed, empty &lt;em&gt;domus&lt;/em&gt;. It&#39;s almost done. You sigh with a delicious sense of contenment. You reach out and touch the nearest wall, but frown as you notice that some of the wet paint has stuck to your fingertips, and you&#39;ve smudged the foliar border framing a bright red frescoe of &lt;&lt;linkappend &quot;a handsome woman playing a kithara.&quot;&gt;&gt;&lt;&lt;include pompeii-link1&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; This will be the &lt;em&gt;triclinium&lt;/em&gt;. The floor is bare and empty, waiting for a tile mosaic. Maybe a lively Nile River scene? Or a colorful dockyard? And what about the other walls?&lt;/p&gt;
+&lt;p&gt;You think of the frescoes and mosaics in your neighbor&#39;s house: &lt;&lt;linkappend &quot;everything from stories of the gods to exotic African animals to flowers and fruit.&quot;&gt;&gt;&lt;&lt;include &quot;pompeii-link2&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt; They&#39;re an old patrician family, though, and your grandparents were slaves. Well-educated, literate, and highly capable, your grandfather was freed by his owner, an old senator. Your grandfather prospered as a freedman within the political and financial network of his former owner. His son, and you and your children remain fiercely loyal to the old senator&#39;s heirs, and you grow richer all the time. Still, you&#39;ll never have the power or prestige of your patrician neighbors - and they&#39;ll never let you forget it. But there&#39;s no reason a pleb as rich as you should live in a hovel. You sigh, moving slowly back outside. What to paint on these walls? ...&lt;/p&gt;
+&lt;p&gt;You look out toward Pompeii. Your home clings to the lovely slopes of Mount Vesuvius, just above the bustling town. It&#39;s 78 CE. Vespasian sits the imperial throne, carrying on the legacy of the Flavian dynasty. Life could hardly be better. What would this world be without the majesty of the empire? There would be no wine, clean water, law and order, schools and plays and libraries and baths, and the &lt;&lt;linkappend &quot;grand colosseum Vespasian has begun building in Rome.&quot;&gt;&gt;&lt;&lt;include &quot;Pompeii-link3&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&lt;/p&gt;
+&lt;p&gt; That&#39;s it! Your walls will celebrate the beauty and splendor of Rome! Its heritage and power and everything it stands for. Everything &lt;em&gt;you&lt;/em&gt; stand for. The patricians can look down their noses at you, but you are a true Roman. That&#39;s what will go on these new, blank walls.&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 
@@ -4425,8 +4425,8 @@ An artist&#39;s impression of construction work at Gobekli Tepe
 &lt;hr&gt;
 
 &lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -4443,8 +4443,8 @@ An artist&#39;s impression of construction work at Gobekli Tepe
 &lt;hr&gt;
 
 &lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;trespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#trespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -4460,7 +4460,8 @@ An artist&#39;s impression of construction work at Gobekli Tepe
 &lt;/ol&gt;
 &lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;Your favorite stories from Greek and Roman legend&lt;/li&gt;
+&lt;li&gt;Your education and experience&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -10480,12 +10481,12 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;You stalk down to the shore of the great river and pause for a moment to draw a deep breath before casting your hook far out into the current. Too far. This is the worst place for fishing. And it&#39;s right next to the Roman road where anyone might see you - fishing like a lowborn commoner. You put up your hood and scowl, blinking mist-drops from your eyelashes and feeling the cold seep into your toes. You&#39;ve always loved fishing, even though your kin have been chiefs in this land for hundreds of years and your friends call you a &lt;em&gt;ceorl&lt;/em&gt; for this odd habit.&lt;/p&gt;
-&lt;p&gt;Fishing was just an excuse to get out of the house. Your parents were arguing again, about you again, and you felt like your head was about to burst. When they do this, you usually flee with sword and shield to the fort to spar with your friends. But it&#39;s Sunday and nobody will be there. You cast again, still scowling, but feeling better by the moment, watching the waves rise and swirl, listening to the cadence of the river&#39;s rush, deafening against the silence of a foggy morning. Nearby, &lt;&lt;linkappend &quot;the great fortress of Vindobona&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include barb-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; looms through the mist, dark and massive above the river.&lt;/p&gt;
-&lt;p&gt;Feeling minuscule beside the walls, you hear your parents&#39; voices in your head: &quot;Nobody builds like that any more. Where would we even get the stone?&quot; You are so tired of hearing about &quot;the good old days&quot; when the power of Rome was real, when there was drinkable wine, fine cloth, clear glass, good iron tools and swords, a library, a real bath house, coins worth their face value. When people could travel a good, straight Roman road that didn&#39;t rattle a cart to tatters, shelter safety behind strong Roman walls, and find justice from a Roman magistrate. The days when people stayed and fought for the land of their ancestors instead of fleeing west every time the a horde of screaming savages appeared on the horizon... And on and on it goes. You shake your head to silence this rehearsal of their eternal, aimless grumbling. Who cares about yesterday? Old men. Not you. You want to know about tomorrow.&lt;/p&gt;
-&lt;p&gt;But this is what your parents were arguing about. Your mother wants you to spend a year or two at Vindobona learning to read and write, to navigate the imperial bureaucracy, building on your family&#39;s connections as members of the local elite. She knows the bishop and the legion&#39;s commissar, and could get you a place as a clerk for either one. The old imperial system is still the path to power, she says, as it was for her father in the auxiliaries and her brothers who serve the Roman magistrate, and her cousins in the church.&lt;/p&gt;
-&lt;p&gt;You father wants you to focus on learning his trade and running the farm. He&#39;s a smith. He says a smith&#39;s family will never go hungry or lose their seat in the council as long as men need swords and shields, shovels and chains. Forget Rome. It&#39;s done. Mind the smithy and run the farm, and look to your own defences.&lt;/p&gt;
-&lt;p&gt;You cast your line again - bootlessly, you know, but it doesn&#39;t matter. You&#39;re feeling a bit better. The rising sun has wrapped Vindobona in a nimbus of golden fog. You wish you were in the training yard with a blunted sword in your hand, dodging and thrusting. When you fight, all these doubts disappear and nothing can stand in your way. You&#39;re the best of the young men in the Vindobona auxiliary corps. It feels good and right. You want to be great general &lt;&lt;linkappend &quot;like Fritigund or Alaric or Stilicho.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include barb-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; The smithy is as dull as the scriptorium. But where do you really belong? Is the exultation you feel in the training yard boyish play? Are your parents right? Smith or scribe? Or soething else?&lt;/p&gt;
+&lt;p&gt;You stalk down to the shore of the great river. You draw a deep breath and cast your line far out into the current. Too far. This is the worst place for fishing. And it&#39;s right next to the Roman road where anyone might see you - fishing like a lowborn slave. You put up your hood and scowl, blinking mist-drops from your eyelashes and feeling the cold seep into your toes. You&#39;ve always loved fishing, even though your kin have been lords in this land for hundreds of years.&lt;/p&gt;
+&lt;p&gt;Fishing was just an excuse to get out of the house. Your parents were arguing again, about you again, and you felt like your head was about to burst. When they do this, you usually flee with sword and shield to the fort to spar with your friends. But it&#39;s Sunday, and nobody will be there. You cast again, still scowling, but feeling better by the moment, watching the waves rise and swirl, listening to the cadence of the river&#39;s rush. Nearby, &lt;&lt;linkappend &quot;the great fortress of Vindobona&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include barb-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; looms through the morning fog, dark and massive above the river.&lt;/p&gt;
+&lt;p&gt;Feeling minuscule beside its walls, you hear your parents&#39; voices in your head: &quot;Nobody builds like that any more. Where would we even get the stone?&quot; You are so tired of hearing about &quot;the good old days&quot; when the power of Rome was real, when there was drinkable wine, fine cloth, clear glass, good iron tools and swords, a library, a real bath house, coins worth their face value. When people could travel a good, straight Roman road that didn&#39;t rattle a cart to tatters, shelter safety behind strong Roman walls, and find justice from a Roman magistrate. The days when people stayed and fought for the land of their ancestors instead of fleeing west every time the a horde of screaming savages appeared on the horizon... And on and on it goes. You shake your head to silence this rehearsal of their eternal, aimless grumbling. Who cares about yesterday? Old men. Not you. You want to know about tomorrow.&lt;/p&gt;
+&lt;p&gt;Your mother wants you to spend a year or two at Vindobona learning to read and write, to navigate the imperial bureaucracy, building on your family&#39;s connections as members of the local elite. She knows the bishop and the legion&#39;s commissar, and could get you a place as a clerk for either one. The old imperial system is still the path to power, she says, as it was for her father in the auxiliaries and her brothers who serve the Roman magistrate, and her cousins in the church.&lt;/p&gt;
+&lt;p&gt;You father wants you to focus on learning his trade. He&#39;s a smith. He says a smith&#39;s family will never go hungry or lose their seat in the council as long as men need swords and armor. Forget Rome. It&#39;s done. Mind the smithy and look to your own defences.&lt;/p&gt;
+&lt;p&gt;You cast your line again - bootlessly, you know, but it doesn&#39;t matter. You&#39;re feeling a bit better. The rising sun has wrapped Vindobona in a nimbus of golden fog. You wish you were in the training yard with a blunted sword in your hand, dodging and thrusting. When you fight, all these doubts disappear and nothing can stand in your way. You want to be great general &lt;&lt;linkappend &quot;like Fritigund or Alaric or Stilicho.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include barb-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; The smithy is as dull as the scriptorium. Where do you really belong?&lt;/p&gt;
 &lt;p&gt;Still scowling, you cast again and wonder, for the hundredth time, what your future holds.&lt;/p&gt; 
 &lt;/div&gt;
 &lt;hr&gt;
@@ -10500,8 +10501,8 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;Our English language comes from the family of Germanic languages spoken by the barbarian tribes. It takes shape as &quot;English&quot; in the early Middle Ages. When we look at these early English texts, it&#39;s fun to recognize early versions of words we still use today. But appearances can be deceiving. Sometimes, we think we recognize an ancestor of a modern English word, but it is actually unrelated - what linguists call a &quot;false cognate.&quot; The old fashioned expression, &quot;God speed!&quot; is a great example. It looks like it means something like, &quot;May God speed you on your journey.&quot; But instead, we find that the Old English word, &lt;em&gt;sped&lt;/em&gt; meant &quot;money,&quot; not &quot;speed.&quot; The old expression, &quot;God speed!&quot; was originally a say of wishing someone good luck and good fortune: Something like, &quot;May your venture be profitable.&quot; A similar example might be the old-timey phrase, &quot;Wassail!&quot; We generally think of this as a kind of toast, probably connecting to ale, which was a popular drink in medieval times. Maybe you&#39;ve heard of a wassail cup. Well, people often did drink ale, but that&#39;s not the root of the word &quot;wassail.&quot; Instead, it is a contraction of the Old English phrase, &quot;Wæs ðu hæl!&quot; meaning, &quot;May you have health!&quot; or &quot;To your good health!&quot;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Question&lt;/p&gt;
-&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Response A&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;Response B&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;feedback&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -10514,12 +10515,13 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
-&lt;p&gt;When the Renaissance erupted across Europe and brought light to the &quot;dark&quot; Middle Ages, people decided that medieval architecture was hiddeous, lumpy, dark, clumsy. They began building in a new style in emulation of Rome and Greece: clean lines, pillars, lots of light, arches, domes, order, harmony, &lt;em&gt;symmetry&lt;/em&gt;. To them, medieval architecture represented barbarism and ignorance. They were going to put all that behind them and revive the grand and glorious style of Roman times. Who had ended Rome? Well, the barbarian tribes, the most notorious of whom were some sort of Goth: Visigoth, Ostrogoth, Goth. So Renaissance revisionists (let&#39;s call them that!) started calling medieval architecture &quot;gothic&quot; as a pejorative term. To them, &quot;gothic&quot; meant &quot;barbarian, savage, ugly, dark&quot;, in opposition to Rome&#39;s legacy of civilization, beauty, and culture.&lt;/p&gt;
-&lt;p&gt;A few centuries later, people (mostly young women) started reading and writing ghost stories about vampires and haunted castles, and the aesthetic was very medieval: ruined abbeys and vaulted naves and stained glass. These thematic and aesthetic associations with medieval architecture earned the genre the name &quot;gothic novel.&quot; And from there, you can pretty much pick up the connection to the &quot;goth look&quot; we&#39;re familiar with today.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/salisbury-cathedral.jpg&quot; alt=&quot;gothic cathedral exterior&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;When the Renaissance erupted across Europe and brought light to the &quot;dark&quot; Middle Ages, people decided that medieval architecture was hiddeous, lumpy, dark, clumsy. They began building in a new style emulating the aesthetics of Rome and Greece: clean lines, pillars, lots of light, arches, domes, order, harmony, &lt;em&gt;symmetry&lt;/em&gt;. To them, medieval architecture was a hiddeous expression of barbarism and ignorance, an embodiment of the &quot;dark ages&quot; that separated their own enlightened age from that other enlightened age of classical times. They were going to put the medieval mess behind them and reconnect with Rome.&lt;/p&gt;
+&lt;p&gt;And who killed Rome? Well, the barbarian tribes, the most notorious of whom were some sort of Goth: Visigoth, Ostrogoth, etc. So these Renaissance revisionists (let&#39;s call them that!) labeled the detested medieval architecture &quot;gothic&quot; as a pejorative expression of their loathing. To them, &quot;gothic&quot; meant &quot;barbarian, savage, ugly, dark&quot;, in opposition to Rome&#39;s elegance and civilization.&lt;/p&gt;
+&lt;p&gt;A few centuries later, people (mostly young women) started reading and writing ghost stories about vampires and haunted castles, and the aesthetic was very medieval: ruined abbeys and vaulted arches and stained glass. These thematic and aesthetic associations with medieval architecture earned the new literary genre the label of &quot;gothic novel.&quot; And from gothic novel, you can pretty much pick up the connection to the &quot;goth look&quot; we&#39;re familiar with today.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/salisbury-cathedral.jpg&quot; alt=&quot;gothic cathedral exterior&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Salisbury Cathedral in England (c. 1250) is a beautiful example of the gothic style.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/alphonso-psalter.jpg&quot; alt=&quot;illuminated manuscript&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Above: Renaissance &quot;moderns&quot; applied the term &quot;gothic&quot; to medieval scripts too, like this psalter from England, c. 1300.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/gothic-psalter.jpg&quot; alt=&quot;illuminated manuscript&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Above: Renaissance &quot;moderns&quot; applied the term &quot;gothic&quot; to medieval scripts too, like this psalter from England, c. 1300 (the Alphonso Psalter).&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;p&gt;In 500 years, how do you think people will view our own early 21st-century West?&lt;/p&gt;
@@ -10540,7 +10542,11 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/ol&gt;
 &lt;p&gt;Here are some of the factors that might shape your choices and the impact they will have.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;item&lt;/li&gt;
+&lt;li&gt;Your skills, tastes, aptitudes&lt;/li&gt;
+&lt;li&gt;Your friends&lt;/li&gt;
+&lt;li&gt;The political events such as Hun invasions or coups by the local elite&lt;/li&gt;
+&lt;li&gt;The treatment you receive from church or administrative officials, and from your family and local leaders&lt;/li&gt;
+&lt;li&gt;Your religious preferences (e.g., Germanic pagan, Arian Christian, Catholic Christian)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;hr&gt;
@@ -10563,9 +10569,9 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
+&lt;li&gt;[[Tacitus, Germania |tacitus]]&lt;/li&gt;
 &lt;hr&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;li&gt;[[Jordanes, History of the Goths |jordanes]]&lt;/li&gt;
 &lt;hr&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
@@ -10577,8 +10583,6 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;hr&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
 &lt;hr&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
@@ -10602,7 +10606,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
-&lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
+&lt;li&gt;[[Back: Did Rome Fall? Portal |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;
 &lt;/div&gt;
@@ -10640,13 +10644,13 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;/div&gt;
 
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;The great fire roars, washing the hall with heat and golden light. Torches dance in the shadowy corners and alcoves. The laughter and loud voices rise up to the tall, timbered roof. You breathe deeply, smelling the meat and bread and woodsmoke, &lt;&lt;linkappend &quot;savoring these hall joys - the fruits and the seeds of victory.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; From your high seat above the mead benches, you watch in silence. The young men posturing and boasting, testing their prestige and the mettle of their comrades, nettling and heckling, hoping for a fight. The older men sit calmly on the benches, like great stones in the river, worn smooth by the storm of swords and spears.&lt;/p&gt;
+&lt;p&gt;The great fire roars, washing the hall with heat and golden light. Torches dance in the corners. Laughter echoes off tall, timbered roof. You breathe deeply, smelling meat and bread and woodsmoke, &lt;&lt;linkappend &quot;savoring these hall joys - the fruits and the seeds of victory.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link1&gt;&gt;&lt;&lt;/linkappend&gt;&gt; From your high seat above the mead benches, you watch in silence - the young men posturing and boasting, testing their prestige and the mettle of their comrades, nettling and heckling, hoping for a fight, the older men quieter on the benches, like great stones in the river, worn smooth by the storm of swords.&lt;/p&gt;
 
-&lt;p&gt;All is as it should be. You watch your daughter and your wife move gracefully down the hall, &lt;&lt;linkappend &quot;filling mead horns,&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; exchanging quiet words with the warriors. You note with approval the way they navigate the hierarchies and subtle currents of enmity or friendship that unite the war band. Your daughter gives a fine twist of gold, a pendant, to your oldest friend and stands in conversation with him for a long time. Next in her path is her uncle’s son, Osric, an insolent youth whose mother’s family has been pushing him into competition with your own sons. Fortunately, he’s as strong as a newborn lamb. He won’t last long, but she’s right to make him wait, to let the hall see her making him wait. She talks with your old friend for a very long time and refills his horn twice, smiling sweetly, laughing softly, beautiful and gold-adorned. You see Osric struggling for calm, trying not to hear her or look at her … and failing miserably. The boy’s incapable of anything. That’s good.&lt;/p&gt;
+&lt;p&gt;You watch your daughter and your wife move gracefully down the hall, &lt;&lt;linkappend &quot;filling mead horns,&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link3&gt;&gt;&lt;&lt;/linkappend&gt;&gt; exchanging quiet words with the warriors. You note with approval the way they navigate the hierarchies and subtle currents of rivalry. Your daughter gives a small twist of fine gold, a pendant, to your oldest friend, Aschere. She stands in conversation with him for a long time. Next in her path is her uncle’s son, Osric. He&#39;s an insolent youth whose mother’s family has been pushing him into competition with your own sons. Fortunately, he’s as strong as a newborn lamb. His arms and neck are bare - a comic contrast to the heavy gold rings on old Aschere&#39;s arms. Poor Osric won’t last long, and your daughter ’s right to make him wait, to let the rest of them see her making him wait. She talks with Aschere for a very long time, refilling his mead horn twice - smiling sweetly, laughing softly, beautiful and gold-adorned. You see Osric struggling for calm, trying not to hear her or look at her … and failing miserably. The boy’s incapable of anything. That is good.&lt;/p&gt;
 
-&lt;p&gt;Your eldest son, Cenwalh, sees what’s happening. He raises his voice and calls down the table to the Osric: “Hey, Osric! I know you didn’t really kill that Scottish goat thief! Or his friends. I saw them yesterday…” Your daughter quietly moves toward Osric and tries to fill his mead horn, but has to apologize because her cup has run dry. You can’t completely suppress a grin behind your beard. She leaves to fetch more as the two youths begin to argue. When Osric tries to stand up, you nod to the old man at your feet. He’s ready. He plucks the strings of his harp and a surprisingly deep, penetrating voice issues from his bony frame. He speaks: &lt;&lt;linkappend &#39;“Listen! We have heard of the Spear-Danes, long ago, of the royal princes’ deeds of glory…”&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link4&gt;&gt;&lt;&lt;/linkappend&gt;&gt; The hall falls silent. Totally silent. Their eyes shine in the firelight as they forget, for a time, their own petty quarrels, lost in the tales of old.&lt;/p&gt;
+&lt;p&gt;Your eldest son, Cenwalh, sees what’s happening. He raises his voice and calls down the table to the Osric: “Hey, Osric! I know you didn’t really kill that Welsh goat thief! Or his friends. I saw them yesterday…” Your daughter quietly moves to fill Osric&#39;s mead horn at last, but has to apologize because her cup has run dry. You can’t completely suppress a grin behind your beard. She leaves to fetch more as the two youths begin to argue. When Osric tries to stand up, you nod to the old man at your feet. He’s ready. He plucks the strings of his harp and a startlingly loud voice issues from his bony frame: &lt;&lt;linkappend &#39;“Listen! We have heard of the Spear-Danes, long ago, of the royal princes’ deeds of glory…”&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link4&gt;&gt;&lt;&lt;/linkappend&gt;&gt; The hall falls silent. Totally silent. Their eyes shine in the firelight as they forget, for a time, their own petty quarrels, lost in the tales of old.&lt;/p&gt;
 
-&lt;p&gt;Now you can relax and think. Your wife, a Mercian princess, is Christian. You are not. She has a priest who holds mass for her and the Christians in her retinue, and a few in your own. Over the years, the pope, has sent you gifts, rich treasures, trappings of power bearing the signs of Roman imperium. Your daughter has converted, following her mother&#39;s example. &lt;&lt;linkappend &quot;Should you join them?&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link5&gt;&gt;&lt;&lt;/linkappend&gt;&gt; Other kings have, in Kent and Northumbria. Massive stone churches have risen in their kingdoms. Preists record their laws and gifts in books that will last forever. Forever? &lt;&lt;linkappend &quot;Nothing is forever. Fate goes as it will.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; This hall is strong. Your sons are strong. The warband is as united as any warband can be. What can the Roman Christ do for your kingdom, or for you?&lt;/p&gt; 
+&lt;p&gt;Now you can relax and think. Your wife, a Mercian princess, is Christian. You are not. She has a priest who holds mass for her and her retinue. Some of your people have been joining them. Your daughter has converted, following her mother&#39;s example. Over the years, the pope has sent you rich gifts from Rome. &lt;&lt;linkappend &quot;Should you become Christian?&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link5&gt;&gt;&lt;&lt;/linkappend&gt;&gt; Other kings have, in Kent and Northumbria. Massive stone churches have risen in their kingdoms. Preists record their laws and gifts in books that will last forever. Forever? &lt;&lt;linkappend &quot;Nothing is forever. Fate goes as it will.&quot;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;include asking-link2&gt;&gt;&lt;&lt;/linkappend&gt;&gt; This hall is strong. Your sons are strong. The warband is as united as any warband can be. What can the Roman Christ do for your kingdom, or for you?&lt;/p&gt; 
 &lt;/div&gt;
 &lt;hr&gt;
 
@@ -10657,12 +10661,14 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;&lt;link &#39;&lt;img src=&quot;images/zombie.jpg&quot; alt=&quot;manuscript illustration skeletons talking to people&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;replace &quot;#zombie&quot;&gt;&gt;
 &lt;hr&gt;
 
-&lt;p&gt;This is where English is born - as a language and as a national identity. When the Roman legions withdrew from their province of Britannia early in the fifth century, the native Celtic Britons were attacked by their warlike Gaelic-speaking neighbors in Scotland and Ireland. After centuries of Roman rule, they weren&#39;t used to fending for themselves. So they called in Germanic mercenaries from the continent: the Angles, Saxons, and Jutes. These mercenaries quickly realized that instead of fighting for their Briton bosse. &lt;em&gt;The Anglo-Saxon Chronicle&#39;s&lt;/em&gt; entry for the year 443 explains it this way: &quot;King Vortigern [a British king] gave them land to the south-east of this land on condition that they fought against the Picts. They then fought against the picts and had victory wherever they came. Then they sent to Angel; ordered them to send more aid and to be told of the worthlessness of the Britons and of the excellence of the land.&quot; The old &quot;Why buy the cow when you can get the milk for free?&quot; situation? Over the next few centuries, an &lt;em&gt;Angla-lond&lt;/em&gt; took shape, inhabited by an &lt;em&gt;Anglisc&lt;/em&gt; people. The native Celtic-speaking Britons were pushed to the western fringes in Wales and Cornwall (and please don&#39;t make the mistake of calling one of them English ... not a way to make friends). So, this is why the language we are speaking here today is a Germanic one.&lt;/p&gt;
+&lt;p&gt;This is where English is born - as a language and as a national identity. When the Roman legions withdrew from their province of Britannia early in the fifth century, the native Celtic Britons were attacked by their warlike Gaelic-speaking neighbors in Scotland and Ireland. After centuries of Roman rule, the Britons weren&#39;t used to fending for themselves. So they called in Germanic mercenaries: the Angles, Saxons, and Jutes. As the &lt;em&gt;Anglo-Saxon Chronicle&#39;s&lt;/em&gt; entry for the year 443 tells it:&lt;/p&gt;
+&lt;p&gt;&quot;King Vortigern [a British king] gave them land to the south-east of this land on condition that they fought against the Picts. They then fought against the picts and had victory wherever they came. Then they sent to Angel; ordered them to send more aid and to be told of the worthlessness of the Britons and of the excellence of the land.&quot;&lt;/p&gt;
+&lt;p&gt;The old &quot;Why buy the cow when you can get the milk for free?&quot; situation? Over the next few centuries, an &lt;em&gt;Angla-lond&lt;/em&gt; took shape, inhabited by an &lt;em&gt;Anglisc&lt;/em&gt; people. The native Celtic-speaking Britons were pushed to the western fringes in Wales and Cornwall (and please don&#39;t make the mistake of calling one of them English ... not a good way to make friends). This is why the language we are speaking here today is a Germanic one, not a Celtic one.&lt;/p&gt;
 &lt;p&gt;By the way, our modern English language preserves traces of Germanic paganism we use every day: Sunday, Monday, Tuesday, Wednesday, Thursday, and Friday. Those English names come from the old gods: Sun, Moon, Tyr, Woden, Thor, Frig. So that explains the &quot;d&quot; in Wednesday: &quot;Woden&#39;s Day.&quot; What happened to Saturday? I think the Romans got that one (Saturn).&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Did you already know the story of that weird &quot;d&quot; in Wednesday?&lt;/p&gt;
 &lt;p id=&quot;zrespA&quot;&gt;&lt;&lt;link &quot;Yes, everyone knows about that.&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespA&quot;&gt;&gt;Ok, sorry. I&#39;m boring.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
-&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;No! It makes sense now!&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;&lt;hr&gt;Cool. Etymology is fun.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+&lt;p id=&quot;zrespB&quot;&gt;&lt;&lt;link &quot;No! It makes sense now!&quot;&gt;&gt;&lt;&lt;set $Score to $Score +2&gt;&gt;&lt;&lt;replace &quot;#zrespB&quot;&gt;&gt;Cool. Etymology is fun.&lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
 
 &lt;&lt;/replace&gt;&gt;&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -10675,7 +10681,9 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;p&gt;Many others have traveled this path through history before us. Ask these time travel pilgrims how they fared on the journey.&lt;/p&gt;
 &lt;&lt;link &#39;&lt;img src=&quot;images/chaucer-pilgrims.jpg&quot; alt=&quot;manuscript illustration of horsemen talking&quot; width=&quot;50%&quot;&gt;&#39;&gt;&gt;&lt;&lt;set $Score to $Score + 2&gt;&gt;&lt;&lt;replace &quot;#travelers&quot;&gt;&gt;
 
-&lt;p&gt;I have disappointing news. We have fallen in with some bad company in this branch of our time travel journey. Very bad. Our fellow travelers are Nazis. Adolf Hitler&#39;s fascination with an an &quot;Aryan&quot; master race led him to celebrate the early medieval history of Germanic peoples. This is why he loved Wagner&#39;s operas about early Germanic legends like Sigurd and the valkyries. You know how the bad guys in the old Indiana Jones movies are always Nazi archaeologists? Well, that&#39;s pretty realistic. The Nazi regime did support scholars scholars whose research focused on this corner of history. Ever since, white supremacist psychos have emulated Hitler&#39;s passion for Germanic history, especially Norse myth and legend. It has left a sickly aura of death and racist fanaticism over this part of the historical landscape. It&#39;s an unfortunate reality. So, let&#39;s do our best to avoid these traveling companions, and carry on exploring early Germanic history without them. It&#39;s a fascinating place. Let&#39;s not let a bunch of evil Nazis and their ignorant toadies spoil it for us, eh?&lt;/p&gt;
+&lt;p&gt;I have disappointing news. We have fallen in with some bad company in this branch of our time travel journey. Very bad company, indeed. Our fellow travelers are Nazis. Adolf Hitler&#39;s fascination with an an &quot;Aryan&quot; master race led him to celebrate the early medieval history of Germanic peoples. This is why he loved Wagner&#39;s operas about the Nibelungenlied - Sigurd and the dragon and valkyries and all that.&lt;/p&gt;
+&lt;p&gt;You know how the bad guys in the old Indiana Jones movies are always Nazi archaeologists? Well, the Nazi regime did support scholars whose research focused on this corner of history. Hitler, like his frenemy, Stalin, saw the value of history as a propaganda tool in the identity politics propping up his regime and justifying its horrors. So he made sure people who wrote history were doing it his way.&lt;/p&gt;
+&lt;p&gt;Sadly, white supremacist psychos have carried on Hitler&#39;s passion for Germanic history, especially Norse myth and legend. It has left a sickly aura of racist fanaticism and thuggish ignorance around this part of the historical landscape. It&#39;s an unfortunate reality. Let&#39;s do our best to avoid these traveling companions, and carry on exploring early Germanic history without them. It&#39;s a fascinating place. Let&#39;s not let a bunch of evil Nazis and their ignorant toadies spoil it for us, eh?&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/nazi-prop.jpg&quot; alt=&quot;nazi propaganda posters&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Nazi propaganda drew heavily on the themes and aesthetic of Hitler&#39;s ideas of a White master race. As he put it in &lt;em&gt;Mein Kampf&lt;/em&gt;: &quot;Everything we admire on this earth today—science and art, technology and inventions—is only the creative product of a few peoples and originally perhaps one race [the Aryans].&quot; It&#39;s just so boring. Let&#39;s leave this group in the dust and move on.&lt;/p&gt;
 
@@ -10756,7 +10764,7 @@ This quest is complete. [[Continue with the role play scenario. |Cannae]]
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: Portals |Portals]]&lt;/li&gt;
-&lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
+&lt;li&gt;[[Back: Did Rome Fall? Portal |Rome2]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;
 &lt;/div&gt;
@@ -11234,20 +11242,19 @@ This quest is complete. [[Continue with the role play scenario. |Barbarian]]
 &lt;hr&gt;
 &lt;p&gt;Looks like you&#39;ve hit a dead end. It&#39;s all part of exploring. Time to move on with the [[role play scenario. |Barbarian]]&lt;/p&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="190" name="barb-link1" tags="" position="1100,4100" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;map of migrations and location of vindobona&lt;/p&gt;
-&lt;p&gt;image&lt;/p&gt;
-&lt;p&gt;caption&lt;/p&gt;
+&lt;p&gt;Below: The reconstructed gates of the Roman fort at Vindobona.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/vindobona-gate.jpg&quot; alt=&quot;stone gateway with two arches&quot; width=&quot;70%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Below: The barbarian tribes of late antiquity, with the location of Vindobona.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/map-vindobona.jpg&quot; alt=&quot;map of Germanic kingdoms and Vindobona&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="191" name="asking-link1" tags="" position="1100,4700" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Old English poetry revels in descriptions of &quot;hall joys,&quot; with many poetic expressions for the hall, including mead hall, treasure hall, feast hall, gold hall. &quot;Hall joys&quot; are seen as one of the gifts a generous lord should give to his warband: music and songs, warmth, light, food and drink, a place at the benches with your comrades, gifts of treasure and valuable war gear. The high hall was also a safe, warm place to sleep (unless Grendel comes) in an otherwise cold and dangerous world. Here are a few examples:&lt;/p&gt;
 &lt;p&gt;In &lt;em&gt;Beowulf&lt;/em&gt;, Hrothgar&#39;s great hall Heorot epitomizes the motif of hall joys provided by a generous lord to his successful warband (although, the poet can&#39;t resist predicting its grim fate: destruction in future feuds): &quot;Then to Hrothgar, success in battle was given, honor in war, so that his thanes served him eagerly, and the warband grew into a mighty troop. It came into Hrothgar&#39;s mind that he should have a hall built, a grand mead hall which men would tell of forever. Within, to young and old, he would share out all that God had given him (except the common land and the lives of men). Then I heard he commanded many people to work on building this best of royal halls, and he named it Heorot (&quot;hart&quot;). His words were trusted everywhere, and he did not lie when he boasted of what he would do: He gave out rings and treasure at the feast. The hall towered, high and horn-gabled. It awaited the cruel surges of hateful flames, when the furious sword-hate of son-in-law and father-in-law, arising from deadly hatred, would awaken - but that time had not yet come.&quot;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/longhall1.jpg&quot; alt=&quot;long timber hall&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: This reconstruction of a Viking Age long hall at Sagnlandet Lejre in Denmark resembles what an Anglo-Saxon ruler&#39;s hall would have looked like.&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="192" name="barb-link2" tags="" position="1200,4100" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;text&lt;/p&gt;
-Arian xpn and paganism 
-Germanic boar helmet crests; Odin warrior ornament&lt;p&gt;caption&lt;/p&gt;
+&lt;p&gt;Fritigund, Alaric, Theodosius, Stilicho, Aetius&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="193" name="asking-link2" tags="" position="1200,4700" size="100,100">&lt;div class=&quot;link&quot;&gt;
-&lt;p&gt;While Old English poets delighted in portraying &quot;hall joys&quot; of warmth and friendship and treasure and song, they frequently reflected on the transience of all such earthly delights. One of their favorite themes was the inexorability of fate, the fact that none of us can control what the future holds for us, and even great civilizations like Rome are eventually brought low by the power of fate and time. They saw Roman ruins all around them, seeming to prove the wisdom of this view. Here&#39;s an example of this them from the elegaic poem, &lt;em&gt;The Wanderer&lt;/em&gt;, in which the speaker bemoans his status as an exile. &quot;Hall joys&quot; represent the opposite of miserable exile: &quot;Where has the horse gone? Where has the man gone? Where have the treasure-givers gone? Where has the place of banquets gone? Where are the joys of the hall? Alas the gleaming cup! Alas the armoured warrior! Alas the prince&#39;s glory! How the time has passed away, grown dark under the helm of the night, as if it never were. There stands now in the track of the dear thane a wall, wondrously high, adorned with serpent-patterns. The might of ash-spears snatched away noble men, weapons greedy for carnage, notorious fate, and storms beat the stone-heaps, falling snowstorm binds the earth, winter&#39;s chaos, then the darkness comes, night-shadows spread gloom, sending from the north fierce hailstorms to the terror of men. All is hardship in the earthly kingdom; the operation of fate changes the world under the heavens. Here, wealth is transitory; here a friend is transitory; here a man is transitory; here a kinsman is transitory. All this earth&#39;s foundation will become empty.&quot; (Text and translation from Elaine Treharne, ed., &lt;em&gt;Old and Middle English c. 890 - c. 1450: An Anthology&lt;/em&gt; (London: Blackwell, 2009).)&lt;p&gt;
+&lt;p&gt;While Old English poets delighted in portraying &quot;hall joys&quot; of warmth and friendship and treasure and song, they frequently reflected on the transience of all such earthly delights. One of their favorite themes was the inexorability of fate, the fact that none of us can control what the future holds for us, and even great civilizations like Rome are eventually brought low by the power of fate and time. They saw Roman ruins all around them, seeming to prove the wisdom of this view. Here&#39;s an example of this them from the elegaic poem, &lt;em&gt;The Wanderer&lt;/em&gt;, in which the speaker bemoans his status as an exile. &quot;Hall joys&quot; represent the opposite of miserable exile: &quot;Where has the horse gone? Where has the man gone? Where have the treasure-givers gone? Where has the place of banquets gone? Where are the joys of the hall? Alas the gleaming cup! Alas the armoured warrior! Alas the prince&#39;s glory! How the time has passed away, grown dark under the helm of the night, as if it never were. There stands now in the track of the dear thane a wall, wondrously high, adorned with serpent-patterns. The might of ash-spears snatched away noble men, weapons greedy for carnage, notorious fate, and storms beat the stone-heaps, falling snowstorm binds the earth, winter&#39;s chaos, then the darkness comes, night-shadows spread gloom, sending from the north fierce hailstorms to the terror of men. All is hardship in the earthly kingdom; the operation of fate changes the world under the heavens. Here, wealth is transitory; here a friend is transitory; here a man is transitory; here a kinsman is transitory. All this earth&#39;s foundation will become empty.&quot; (Text and translation from Elaine Treharne, ed., &lt;em&gt;Old and Middle English c. 890 - c. 1450: An Anthology&lt;/em&gt; (London: Blackwell, 2009).)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/wanderer.jpg&quot; alt=&quot;text from above&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;If you know your &lt;em&gt;Lord of the Rings&lt;/em&gt;, and you think this sounds like Theoden&#39;s speech at Helm&#39;s Deep (&quot;Who am I, Gamil? Where is the horse? Where are the horse and the rider? Where is the horn that was blowing?&quot;), you are right. Tolkein lifted it exactly from this poem. The whole Kingdom of Rohan is inspired by Anglo-Saxon England. Below: Theoden at Helm&#39;s Deep.&lt;/p&gt;  
 &lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xVEYcTyj1Do?si=-iEP_9JRB9kyOlxN&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
@@ -11830,8 +11837,8 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;li&gt;[[Tacitus, Germania |tacitus]]&lt;/li&gt;
+&lt;li&gt;[[Jordanes, History of the Goths |jordanes]]&lt;/li&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -11842,7 +11849,6 @@ This quest is complete. [[Continue with the role play scenario. |AS-king]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -20640,13 +20646,13 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;In both of these examples (which are representative), we see that the women are more than waitresses. They take an active role in the political scene (an impression clearly and repeatedly reinforced by evidence outside of poetry (in chronicles and legal documents, for instance). A variety of evidence clearly shows that elite women were powerful players in the early medieval game of thrones.&lt;/p&gt;
 &lt;p&gt;But &quot;peace weaver&quot; was one side of this coin. The other side was &quot;inciter of violence.&quot; Ever wonder where the term &quot;to egg someone on&quot; comes from? It makes no sense, right? Well, it&#39;s not &quot;egg&quot; from our word &quot;egg.&quot; It&#39;s from the Old Norse verb &lt;em&gt;eggja,&lt;/em&gt; which means to &quot;whet, to put an edge to a weapon,&quot; and the Old English noun &lt;em&gt;ecg&lt;/em&gt;, &quot;edge.&quot; Poetry, chronicles, and sagas from the early Germanic world frequently depict women as inciters of violence, &quot;egging on&quot; their menfolk by aggressively reminding them of revenge obligations or unsettled feuds. Like, &quot;Get off the couch and go kill someone. Your list of people you&#39;re supposed to be killing is so long, why are you sitting here?&quot;&lt;/p&gt;
 &lt;p&gt;There&#39;s even an intriguing connection way back to Roman times, in the first-century account of Germanic tribes written by Tacitus. He notes that German women came to war with their men, not to fight in the front lines, but to yell at them from the sidelines and remind them of what would happen to their women if the other side was victorious. Here&#39;s what Tacitus says in &lt;em&gt;Germania&lt;/em&gt; (c. 98): “Tradition says that armies already wavering and giving way have been rallied by women who, with earnest entreaties and bosoms laid bare, have vividly represented the horrors of captivity, which the Germans fear with such extreme dread on behalf of their women, that the strongest tie by which a state can be bound is the being required to give, among the number of hostages, maidens of noble birth. They even believe that the sex has a certain sanctity and prescience, and they do not despise their counsels, or make light of their answers.” Maybe the early medieval oral traditional poetry preserves something of these old gender norms recorded by Tacitus centuries earlier. Or maybe not. What do you think?&lt;/p&gt; 
-&lt;p&gt;&lt;img src=&quot;images/mead-cup.jpg&quot; alt=&quot;silver female figures&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/mead-cup.jpg&quot; alt=&quot;silver female figures&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: These silver Viking Age ornaments present women carrying a horn or cup - a common motif that resonates with these depictions of women in the poetry.&lt;/p&gt;
 &lt;p&gt;Below: Another example of this &quot;lady with a mead cup&quot; motif, from a memorial stone from Viking Age Sweden. In the top panel, Odin is shown on his eight-legged horse, Sleipnir, receiving a mead cup from a valkyrie.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/gotland-odin.jpg&quot; alt=&quot;painted stone carving of Viking ship and mythological figures&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/gotland-odin.jpg&quot; alt=&quot;painted stone carving of Viking ship and mythological figures&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="352" name="asking-link4" tags="" position="1400,4700" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;These are the famous opening lines of &lt;em&gt;Beowulf&lt;/em&gt;. The poem was composed in the late 8th century, but survives only in a single manuscript from c. 1000. Here is the first page from that precious manuscript.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/beowulf.jpg&quot; alt=&quot;manuscript page&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/beowulf.jpg&quot; alt=&quot;manuscript page&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Below: Here is what it might have sounded like.&lt;/p&gt;
 &lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0zorjJzrrvA?si=Y0j69Yr9J8lMzYEU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="353" name="suttonhoo" tags="" position="1600,4600" size="100,100">&lt;div class=&quot;container&quot;&gt;
@@ -20831,8 +20837,8 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;li&gt;[[Tacitus, Germania |tacitus]]&lt;/li&gt;
+&lt;li&gt;[[Jordanes, History of the Goths |jordanes]]&lt;/li&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -20843,7 +20849,6 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21799,8 +21804,8 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;li&gt;[[Tacitus, Germania |tacitus]]&lt;/li&gt;
+&lt;li&gt;[[Jordanes, History of the Goths |jordanes]]&lt;/li&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21811,7 +21816,6 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21909,8 +21913,8 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;h2&gt;Primary Sources&lt;/h2&gt;
 &lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
+&lt;li&gt;[[Tacitus, Germania |tacitus]]&lt;/li&gt;
+&lt;li&gt;[[Jordanes, History of the Goths |jordanes]]&lt;/li&gt;
 &lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21921,7 +21925,6 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
 &lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -21955,85 +21958,41 @@ This quest is complete. [[Continue with the role play scenario. |Artist]]
 &lt;p&gt;&lt;img src=&quot;images/judith-gentileschi.jpg&quot; alt=&quot;two women killing a man with a sword&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;As a woman, Artemisia stood outside the networks of patronage and institutions that supported male artists like Caravaggio. His version of Judith and Holofernes, below, was much admired and his career flourished in spite of a lifestyle of (lethal) violence and continual debt.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/judith-caravaggio.jpg&quot; alt=&quot;woman killing a sleeping man with a sword while another woman looks on&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="450" name="barb-link3" tags="" position="1300,4100" size="100,100">Fritigund, Alaric, Theodosius, Stilicho, Aetius</tw-passagedata><tw-passagedata pid="451" name="witch-link3" tags="" position="1300,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="450" name="witch-link3" tags="" position="1300,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Early seventeenth-century men&#39;s clothing was complex and ornate. The design aimed to emphasize the wearer&#39;s wealth and status with displays of opulence and costly materials such as rich dye, silk, fur, embroidery. This can be seen in the portrait of Sir Walter Raleigh and his son, below, created by an unknown artist c. 1602.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/raleigh.jpg&quot; alt=&quot;man and boy posing in fine seventeenth-century clothing&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;We can see the intricacy of masculine dress in the image below as well. This baroque masterpiece by Dutch painter Rembrandt van Rijn, called &lt;em&gt;The Night Watch&lt;/em&gt;, depicts the civic militia employed by a prosperous city to enforce law and order.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/nightwatch.jpg&quot; alt=&quot;men in bright clothing hold weapons, surrounded by dark crowd&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="452" name="witch-link4" tags="" position="1400,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="451" name="witch-link4" tags="" position="1400,7300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;The time of the European witch craze was also a time of nearly constant war, fought primarily by mercenary companies. They were notorious for profit-driven attacks on ordinary people. Villages were devastated by repeated waves of violence, diseaes, famine. In the engravings below, French artist Jacques Callot draws on his own experience of the Thirty Years&#39; War. They were published in his 1633 series, &quot;The Great Miseries of War.&quot;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/callot1.jpg&quot; alt=&quot;mercenaries raiding a farmhouse&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Mercenaries raiding a farmhouse. Callot&#39;s caption reads: &quot;See the fair deeds of these bestial hearts. They look everywhere and nothing escapes their grasp. Here one tortures in search of gold. There another who&#39;s done it all before urges on his friends. And all of them together kidnap, rape, murder, and steal.&quot;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/callot2.jpg&quot; alt=&quot;mercenaries raiding a farmhouse&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: Mercenaries being executed by local authorities. Callot&#39;s caption reads: &quot;In the end these hateful and damned thieves hang on this tree like bad fruits - showing that horrible crimes and dark acts are also tools of shame and revenge, that the fate of men so vicious is simply to prove (sooner or later) the justice of heaven.&quot;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="453" name="asking-link5" tags="" position="1500,4700" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="452" name="asking-link5" tags="" position="1500,4700" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Conversion involved a mixture of pagan and Christian practices and beliefs. For instance, popes were ready to make space for pagan festivals in the Christian calendar. They advised missionaries to keep pagan shrines intact, simply replacing the idols with a cross, and sacrifices with sacraments. Beowulf says, &quot;Fate will often save a man if his courage holds,&quot; while another poet writing a life of Saint Andrew around the same time and in the same heroic-traditional style, uses the same familiar formulaic phrase to describe the saint&#39;s bravery in his battle with demons. He simply changes &quot;Fate&quot; (Old English, &lt;em&gt;wyrd&lt;/em&gt;) to &quot;God.&quot; Easy. The three artifacts from the seventh-century Germanic kingdoms illustrate this kind of religious and cultural syncretism.&lt;/p&gt;
 &lt;p&gt;Below: &quot;The Coppergate Helmet&quot; from York features ornamental boar heads matching a description from &lt;em&gt;Beowulf,&lt;/em&gt; which tells us that pagans believed the board heads would protect the wearer. The helmet is also decorated by a Christian prayer, &quot;In the name of the Lord Jesus, Holy Spirit, and God ...&quot;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;images/york-helmet.jpg&quot; alt=&quot;helmet with cheekplates&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Below: This ornament from Anglo-Saxon England depicts Odin, and closely resembles the figure of Christ as the warrior below it, on a funerary plaque from Francia. Poetic depictions of Christ often present him this way - as a warrior, fighting demons, surrounded by his loyal warband (the disciples).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;images/york-helmet.jpg&quot; alt=&quot;helmet with cheekplates&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Below: This ornament from Anglo-Saxon England depicts Odin, and closely resembles the figure of Christ as the warrior on a funerary plaque from Francia. Poetic depictions of Christ often present him this way - as a warrior, fighting demons, surrounded by his loyal warband (the disciples).&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;&lt;img src=&quot;images/woden-ornament.jpg&quot; alt=&quot;ornament engraved with figure wielding spear&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;&lt;img src=&quot;images/woden-funerary.jpg&quot; alt=&quot;engraving of warrior with spear&quot; width=&quot;50%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="454" name="hattin-link4" tags="" position="1400,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="453" name="hattin-link4" tags="" position="1400,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Crusader armies were typically vastly outnumbered by their Muslim opponents. However, their heavy cavalry was formidable. Muslim cavalry was lighter, relying primarily on bows rather than swords and lances. Muslim leaders like Saladin soon learned to develop their own form of heavy cavalry, modeled on that of &quot;the Franks,&quot; as they called the crusaders. This scene from the Maciejowski Bible (France, c. 1240) conveys some sense of how physically overwhelming a crusader cavalry charge might be.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/maciejowski-battle.jpg&quot; alt=&quot;knights in battle&quot; width=&quot;100%&quot;&gt;&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="455" name="hattin-link5" tags="" position="1500,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="454" name="hattin-link5" tags="" position="1500,6300" size="100,100">&lt;div class=&quot;link&quot;&gt;
 &lt;p&gt;Saldin was highly respected for his mastery of strategy. Like the crusader elite and other Muslim leaders, Saladin made use of diplomacy, espionage, and secrete alliances with enemy players. It&#39;s no surprise that the game of chess was popular among the Christian and Muslim elite during the Middle Ages.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/chess-christian-arab.jpg&quot; alt=&quot;two men play chess&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/chess-spain.jpg&quot; alt=&quot;two men play chess in a tent&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: These two images from 13th-century Spain show Christian and Muslim men playing chess with each other.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;images/manesse-chess.jpg&quot; alt=&quot;man and woman playing chess&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Above: German Margrave Otto IV of Brandenbur playing chess with a woman (Codex Manesse, c. 1300).&lt;/p&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="456" name="halsall" tags="" position="1900,4200" size="100,100">Halsall chapter or video about late empire fortification or Hadrian&#39;s Wall
-
-
-&lt;h2&gt;The Sources&lt;/h2&gt;
-&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-md ps&quot; id=&quot;sourcedoorstext&quot;&gt;
-&lt;div class=&quot;transbox sourcelist&quot;&gt;
-&lt;h2&gt;Primary Sources&lt;/h2&gt;
-&lt;p&gt;A primary source is an artifact from history, created during the time period you are studying.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[[Tacitus, &lt;em&gt;Germania&lt;/em&gt; |tacitus]]&lt;/li&gt;
-&lt;li&gt;[[Jordanes, &lt;em&gt;History of the Goths&lt;/em&gt; |jordanes]]&lt;/li&gt;
-&lt;li&gt;[[Barbarian law  |law]]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-md ss&quot; id=&quot;sourcedoorstext&quot;&gt;
-&lt;div class=&quot;transbox sourcelist&quot;&gt;
-&lt;h2&gt;Secondary Sources&lt;/h2&gt;
-&lt;p&gt;A secondary source is a present-day interpretation of history (like your textbook).&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[[About the Germanic tribes |green]]&lt;/li&gt;
-&lt;li&gt;[[About the Roman legions in the fourth century CE |halsall]]&lt;/li&gt;
-&lt;li&gt;You can also use your textbook or class lectures.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;hr&gt;
-
-&lt;h2&gt;All done?&lt;/h2&gt;
-&lt;p&gt;Have you collected enough material from the sources using the &quot;Marginalia&quot; boxes? Your Role Play response needs to utilize &lt;span class=&quot;bi&quot;&gt;at least one primary source and at least one secondary source.&lt;/span&gt; If you have enough source material, move on to the Victory! screen and end the game. You will find your quotes and notes waiting for you there.&lt;/p&gt;
-&lt;div class=&quot;row&quot;&gt;
-&lt;div class=&quot;col-md&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-md victory-link&quot;&gt;
-&lt;p&gt;[[Victory! |Rome2-victory-a]]&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col-md&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-&lt;footer&gt;
-&lt;ul&gt;
-&lt;li&gt;[[Back: Did Rome Fall? |Rome2]]&lt;/li&gt;
-&lt;li&gt;[[Back: Barbarian Scenario |Barbarian]]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/footer&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="457" name="bible-stories" tags="" position="1500,1400" size="100,100">&lt;div class=&quot;container&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="455" name="bible-stories" tags="" position="1500,1400" size="100,100">&lt;div class=&quot;container&quot;&gt;
 
 &lt;h1&gt;Bible Storiesh&lt;/h1&gt;&lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row&quot;&gt;
