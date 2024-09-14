@@ -4935,6 +4935,7 @@ other. |babylon-rewrite2]]&lt;/li&gt;
 &lt;li&gt;[[While our beatings are harsh and our teachers strict they are nothing to what those in the army deal with every day. Running is better, we could settle somewhere far from the city and run a better settlement. |babylon-rewrite5]]&lt;/li&gt;
 &lt;li&gt;[[In order to have an actual revolution I would first need to be in a high position in the current political structure, or have friends in high positions in the current political structure or some I would need some kind of military presence... |babylon-rewrite6]]&lt;/li&gt;
 &lt;hr&gt;
+&lt;li&gt;[[I could write plans of a rebellion and have them posted around the city so others could see. ...  I could start teaching at these schools to spread word of the rebellion to my peers. |babylon-rewrite7]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -4976,6 +4977,8 @@ then. |assyria-rewrite2]]&lt;/li&gt;
 &lt;li&gt;[[As a poor hungry young civilian, I had no choice but to join the army. I needed a place to sleep, eat, and to carry my future into a path of change for the better. |assyria-rewrite4]]&lt;/li&gt;
 &lt;hr&gt;
 &lt;li&gt;[[As a woman they wouldn’t let me do a lot with the military. My job would proably be to please the men. Just saying that grosses me out but it is the reality of the situation. I would probably have to sleep my way to the top. |assyria-rewrite5]]&lt;/li&gt;
+&lt;hr&gt;
+&lt;li&gt;[[Another way that I can rise in the ranks in the army is by showing depictions of me as the leader in these art works. I could also tell them that I was appointed by God as their leader. |assyria-rewrite6]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
@@ -5923,6 +5926,18 @@ This quest is complete. [[Continue with the role play scenario. |GT]]
 &lt;&lt;set $treasure to false&gt;&gt;
 &lt;&lt;set $armor to false&gt;&gt;
 &lt;&lt;set $horse to false&gt;&gt;
+
+&lt;&lt;set $beginCombat1 to false&gt;&gt;
+&lt;&lt;set $ironCombat1 to false&gt;&gt;
+&lt;&lt;set $greeceCombat1 to false&gt;&gt;
+&lt;&lt;set $hellenisticCombat1 to false&gt;&gt;
+&lt;&lt;set $rome1Combat1 to false&gt;&gt;
+&lt;&lt;set $rome2Combat1 to false&gt;&gt;
+&lt;&lt;set $vikingCombat1 to false&gt;&gt;
+&lt;&lt;set $knightsCombat1 to false&gt;&gt;
+&lt;&lt;set $peasantsCombat1 to false&gt;&gt;
+&lt;&lt;set $renCombat1 to false&gt;&gt;
+
 
 &lt;&lt;if $Password is &quot;Beowulf&quot;&gt;&gt;
 &lt;div class=&quot;container&quot;&gt;
@@ -7264,20 +7279,20 @@ You already won this fight. [[Continue on. |Greece]]
 &lt;div class=&quot;container&quot;&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;div class = &quot;col-md&quot;&gt;
-&lt;img src=&quot;images/mobs/mob2.jpg&quot; alt=&quot;creature with large ears&quot; width=&quot;100%&quot;&gt;
+&lt;img src=&quot;images/mobs/mob2.jpg&quot; alt=&quot;manuscript illumination of grotesque creature with large ears&quot; width=&quot;100%&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
-&lt;p&gt;It says, &quot;something&quot;&lt;/p&gt;
+&lt;p&gt;It says, &quot;We know that Homer composed the &lt;em&gt;Iliad&lt;/em&gt; and &lt;em&gt;Odyssey&lt;/em&gt; during the Mycenaean Period because the type of weapons and combat he describes resemble artifacts archaeologists have dated to the Mycenaean Period. Archaeologists recognized these objects as Mycenaean because they matched the descriptions in Homer&#39;s epics.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;p&gt;Let&#39;s play &quot;name that logical fallacy&quot; with this one!&lt;/p&gt;
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt; Response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt; Response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt; Response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;A&quot;&gt;&gt; Anachronism&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;B&quot;&gt;&gt; Correlation/causation fallacy&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$greeceCombatQ1&quot; &quot;C&quot;&gt;&gt; Circular reasoning&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -7541,30 +7556,33 @@ You already won this fight. [[Continue on. |Iron]]
 
 &lt;/div&gt;
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="106" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if ($greeceCombatQ1 is &quot;A&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="106" name="greece-combat1-spoils" tags="" position="500,1800" size="100,100">&lt;&lt;if ($greeceCombatQ1 is &quot;C&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $greeceCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Illuminated codex&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;Right! The risks of such circular reasoning are particularly high for historians studying early civilizations that left few written records, because archaeologists often use those records while analyzing physical artifacts, while philologists and historians use archaeological scholarship to nuance their own interpretations of textual sources. In this way, interdisciplinary can increase the risk of circular reasoning.&lt;/p&gt;
+&lt;p&gt;With oral traditional texts like Homer&#39;s poems, linguistics, rather than content, is a better method of dating. Homer worked in the Dark Age era, but his poems are &lt;em&gt;about&lt;/em&gt; the Mycenaean Period. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
 
 &lt;&lt;elseif ($greeceCombatQ1 is &quot;B&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;Feedback&lt;/p&gt;
-&lt;p&gt;You have been defeated. Better luck next time. [[Onward! |Greece]]&lt;/p&gt;
+&lt;p&gt;This is a good guess! A correlation/causation fallacy would identify something as the necessary and only cause of an outcome, without considering other possible causes of that outcome. As you would imagine, it&#39;s rare to be able to accurately formulate such simple statements about something as chaotic as history. Instead, historians analyzing a &quot;cause and effect&quot; situation would consider a more nuanced range of factors such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficient cause: Prior events and conditions required for an event to occur&lt;/li&gt;
+&lt;li&gt;Formal cause: Background causes of the efficient cause&lt;/li&gt;
+&lt;li&gt;Final cause: The will or purpose of the agent&lt;/li&gt;
+&lt;li&gt;Necessary cause: The minimum requirements necessary for an event to occur (a question of probability)&lt;/li&gt;
+&lt;li&gt;Sufficient cause: The conditions that will certainly produce the event (i.e. making the outcome inevitable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More than you wanted to know. Sorry. Better luck next time. [[Onward! |Greece]]&lt;/p&gt;
 
-&lt;&lt;elseif ($greeceCombatQ1 is &quot;C&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;&lt;set $greeceCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Feedback. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Lance&quot;&gt;&gt;&lt;&lt;set $lance to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Illuminated codex&quot;&gt;&gt;&lt;&lt;set $book to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;elseif ($greeceCombatQ1 is &quot;A&quot;) and ($greeceCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;Anachronism (inserting our own 21st-century desires or biases into a historical situation where they didn&#39;t exist) is a common pitfall. But it doesn&#39;t describe what this monster has done here. Better luck next time!&lt;/p&gt;
 &lt;p&gt;[[Onward! |Greece]]&lt;/p&gt;
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Greece]]&lt;/p&gt;
-&lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="107" name="greece-combat2" tags="" position="600,1900" size="100,100">&lt;&lt;if $greeceCombat2 is &quot;done&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="107" name="greece-combat2" tags="" position="600,1900" size="100,100">&lt;&lt;if $greeceCombat2 is &quot;done&quot;&gt;&gt;
 You already won this fight. [[Continue on. |Greece]]
 &lt;&lt;else&gt;&gt;
 
@@ -10331,24 +10349,28 @@ You already won this fight. [[Continue on. |Hellenistic]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="164" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;A&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="164" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;C&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;Right! The risks of such circular reasoning are particularly high for historians studying early civilizations that left few written records, because archaeologists often use those records while analyzing physical artifacts, while philologists and historians use archaeological scholarship to nuance their own interpretations of textual sources. In this way, interdisciplinary can increase the risk of circular reasoning.&lt;/p&gt;
+&lt;p&gt;With oral traditional texts like Homer&#39;s poems, linguistics, rather than content, is a better method of dating. Homer worked in the Dark Age era, but his poems are &lt;em&gt;about&lt;/em&gt; the Mycenaean Period. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
 
 &lt;&lt;elseif ($hellenisticCombatQ1 is &quot;B&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;Feedback&lt;/p&gt;
-&lt;p&gt;You have been defeated. Better luck next time. [[Onward! |Hellenistic]]&lt;/p&gt;
+&lt;p&gt;This is a good guess! A correlation/causation fallacy would identify something as the necessary and only cause of an outcome, without considering other possible causes of that outcome. As you would imagine, it&#39;s rare to be able to accurately formulate such simple statements about something as chaotic as history. Instead, historians analyzing a &quot;cause and effect&quot; situation would consider a more nuanced range of factors such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficient cause: Prior events and conditions required for an event to occur&lt;/li&gt;
+&lt;li&gt;Formal cause: Background causes of the efficient cause&lt;/li&gt;
+&lt;li&gt;Final cause: The will or purpose of the agent&lt;/li&gt;
+&lt;li&gt;Necessary cause: The minimum requirements necessary for an event to occur (a question of probability)&lt;/li&gt;
+&lt;li&gt;Sufficient cause: The conditions that will certainly produce the event (i.e. making the outcome inevitable)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More than you wanted to know. Sorry. Better luck next time. [[Onward! |Hellenistic]]&lt;/p&gt;
 
-&lt;&lt;elseif ($hellenisticCombatQ1 is &quot;C&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Feedback Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
+&lt;&lt;elseif ($hellenisticCombatQ1 is &quot;A&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
+&lt;p&gt;Anachronism (inserting our own 21st-century desires or biases into a historical situation where they didn&#39;t exist) is a common pitfall. But it doesn&#39;t describe what this monster has done here. Better luck next time!&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
 
 &lt;&lt;else&gt;&gt;
@@ -22818,6 +22840,61 @@ behind us in order for a full scale revolution to occur back then.
 &lt;footer&gt;
 &lt;ul&gt;
 &lt;li&gt;[[Back: In the Beginning Rewrite |Begin-rewrite]]&lt;/li&gt;
+&lt;li&gt;[[Back: Our History Rewrite |Our History Rewrite]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="454" name="babylon-rewrite7" tags="" position="3600,800" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;p&gt;I decided for this era I would be a scribe. The reasoning behind this was because I thought that it would be very interesting to see what life was like at this time writing and documenting everything down. In this play through I decided to rebel against my peers and teachers who were doing wrong by me. In order to succeed in a rebellion you need followers, I will try and convince my peers that who their God is isn&#39;t a good person and why it shouldn&#39;t be their “Leader”. The text states, “However, is young and immature; he oppresses his people and treats them harshly. So the people cry for help to Anu, the sky god and chief deity of Uruk, their city. In response to their pleas, Anu creates a wild man, Enkidu, in the wild and terrifying forests that surround Uruk. Enkidu is more like an animal than a man. He has the strength of dozens of wild animals” This passage shows how bad of a God he is and hopefully others listen to me. If this doesn&#39;t work I will try to incorporate new ways of communication. For instance this was one of the very first civilizations to use writing as a form of communication. I could write plans of a rebellion and have them posted around the city so others could see. The text states, “The cultures of ancient Mesopotamia and Egypt were the first in world history in which some people knew how to write, a skill that remained limited to very few indi- viduals within each culture.” Lastly I could even get some of my peers to join/ spread word of the rebellion I am planning the text states, “These schools were firmly established by the Early Dynastic Period and spread throughout Sumer.” I could start teaching at these schools to spread word of the rebellion to my peers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;&lt;link &quot;(Back to see other choices)&quot; &quot;Begin-rewrite&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: In the Beginning Rewrite |Begin-rewrite]]&lt;/li&gt;
+&lt;li&gt;[[Back: Our History Rewrite |Our History Rewrite]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="455" name="assyria-rewrite6" tags="" position="3200,1500" size="100,100">&lt;div class=&quot;container&quot;&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+
+&lt;p&gt;In this role play game I decided to role play as a soldier in the Assyrian Army. The
+reason why I picked this was because I want to know what life was like during this brutal time.
+Military life wasn&#39;t easy and I want to see through the eyes of a soldier during this time to what
+they had to endure. The way that I plan on building my status in the army is becoming a leader.
+People often need someone to guide them when it comes to something such as war. For instance
+during the fight with the south President Abe Lincoln was the leader of the North and during the
+Napoleonic was Napolean was General and later appointed himself king. I will stand out by
+showing my fellow soldiers that I will fight with them and lead them to victory. The text states,
+“And we aren&#39;t wrong. But (you knew that was coming, right?) ... but... they had a softer side,
+reflected in their obvious appreciation of beautiful artwork. Their stone walls of their palaces
+were alive with vibrantly painted, intricately detailed bas-relief carvings (or friezes). Of course,
+their favorite themes were grim and gruesome (war, hunting, domination), but still ... they were a
+little artsy” Another way that I can rise in the ranks in the Army is by showing depictions of me
+as the leader in these art works. I could also tell them that I was appointed by God as their
+leader,” Assur, Great Lord, King of All the great gods! Anu, God, Lord of the world, King of the
+spirits of heaven and spirits of earth! Bel the Supreme, Father of the gods, the Creator! Hea, King
+of the deep, determiner of destinies, the king of crowns, awash in brilliance!”.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;&lt;link &quot;(Back to see other choices)&quot; &quot;ironage-rewrite&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;hr&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+&lt;footer&gt;
+&lt;ul&gt;
+&lt;li&gt;[[Back: Iron Age Empires Rewrite |ironage-rewrite]]&lt;/li&gt;
 &lt;li&gt;[[Back: Our History Rewrite |Our History Rewrite]]&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/footer&gt;
