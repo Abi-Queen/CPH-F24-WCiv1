@@ -10471,16 +10471,16 @@ You already won this fight. [[Continue on. |Hellenistic]]
 &lt;/div&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
-&lt;p&gt;It says, &quot;slavery in rome/greece vs us&quot;&lt;/p&gt;
+&lt;p&gt;It says, &quot;Something...&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
 &lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt;Response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt; Response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt; Response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;A&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;B&quot;&gt;&gt;Incorrect response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$hellenisticCombatQ1&quot; &quot;C&quot;&gt;&gt;Correct response&lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -10496,26 +10496,19 @@ You already won this fight. [[Continue on. |Hellenistic]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="164" name="hellenistic-combat1-spoils" tags="" position="500,2600" size="100,100">&lt;&lt;if ($hellenisticCombatQ1 is &quot;C&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $hellenisticCombat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Right! The risks of such circular reasoning are particularly high for historians studying early civilizations that left few written records, because archaeologists often use those records while analyzing physical artifacts, while philologists and historians use archaeological scholarship to nuance their own interpretations of textual sources. In this way, interdisciplinary can increase the risk of circular reasoning.&lt;/p&gt;
-&lt;p&gt;With oral traditional texts like Homer&#39;s poems, linguistics, rather than content, is a better method of dating. Homer worked in the Dark Age era, but his poems are &lt;em&gt;about&lt;/em&gt; the Mycenaean Period. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;Feedback&lt;/p&gt;
+&lt;p&gt;Congratulations! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Sword&quot;&gt;&gt;&lt;&lt;set $sword to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Lyre&quot;&gt;&gt;&lt;&lt;set $lyre to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
 
 &lt;&lt;elseif ($hellenisticCombatQ1 is &quot;B&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;This is a good guess! A correlation/causation fallacy would identify something as the necessary and only cause of an outcome, without considering other possible causes of that outcome. As you would imagine, it&#39;s rare to be able to accurately formulate such simple statements about something as chaotic as history. Instead, historians analyzing a &quot;cause and effect&quot; situation would consider a more nuanced range of factors such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficient cause: Prior events and conditions required for an event to occur&lt;/li&gt;
-&lt;li&gt;Formal cause: Background causes of the efficient cause&lt;/li&gt;
-&lt;li&gt;Final cause: The will or purpose of the agent&lt;/li&gt;
-&lt;li&gt;Necessary cause: The minimum requirements necessary for an event to occur (a question of probability)&lt;/li&gt;
-&lt;li&gt;Sufficient cause: The conditions that will certainly produce the event (i.e. making the outcome inevitable)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;More than you wanted to know. Sorry. Better luck next time. [[Onward! |Hellenistic]]&lt;/p&gt;
+&lt;p&gt;Feedback&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Onward! |Hellenistic]]&lt;/p&gt;
 
 &lt;&lt;elseif ($hellenisticCombatQ1 is &quot;A&quot;) and ($hellenisticCombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;Anachronism (inserting our own 21st-century desires or biases into a historical situation where they didn&#39;t exist) is a common pitfall. But it doesn&#39;t describe what this monster has done here. Better luck next time!&lt;/p&gt;
-&lt;p&gt;[[Onward! |Hellenistic]]&lt;/p&gt;
+&lt;p&gt;Feedback&lt;/p&gt;
+&lt;p&gt;You have been defeated. Better luck next time. [[Onward! |Hellenistic]]&lt;/p&gt;
 
 &lt;&lt;else&gt;&gt;
 &lt;p&gt;You have been defeated. Better luck next time. [[Move on through this time travel portal. |Hellenistic]]&lt;/p&gt;
