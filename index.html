@@ -11409,16 +11409,16 @@ You already won this fight. [[Continue on. |Rome2]]
 &lt;/div&gt;
 &lt;div class=&quot;col-md&quot;&gt;
 &lt;p&gt;Here is your opponent. To win this fight, choose a good response to its questionable statements about history.&lt;/p&gt;
-&lt;p&gt;It says, &quot;something [to be posted]&quot;&lt;/p&gt;
+&lt;p&gt;It says, &quot;Druids were members of a Celtic priesthood responsible for administering justice, arbitrating disputes, foretelling the future, and preserving oral history. They practiced human sacrifice, including the notorious &#39;wicker man,&#39; a huge human shape built of wicker which was filled with sacrificial animals and people and then burned as an offering to the gods.&quot;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;hr&gt;
 &lt;div class=&quot;row center&quot;&gt;
-&lt;p&gt;How will you respond to this creature&#39;s hysterical history?&lt;/p&gt;
+&lt;p&gt;What do you think? Is he right? Or is something a little off here? Choose the best reply below.&lt;/p&gt;
 &lt;div class=&quot;row scenario&quot;&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt; incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt; incorrect response&lt;/label&gt;&lt;/p&gt;
-&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt; correct response&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;A&quot;&gt;&gt; The wicker man thing is definitely not real. It was in a movie, but there&#39;s zero historical evidence for such practices happening in ancient or medieval Celtic society.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;B&quot;&gt;&gt; This is mostly nonsense with only the shakiest foundations in the existing historical record. It&#39;s the product of the over-active imaginations of nationalistic British Victorian scholars, who were excited about bringing the druids to life as a vivid emblem of ancient British national identity.&lt;/label&gt;&lt;/p&gt;
+&lt;p&gt;&lt;label&gt;&lt;&lt;radiobutton &quot;$rome2CombatQ1&quot; &quot;C&quot;&gt;&gt; Textual sources from ancient Greece and Rome support these statements. However, it is important to note that all of these ancient sources were written by non-Celts whose knowledge about the Druids was second or third hand. &lt;/label&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;row&quot; id=&quot;combat-spoils&quot;&gt;
@@ -11432,21 +11432,18 @@ You already won this fight. [[Continue on. |Rome2]]
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="180" name="rome2-combat1-spoils" tags="" position="500,4200" size="100,100">&lt;&lt;if ($rome2CombatQ1 is &quot;A&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;&lt;set $rome2Combat1 to &quot;done&quot;&gt;&gt;
-&lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Quite so! Nice work! Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
-&lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
+&lt;p&gt;It is in a movie! The Wicker Man (1973) is a cult classic. The movie is unforgettably weird, but these statements about druids offering sacrifices in a wicker man are supported by ancient texts.&lt;/p&gt;
+&lt;p&gt;Try again? [[Onward! |Rome2]]&lt;/p&gt;
 
 &lt;&lt;elseif ($rome2CombatQ1 is &quot;B&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
-&lt;p&gt;feedback&lt;/p&gt;
+&lt;p&gt;Well, this is not exactly wrong. The imaginations of those nationalistic Victorian British historians did go wild with the druids as an emblem of ancient British nationalism. They cobbled together source material from even the least reliable oral traditions, setting early modern Welsh ballads on a par with Hellenistic travel narratives and seeming to believe all of it at face value. Much of what popular culture believes about druids is their doing. But the monster&#39;s statement did not fall into this camp of romantic, ideology-driven historiography. It was accurate.&lt;/p&gt;
 &lt;p&gt;Better luck next time! [[Onward! |Rome2]]&lt;/p&gt;
 
 &lt;&lt;elseif ($rome2CombatQ1 is &quot;C&quot;) and ($rome2CombatQ1 isnot &quot;&quot;)&gt;&gt;
 &lt;&lt;set $rome2Combat1 to &quot;done&quot;&gt;&gt;
 &lt;&lt;set $Score to $Score +5&gt;&gt;
-&lt;p&gt;Feedback. Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
+&lt;p&gt;Good choice! Yes, these statements about druids have solid basis in ancient Roman and Greek texts. It is wise to interpret these texts carefully, since they were written by outside (sometimes quite biased) observers, not by Celts themselves.&lt;/p&gt;
+&lt;p&gt;Victory has boosted your score by 5. Choose loot for your inventory: &lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Horse&quot;&gt;&gt;&lt;&lt;set $horse to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;&lt;linkreplace &quot;Armor&quot;&gt;&gt;&lt;&lt;set $armor to true&gt;&gt;\&lt;&lt;/linkreplace&gt;&gt;&lt;/p&gt;
 &lt;p&gt;[[Onward! |Rome2]]&lt;/p&gt;
